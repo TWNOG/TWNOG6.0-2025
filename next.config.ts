@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import type { NextConfig } from 'next';
+import { i18n } from './next-i18next.config.js'; // 這裡仍是 ESM import
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // 其他設定...
+  i18n,
 };
 
 export default nextConfig;

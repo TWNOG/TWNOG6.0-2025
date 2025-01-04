@@ -191,12 +191,11 @@ export default function SponsorshipPage() {
             {t("notice.rankingPrinciples.description")}
           </p>
           <ol className="list-decimal list-inside mt-2 mb-2 pl-2">
-            {/* items 是 array，所以可 map */}
-            {t("notice.rankingPrinciples.items", { returnObjects: true }).map(
-              (item: string, idx: number) => (
-                <li key={idx}>{item}</li>
-              )
-            )}
+            {(
+              t("notice.rankingPrinciples.items", { returnObjects: true }) as string[]
+            ).map((item: string, idx: number) => (
+              <li key={idx}>{item}</li>
+            ))}
           </ol>
           <p>{t("notice.tableLocation")}</p>
         </div>

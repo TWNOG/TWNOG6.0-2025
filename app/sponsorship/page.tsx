@@ -1,33 +1,82 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 export default function SponsorshipPage() {
+  // 假設此 namespace 叫 "sponsorship"
+  // 確保對應到 public/locales/en/sponsorship.json（或 zh/sponsorship.json 等）
+  const { t } = useTranslation("sponsorship");
+
   return (
     <div className="min-h-screen p-8 pb-20">
       <section className="max-w-4xl mx-auto bg-white p-6 rounded shadow-sm">
-        <h1 className="text-2xl font-bold mb-6">我要贊助</h1>
-        
+        {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
+        <h1 className="text-2xl font-bold mb-6">{t("pageTitle")}</h1>
+
         {/* 贊助方案表格 */}
         <div className="overflow-x-auto">
           <table className="table-auto w-full border border-gray-300 text-sm text-center">
             <thead className="bg-yellow-100">
               <tr>
-                <th className="border border-gray-300 py-2 px-4">Sponsor Level</th>
-                <th className="border border-gray-300 py-2 px-4">Titanium<br/>(NT 300,000 / USD 10,000)</th>
-                <th className="border border-gray-300 py-2 px-4">Platinum<br/>(NT 100,000 / USD 3,150)</th>
-                <th className="border border-gray-300 py-2 px-4">Gold<br/>(NT 60,000 / USD 2,000)</th>
-                <th className="border border-gray-300 py-2 px-4">Silver<br/>(NT 36,000 / USD 1,200)</th>
+                <th className="border border-gray-300 py-2 px-4">
+                  {t("table.header.level")}
+                </th>
+                <th className="border border-gray-300 py-2 px-4">
+                  {t("table.header.titanium")}
+                </th>
+                <th className="border border-gray-300 py-2 px-4">
+                  {t("table.header.platinum")}
+                </th>
+                <th className="border border-gray-300 py-2 px-4">
+                  {t("table.header.gold")}
+                </th>
+                <th className="border border-gray-300 py-2 px-4">
+                  {t("table.header.silver")}
+                </th>
               </tr>
             </thead>
             <tbody>
+              {/* Sponsor Amount */}
+              <tr>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.sponsorAmount")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  NT 300,000 / USD 10,000
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  NT 100,000 / USD 3,150
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  NT 60,000 / USD 2,000
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  NT 36,000 / USD 1,200
+                </td>
+              </tr>
               {/* Sponsor Session */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Sponsor Session</td>
-                <td className="border border-gray-300 py-2 px-4">Keynote * 1</td>
-                <td className="border border-gray-300 py-2 px-4">Session * 1</td>
-                <td className="border border-gray-300 py-2 px-4">X</td>
-                <td className="border border-gray-300 py-2 px-4">X</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.sponsorSession")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.sessionKeynote")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.sessionNormal")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.sessionNone")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.sessionNone")}
+                </td>
               </tr>
               {/* Logo on website & Hyperlink */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Logo on website & Hyperlink</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.logoWebsite")}
+                </td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -35,7 +84,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Logo on Signage */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Logo on Signage</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.logoSignage")}
+                </td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -43,7 +94,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Event Backdrop Logo */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Event Backdrop Logo</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.backdropLogo")}
+                </td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -51,65 +104,101 @@ export default function SponsorshipPage() {
               </tr>
               {/* Free Ticket */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Free Ticket</td>
-                <td className="border border-gray-300 py-2 px-4">30</td>
-                <td className="border border-gray-300 py-2 px-4">15</td>
-                <td className="border border-gray-300 py-2 px-4">10</td>
-                <td className="border border-gray-300 py-2 px-4">6</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.freeTicket")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.freeTicket.titanium")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.freeTicket.platinum")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.freeTicket.gold")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.freeTicket.silver")}
+                </td>
               </tr>
               {/* Dinner Quota */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Dinner Quota</td>
-                <td className="border border-gray-300 py-2 px-4">15</td>
-                <td className="border border-gray-300 py-2 px-4">5</td>
-                <td className="border border-gray-300 py-2 px-4">3</td>
-                <td className="border border-gray-300 py-2 px-4">1</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.dinnerQuota")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dinnerQuota.titanium")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dinnerQuota.platinum")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dinnerQuota.gold")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dinnerQuota.silver")}
+                </td>
               </tr>
               {/* Exhibition Desk */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Exhibition Desk</td>
-                <td className="border border-gray-300 py-2 px-4">Table*4<br/>Chair*8</td>
-                <td className="border border-gray-300 py-2 px-4">Table*2<br/>Chair*4</td>
-                <td className="border border-gray-300 py-2 px-4">Table*1<br/>Chair*2</td>
-                <td className="border border-gray-300 py-2 px-4">X</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.exhibitionDesk")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.deskTitanium")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.deskPlatinum")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.deskGold")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.rows.deskNone")}
+                </td>
               </tr>
               {/* DM (A4) */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">DM (A4)</td>
-                <td className="border border-gray-300 py-2 px-4">500</td>
-                <td className="border border-gray-300 py-2 px-4">200</td>
-                <td className="border border-gray-300 py-2 px-4">200</td>
-                <td className="border border-gray-300 py-2 px-4">200</td>
+                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                  {t("table.rows.dmA4")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dm.titanium")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dm.platinum")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dm.gold")}
+                </td>
+                <td className="border border-gray-300 py-2 px-4">
+                  {t("table.numbers.dm.silver")}
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        {/* 說明文字 */}
+        {/* Introduction */}
         <p className="mt-4 text-sm">
-          <strong>Introduction:</strong> Please provide Hyperlink/Logo in an AI or EPS file
-          and DM <strong>a month before</strong> the event date.
+          <strong>{t("introduction.title")}:</strong> {t("introduction.content")}
         </p>
 
-        {/* 注意事項、排名原則 */}
+        {/* Notice */}
         <div className="mt-8 text-sm leading-relaxed">
-          <h2 className="font-semibold mb-2">Notice</h2>
+          <h2 className="font-semibold mb-2">{t("notice.title")}</h2>
           <p>
-            <strong>Ranking Processing Principles:</strong> The arrangement and placement
-            of names and logos of vendors at all levels of the conference, as well as
-            the arrangement of exhibition tables, shall be conducted by the following
-            principles:
+            <strong>{t("notice.rankingPrinciples.heading")}</strong>{" "}
+            {t("notice.rankingPrinciples.description")}
           </p>
           <ol className="list-decimal list-inside mt-2 mb-2 pl-2">
-            <li>Sponsorship Amount</li>
-            <li>
-              If amounts are equal, priority is given based on the order of sponsorship
-              time, followed by the alphabetical order of the English name.
-            </li>
+            {/* items 是 array，所以可 map */}
+            {t("notice.rankingPrinciples.items", { returnObjects: true }).map(
+              (item: string, idx: number) => (
+                <li key={idx}>{item}</li>
+              )
+            )}
           </ol>
-          <p>
-          The organizing committee will assign and arrange the locations of the exhibition tables. For any inquiries, please contact our team at &lt;sponsorship@twnog.net&gt;.
-          </p>
+          <p>{t("notice.tableLocation")}</p>
         </div>
       </section>
     </div>

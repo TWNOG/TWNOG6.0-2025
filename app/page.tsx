@@ -53,7 +53,7 @@ export default function Home() {
       {/* 頁尾，可放一些社群連結、版權聲明等 */}
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <p className="text-sm sm:text-base">
-          © 2025 TWNOG 台灣網路維運社群
+          © 2025 {t('copyright')}
         </p>
         {/* 如有社群連結可加在這裡 */}
         {/* <a href="https://facebook.com/twnog" className="hover:underline text-sm sm:text-base">Facebook</a> */}

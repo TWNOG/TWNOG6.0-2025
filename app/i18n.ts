@@ -1,31 +1,36 @@
-// app/i18n.ts
 "use client";
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// 這裡示範最簡單的 resources，實務通常會用 next-i18next 或 http-backend 載入翻譯檔
+// 這裡直接匯入翻譯檔
+import enIndex from '../public/locales/en/index.json';
+import zhHantIndex from '../public/locales/zh-Hant/index.json';
+import enSponsorship from '../public/locales/en/sponsorship.json';
+import zhHantSponsorship from '../public/locales/zh-Hant/sponsorship.json';
+
+// 如果你有多個 namespace，例如 common.json、footer.json，也能各自 import
+
+// 將 JSON 設為 i18n resources
 const resources = {
   en: {
-    translation: {
-      hello: "Hello World"
-    }
+    index: enIndex,
+    sponsorship: enSponsorship
   },
   zh: {
-    translation: {
-      hello: "哈囉，世界"
-    }
-  }
+    index: zhHantIndex,
+    sponsorship: zhHantSponsorship
+  },
 };
 
-// 如果已經初始化過，就不要重複 init
 if (!i18n.isInitialized) {
   i18n
     .use(initReactI18next)
     .init({
       resources,
-      lng: "en",          // 預設語言
-      fallbackLng: "en",
+      // 預設語系（可改成從 environment / router 判斷）
+      lng: 'en',
+      fallbackLng: 'en',
       interpolation: {
         escapeValue: false,
       },

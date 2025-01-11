@@ -1,9 +1,9 @@
 export default function CFPPage() {
   return (
     <div className="min-h-screen p-8 pb-20">
-      <section className="max-w-3xl mx-auto bg-white p-6 rounded shadow-sm">
+      <section className="max-w-3xl mx-auto p-6 rounded shadow-sm">
         {/* 大標題 */}
-        <h1 className="text-3xl font-bold mb-4">Call For Presentations</h1>
+        <h1 className="text-3xl font-bold mb-4">Call For Papers</h1>
         <p className="text-sm mb-4">
           The TWNOG6 Program Committee is now seeking contributions for presentations
           for the TWNOG6 Conference.
@@ -28,10 +28,10 @@ export default function CFPPage() {
               <strong>Call for Papers Opens:</strong> Now
             </li>
             <li>
-              <strong>First Draft Program Published:</strong> Feb 28, 2025
+              <strong>First Draft Program Published:</strong> Feb 21, 2025
             </li>
             <li>
-              <strong>Final Deadline for Submissions:</strong> Feb 29, 2025
+              <strong>Final Deadline for Submissions:</strong> Feb 28, 2025
             </li>
             <li>
               <strong>Submission Review/Approval:</strong> Mar 4-10, 2025

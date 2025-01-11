@@ -9,14 +9,14 @@ export default function SponsorshipPage() {
 
   return (
     <div className="min-h-screen p-8 pb-20">
-      <section className="max-w-4xl mx-auto bg-white p-6 rounded shadow-sm">
+      <section className="max-w-4xl mx-auto p-6 rounded shadow-sm">
         {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
         <h1 className="text-2xl font-bold mb-6">{t("pageTitle")}</h1>
 
         {/* 贊助方案表格 */}
         <div className="overflow-x-auto">
           <table className="table-auto w-full border border-gray-300 text-sm text-center">
-            <thead className="bg-yellow-100">
+            <thead className="">
               <tr>
                 <th className="border border-gray-300 py-2 px-4">
                   {t("table.header.level")}

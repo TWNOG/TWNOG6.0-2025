@@ -1,14 +1,20 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 // app/agenda/page.tsx
 export default function AgendaPage() {
+    const { t } = useTranslation("agenda");
+  
     return (
       <div className="min-h-screen p-8 pb-20">
-        <section className="max-w-2xl mx-auto bg-white p-8 rounded shadow-sm">
-          <h1 className="text-2xl font-bold mb-4">活動議程</h1>
+        <section className="max-w-2xl mx-auto p-8 rounded shadow-sm">
+          <h1 className="text-2xl font-bold mb-4">{t("pageTitle")}</h1>
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b">
-                <th className="text-left py-2 px-4 font-semibold">時間</th>
-                <th className="text-left py-2 px-4 font-semibold">議程名稱</th>
+                <th className="text-left py-2 px-4 font-semibold">{t("sessions.time")}</th>
+                <th className="text-left py-2 px-4 font-semibold">{t("sessions.name")}</th>
               </tr>
             </thead>
             <tbody>

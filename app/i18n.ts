@@ -8,6 +8,8 @@ import enIndex from '../public/locales/en/index.json';
 import zhHantIndex from '../public/locales/zh-Hant/index.json';
 import enSponsorship from '../public/locales/en/sponsorship.json';
 import zhHantSponsorship from '../public/locales/zh-Hant/sponsorship.json';
+import enAgenda from '../public/locales/en/agenda.json';
+import zhHantAgenda from '../public/locales/zh-Hant/agenda.json';
 
 // 如果你有多個 namespace，例如 common.json、footer.json，也能各自 import
 
@@ -15,11 +17,13 @@ import zhHantSponsorship from '../public/locales/zh-Hant/sponsorship.json';
 const resources = {
   en: {
     index: enIndex,
-    sponsorship: enSponsorship
+    sponsorship: enSponsorship,
+    agenda: enAgenda,
   },
   zh: {
     index: zhHantIndex,
-    sponsorship: zhHantSponsorship
+    sponsorship: zhHantSponsorship,
+    agenda: zhHantAgenda,
   },
 };
 

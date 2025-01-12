@@ -1,0 +1,32 @@
+{
+  "callForPapersTitle": "徵求稿件",
+  "callForPapersDescription": "TWNOG 6 議程組現正徵求投稿，歡迎在第六屆台灣網路維運論壇分享相關議題。請透過 APNIC Paper Submission System 提交稿件：https://submission.apnic.net/user/login.php?event=213",
+  "conferenceMilestonesTitle": "論壇相關時程",
+  "conferenceMilestones": {
+    "open": "徵稿開始：即日起",
+    "draftProgram": "暫定議程公告：2025 年 2 月 14 日",
+    "submissionDeadline": "徵求演講截止：2025 年 2 月 21 日",
+    "review": "演講提案討論與同意：2025 年 2 月 21 日至 2025 年 3 月 18 日",
+    "finalProgram": "議程確認公告：2025 年 3 月 29 日",
+    "finalSlides": "提供最終簡報：2025 年 4 月 4 日",
+    "conferenceDate": "論壇活動日：2025 年 4 月 18 日"
+  },
+  "programContentTitle": "議程內容",
+  "presentationTopicsTitle": "主題：網際網路營運與技術",
+  "recommendedTopicsIntro": "以下為推薦主題（但不限於）：",
+  "recommendedTopicsList": [
+    "網路安全與攻擊防護：NSP-SEC、DDoS 趨勢、防垃圾郵件、殭屍網路偵測、DNS / DNSSEC、網路基礎設施與軟體定義網路（SDN）",
+    "IXPs 與 Peering",
+    "IPv4 / IPv6 路由與營運，IPv6 在各產業的應用，v6 部署與轉換，網際網路骨幹營運，接取與傳輸技術（3G/LTE/5G、FTTH、無線、Metro Ethernet、光纖、MPLS），SDN 與 NFV，RPKI 與 ROA，衛星網路，經濟型網路，資料中心",
+    "能源使用：營運管理、資料中心認證、無線與行動通訊",
+    "5G/6G 相關主題：網路營運與管理",
+    "ISP 與電信業者服務：AI 在網路營運中的應用、網路營運最佳實務、網路效能量測、雲端與內容傳遞網路（CDN）",
+    "雲端運算與 CDN：多播、語音、視訊、遠距會議、遊戲、新興技術及其他相關主題",
+    "大數據、AI、物聯網（IoT） 與工業 4.0 及其他網路相關議題"
+  ],
+  "cfpSubmissionTitle": "稿件提交規範",
+  "cfpSubmissionDescription": "所有投稿需附上簡報草稿，未附草稿者將會被拒絕。若稿件仍在撰寫中，可提供當下草稿內容。\n\n所有未完成稿件與正式簡報檔一律以 PDF 格式提交，簡報必須是原創內容，不得包含任何公司機密標記。商業或銷售性質內容的簡報將不予接受。\n\n最終簡報檔需於指定截止日期前提交，並將公布於 TWNOG 官方網站。",
+  "contactInfo": "若有任何問題，請透過 email 與議程組聯繫：paper@twnog.net。",
+  "closingRemark": "期待收到您的投稿！",
+  "committeeSignature": "TWNOG 6 議程組 敬上"
+}

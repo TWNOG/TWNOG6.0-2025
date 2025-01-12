@@ -1,0 +1,33 @@
+{
+    "callForPapersTitle": "Call For Papers",
+    "callForPapersDescription": "The TWNOG6 Program Committee is now seeking contributions for presentations for the TWNOG6 Conference.\n\nPlease submit via the APNIC Paper Submission System at: https://submission.apnic.net/user/login.php?event=213",
+    "conferenceMilestonesTitle": "Conference Milestones",
+    "conferenceMilestones": {
+      "open": "Call for Papers Opens: Now",
+      "draftProgram": "First Draft Program Published: Feb 14, 2025",
+      "submissionDeadline": "Final Deadline for Submissions: Feb 21, 2025",
+      "review": "Submission Review/Approval: Feb 21 - Mar 18, 2025",
+      "finalProgram": "Final Program Published: Mar 29, 2025",
+      "finalSlides": "Final Slides Received: Apr 4, 2025",
+      "conferenceDate": "Conference Date: Apr 18, 2025"
+    },
+    "programContentTitle": "Program Content",
+    "presentationTopicsTitle": "Presentation Topics: Internet Operations & Technologies",
+    "recommendedTopicsIntro": "The following are recommended topics, but not limited to:",
+    "recommendedTopicsList": [
+      "Network Security and Attack Protection: NSP-SEC, DDoS trend, Anti-Spam, Botnet detection, DNS / DNSSEC, Network Infrastructure and Software-Defined Networking",
+      "IXPs and Peering",
+      "IPv4 / IPv6 Routing and Operations, IPv6 used in different industries, v6 deployment & transition, Internet backbone operations, Access and Transport Technologies (3G/LTE/5G, FTTH, Wireless, Metro Ethernet, Fiber Optics, MPLS), SDN & NFV, RPKI & ROA, Satellite Networks, Affordable Network, Data Center",
+      "Energy Utilization: Operations Management, Data Center Certification, Wireless and Mobile Communications",
+      "5G/6G related topics: Network Operations and Management",
+      "ISP and Carrier services: AI used in Network Operations, Best Practice in Network Operations, Network Performance Measurement, Cloud and Content Delivery Networks (CDN)",
+      "Cloud Computing and CDN: Multicast, Voice, Video, Telepresence, Gaming, Emerging Technologies and Others",
+      "Big Data, AI, IoT and Industry 4.0, Other Network-Related Topics"
+    ],
+    "cfpSubmissionTitle": "CFP Submission",
+    "cfpSubmissionDescription": "Draft slides MUST be provided with CFP submissions otherwise the submission will be rejected immediately. For work in progress, the most current information available at the time of submission is acceptable.\n\nAll draft and complete slides must be submitted in PDF format only. Slides must be of original work, with all company confidential marks removed. Presentations with commercial/sales content will NOT be accepted.\n\nFinal slides are to be provided by the specified deadline for publication on the TWNOG website.",
+    "contactInfo": "Any questions or concerns should be addressed to the Program Committee Chairs by e-mail at paper@twnog.net.",
+    "closingRemark": "We look forward to receiving your presentation proposals.",
+    "committeeSignature": "TWNOG 6 Program Committee Chairs"
+  }
+  

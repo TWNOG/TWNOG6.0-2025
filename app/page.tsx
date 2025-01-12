@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* 主要內容放在 main */}
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
         {/* 活動 Logo 或 Banner */}
         {/* 你可以換成 TWNOG logo，或參考 /public 中的其他圖片 */}
         <Image
@@ -20,7 +20,7 @@ export default function Home() {
         />
 
         {/* 活動簡介 */}
-        <section className="text-center sm:text-left">
+        <section className="text-center sm:text-center">
           <h1 className="text-2xl font-bold mb-4">TWNOG 6</h1>
           <p className="text-base">
           {t('content')}

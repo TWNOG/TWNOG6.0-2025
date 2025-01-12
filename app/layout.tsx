@@ -34,14 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <style>{`
-          html {
-            font-size: 16px;
-          }
-        `}</style>
-      </head>
-      <body className={`antialiased`} style={{ fontFamily: `${geistSans.style.fontFamily}, ${geistMono.style.fontFamily}, ${notoSans.style.fontFamily}` }}>
+      <body className={`antialiased`}>
         <I18nProvider>
           <Navbar />
           {children}

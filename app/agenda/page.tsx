@@ -7,8 +7,8 @@ export default function AgendaPage() {
     const { t } = useTranslation("agenda");
   
     return (
-      <div className="min-h-screen p-8 pb-20">
-        <section className="max-w-2xl mx-auto p-8 rounded shadow-sm">
+      <div className="min-h-screen p-6 pb-20">
+        <section className="max-w-4xl mx-auto rounded shadow-sm">
           <h1 className="text-2xl font-bold mb-4">{t("pageTitle")}</h1>
           <table className="w-full border-collapse">
             <thead>

@@ -1,7 +1,7 @@
 export default function CFPPage() {
   return (
-    <div className="min-h-screen p-8 pb-20">
-      <section className="max-w-3xl mx-auto p-6 rounded shadow-sm">
+    <div className="min-h-screen p-6 pb-20">
+      <section className="max-w-4xl mx-auto rounded shadow-sm">
         {/* 大標題 */}
         <h1 className="text-3xl font-bold mb-4">Call For Papers</h1>
         <p className="text-sm mb-4">

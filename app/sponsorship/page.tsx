@@ -8,8 +8,8 @@ export default function SponsorshipPage() {
   const { t } = useTranslation("sponsorship");
 
   return (
-    <div className="min-h-screen p-8 pb-20">
-      <section className="max-w-4xl mx-auto p-6 rounded shadow-sm">
+    <div className="min-h-screen p-6 pb-20">
+      <section className="max-w-4xl mx-auto rounded shadow-sm">
         {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
         <h1 className="text-2xl font-bold mb-6">{t("pageTitle")}</h1>
 

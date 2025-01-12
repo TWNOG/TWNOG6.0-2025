@@ -20,9 +20,9 @@
       "freeTicket": "Free Ticket",
       "dinnerQuota": "Dinner Quota",
       "exhibitionDesk": "Exhibition Desk",
-      "deskTitanium": "Table * 4\nChair * 8",
-      "deskPlatinum": "Table * 2\nChair * 4",
-      "deskGold": "Table * 1\nChair * 2",
+      "deskTitanium": "Table * 4, Chair * 8",
+      "deskPlatinum": "Table * 2, Chair * 4",
+      "deskGold": "Table * 1, Chair * 2",
       "deskNone": "X",
       "dmA4": "DM (A4)"
     },
@@ -49,7 +49,7 @@
   },
   "introduction": {
     "title": "Introduction",
-    "content": "Please provide Hyperlink/Logo in an AI or EPS file and DM a month before the event date."
+    "content": ": Please provide Hyperlink/Logo in an AI or EPS file and DM a month before the event date."
   },
   "notice": {
     "title": "Notice",
@@ -57,8 +57,8 @@
       "heading": "Ranking Processing Principles:",
       "description": "The arrangement and placement of names and logos of vendors at all levels of the conference, as well as the arrangement of exhibition tables, shall be conducted by the following principles:",
       "items": [
-        "Sponsorship Amount",
-        "If amounts are equal, priority is given based on the order of sponsorship time, followed by the alphabetical order of the English name."
+        "Sponsorship Level",
+        "If sponsorship level are equal, priority is given based on the order of sponsorship time, followed by the alphabetical order of the English name."
       ]
     },
     "tableLocation": "The organizing committee will assign and arrange the locations of the exhibition tables. For any inquiries, please contact our team at <sponsorship@twnog.net>."

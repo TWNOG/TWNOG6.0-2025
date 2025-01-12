@@ -1,14 +1,15 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
+import LanguageSelector from './languageSelector';
+
 export default function Navbar() {
     const pathname = usePathname();
-    const { t, i18n } = useTranslation('index');
+    const { t } = useTranslation('index');
 
     const [ showHamburger, setShowHamburger ] = useState(false);
 
@@ -30,12 +31,7 @@ export default function Navbar() {
                     ))}
                 </div>
                 <div className='sm:flex space-x-2 items-center hidden'>
-                    <Image alt='globe icon' height={20} width={20} src='/globe.svg' className='w-5 h-5' />
-                    <select className='bg-white text-black rounded-lg p-2' defaultValue={i18n.resolvedLanguage} onChange={(e) => i18n.changeLanguage(e.target.value)}>
-                        {Array.from(i18n.languages).sort().map((lang) => (
-                            <option key={lang} value={lang}>{lang}</option>
-                        ))}
-                    </select>
+                    <LanguageSelector />
                     <Link className='bg-black text-white rounded-full px-3 py-1' href='https://twnog.kktix.cc/events/2025twnog6' target='_blank'>{t('menu.register')}</Link>
                 </div>
                 <button className='bg-black text-white rounded-full px-3 py-1 sm:hidden' onClick={() => setShowHamburger(!showHamburger)}>☰</button>
@@ -46,13 +42,8 @@ export default function Navbar() {
                         <Link key={key} className={(pathname == `/${key}`) ? "underline underline-offset-8" : "" } href={`/${key}`}>{value}</Link>
                     ))}
                 </div>
-                <div className='flex space-x-1 items-center justify-center'>
-                    <Image alt='globe icon' height={20} width={20} src='/globe.svg' className='w-5 h-5' />
-                    <select className='bg-white text-black rounded-lg p-2' defaultValue={i18n.resolvedLanguage} onChange={(e) => i18n.changeLanguage(e.target.value)}>
-                        {Array.from(i18n.languages).sort().map((lang) => (
-                            <option key={lang} value={lang}>{lang}</option>
-                        ))}
-                    </select>
+                <div className='flex space-x-2 items-center justify-center'>
+                    <LanguageSelector />
                     <Link className='bg-black text-white rounded-full px-3 py-1' href='https://twnog.kktix.cc/events/2025twnog6' target='_blank'>{t('menu.register')}</Link>
                 </div>
             </div>

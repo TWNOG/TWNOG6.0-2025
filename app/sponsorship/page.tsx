@@ -180,15 +180,14 @@ export default function SponsorshipPage() {
 
         {/* Introduction */}
         <p className="mt-4 text-sm">
-          <strong>{t("introduction.title")}:</strong> {t("introduction.content")}
+          <strong>{t("introduction.title")}</strong>{t("introduction.content")}
         </p>
 
         {/* Notice */}
         <div className="mt-8 text-sm leading-relaxed">
           <h2 className="font-semibold mb-2">{t("notice.title")}</h2>
           <p>
-            <strong>{t("notice.rankingPrinciples.heading")}</strong>{" "}
-            {t("notice.rankingPrinciples.description")}
+            <strong>{t("notice.rankingPrinciples.heading")}</strong>{t("notice.rankingPrinciples.description")}
           </p>
           <ol className="list-decimal list-inside mt-2 mb-2 pl-2">
             {(

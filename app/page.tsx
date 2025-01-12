@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { t } = useTranslation('index');
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* 主要內容放在 main */}
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
         {/* 活動 Logo 或 Banner */}
@@ -50,14 +50,9 @@ export default function Home() {
         </div>
       </main>
 
-      {/* 頁尾，可放一些社群連結、版權聲明等 */}
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <p className="text-sm sm:text-base">
-          © 2025 {t('copyright')}
-        </p>
-        {/* 如有社群連結可加在這裡 */}
-        {/* <a href="https://facebook.com/twnog" className="hover:underline text-sm sm:text-base">Facebook</a> */}
-      </footer>
+      <p className="row-start-3 text-sm sm:text-base">
+        © 2025 {t('copyright')}
+      </p>
     </div>
   );
 }

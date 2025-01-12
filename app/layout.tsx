@@ -3,7 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from './i18n-provider';
 import { GoogleAnalytics } from '@next/third-parties/google';
+
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +33,7 @@ export default function RootLayout({
         <I18nProvider>
           <Navbar />
           {children}
+          <Footer />
         </I18nProvider>
       </body>
       <GoogleAnalytics gaId="G-3W8CJ699W2" />

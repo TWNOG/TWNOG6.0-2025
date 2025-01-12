@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`${notoSans.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <I18nProvider>
           <Navbar />
           {children}

@@ -2,6 +2,7 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import i18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
 
 // 這裡直接匯入翻譯檔
 import enIndex from '../public/locales/en/index.json';
@@ -29,12 +30,13 @@ const resources = {
 
 if (!i18n.isInitialized) {
   i18n
+    .use(i18nextBrowserLanguageDetector) // 從 browser 取得使用者語言
     .use(initReactI18next)
     .init({
       resources,
-      // 預設語系（可改成從 environment / router 判斷）
-      lng: 'en',
-      fallbackLng: 'en',
+      fallbackLng: ['en', 'zh'],
+      supportedLngs: ['en', 'zh'],
+      load: 'all',
       interpolation: {
         escapeValue: false,
       },

@@ -8,7 +8,8 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 
 const notoSans = Noto_Sans_TC({
-  variable: "--font-noto-sans-tc"
+  variable: "--font-noto-sans-tc",
+  preload: false
 });
 
 const geistSans = Geist({

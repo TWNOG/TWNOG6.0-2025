@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className={`${showHamburger ? '' : 'hidden'} absolute top-100 left-0 right-0 pb-4 z-10 sm:hidden bg-inherit`}>
         <div className='max-w-4xl mx-auto flex flex-col py-4 px-6 sm:px-0' onClick={() => setShowHamburger(false)}>
           {Object.entries(links).map(([key, value]) => (
-            <Link key={key} className={(pathname == `/${key}`) ? "underline underline-offset-8" : ""} href={`/${key}`}>{value}</Link>
+            <Link key={key} className={((pathname == `/${key}`) ? "underline underline-offset-8" : "") + " py-1"} href={`/${key}`}>{value}</Link>
           ))}
         </div>
         <div className='flex space-x-2 items-center justify-center'>

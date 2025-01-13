@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 
 export default function CFPPage() {
   const { t } = useTranslation("cfp");
-  
+
   return (
     <div className="p-6 pb-20">
       <section className="max-w-4xl mx-auto rounded shadow-sm">
         {/* 大標題 */}
-        <h1 className="text-3xl font-bold mb-4">{t("callForPapersTitle")}</h1>
+        <h2 className="text-xl font-bold mb-2">{t("callForPapersTitle")}</h2>
         <p className="text-sm mb-4">
           {t("callForPapersDescription")}
         </p>
@@ -17,29 +17,65 @@ export default function CFPPage() {
         {/* Conference Milestones */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">{t("conferenceMilestonesTitle")}</h2>
-          <ul className="list-none space-y-1 text-sm">
-            <li>
-              {t("conferenceMilestones.open")}
-            </li>
-            <li>
-            {t("conferenceMilestones.draftProgram")}
-            </li>
-            <li>
-            {t("conferenceMilestones.submissionDeadline")}
-            </li>
-            <li>
-            {t("conferenceMilestones.review")}
-            </li>
-            <li>
-            {t("conferenceMilestones.finalProgram")}
-            </li>
-            <li>
-            {t("conferenceMilestones.finalSlides")}
-            </li>
-            <li>
-            {t("conferenceMilestones.conferenceDate")}
-            </li>
-          </ul>
+
+          <div className="overflow-x-auto">
+            <table className="table-auto w-full border border-gray-300 text-sm text-center">
+              <thead className="">
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4">
+                    {t("conferenceMilestones.open")}
+                  </th>
+                  <th className="border border-gray-300 py-2 px-4">
+                    {t("conferenceMilestones.openTime")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.draftProgram")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4 whitespace-nowrap">
+                    {t("conferenceMilestones.draftProgramTime")}
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.submissionDeadline")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4">
+                    {t("conferenceMilestones.submissionDeadlineTime")}
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.review")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4">{t("conferenceMilestones.reviewTime")}</td>
+                </tr>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.finalProgram")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4">{t("conferenceMilestones.finalProgramTime")}</td>
+                </tr>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.finalSlides")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4">{t("conferenceMilestones.finalSlidesTime")}</td>
+                </tr>
+                <tr>
+                  <th className="border border-gray-300 py-2 px-4 font-semibold">
+                    {t("conferenceMilestones.conferenceDate")}
+                  </th>
+                  <td className="border border-gray-300 py-2 px-4">
+                    {t("conferenceMilestones.conferenceDateTime")}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Program Content */}
@@ -49,7 +85,7 @@ export default function CFPPage() {
             {t("presentationTopicsTitle")}
           </p>
           <p className="text-sm mb-2">
-          {t("recommendedTopicsIntro")}
+            {t("recommendedTopicsIntro")}
           </p>
           <ul className="list-disc list-inside text-sm space-y-1">
             <li>
@@ -89,13 +125,6 @@ export default function CFPPage() {
             {t("contactInfo")}
           </p>
         </div>
-
-        {/* Ending */}
-        <p className="text-sm">
-          {t("closingRemark")}
-          <br /><br />
-          <strong>{t("committeeSignature")}</strong>
-        </p>
       </section>
     </div>
   );

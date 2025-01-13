@@ -38,27 +38,27 @@ export default function SponsorshipPage() {
             <tbody>
               {/* Sponsor Amount */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.sponsorAmount")}
-                </td>
-                <td className="border border-gray-300 py-2 px-4">
+                </th>
+                <td className="border border-gray-300 py-2 px-4 whitespace-nowrap">
                   NT 300,000 / USD 10,000
                 </td>
-                <td className="border border-gray-300 py-2 px-4">
+                <td className="border border-gray-300 py-2 px-4 whitespace-nowrap">
                   NT 100,000 / USD 3,150
                 </td>
-                <td className="border border-gray-300 py-2 px-4">
+                <td className="border border-gray-300 py-2 px-4 whitespace-nowrap">
                   NT 60,000 / USD 2,000
                 </td>
-                <td className="border border-gray-300 py-2 px-4">
+                <td className="border border-gray-300 py-2 px-4 whitespace-nowrap">
                   NT 36,000 / USD 1,200
                 </td>
               </tr>
               {/* Sponsor Session */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.sponsorSession")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">
                   {t("table.rows.sessionKeynote")}
                 </td>
@@ -74,9 +74,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Logo on website & Hyperlink */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.logoWebsite")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -84,9 +84,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Logo on Signage */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.logoSignage")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -94,9 +94,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Event Backdrop Logo */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.backdropLogo")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
                 <td className="border border-gray-300 py-2 px-4">V</td>
@@ -104,9 +104,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Free Ticket */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.freeTicket")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">
                   {t("table.numbers.freeTicket.titanium")}
                 </td>
@@ -122,9 +122,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Dinner Quota */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.dinnerQuota")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">
                   {t("table.numbers.dinnerQuota.titanium")}
                 </td>
@@ -140,9 +140,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* Exhibition Desk */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.exhibitionDesk")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">
                   {t("table.rows.deskTitanium")}
                 </td>
@@ -158,9 +158,9 @@ export default function SponsorshipPage() {
               </tr>
               {/* DM (A4) */}
               <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">
+                <th className="border border-gray-300 py-2 px-4 font-semibold">
                   {t("table.rows.dmA4")}
-                </td>
+                </th>
                 <td className="border border-gray-300 py-2 px-4">
                   {t("table.numbers.dm.titanium")}
                 </td>

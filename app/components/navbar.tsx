@@ -30,11 +30,11 @@ export default function Navbar() {
             <Link key={key} className={(pathname == `/${key}`) ? "underline underline-offset-8" : ""} href={`/${key}`}>{value}</Link>
           ))}
         </div>
-        <div className='sm:flex space-x-2 items-center hidden'>
+        <div className='flex space-x-2 items-center'>
           <LanguageSelector />
-          <Link className='bg-black text-white dark:invert rounded-full px-3 py-1' href='https://twnog.kktix.cc/events/2025twnog6' target='_blank'>{t('menu.register')}</Link>
+          <Link className='bg-black text-white dark:invert rounded-full px-3 py-1 hidden sm:inline-block' href='https://twnog.kktix.cc/events/2025twnog6' target='_blank'>{t('menu.register')}</Link>
+          <button className='bg-black text-white dark:invert rounded-full px-3 py-1 sm:hidden' onClick={() => setShowHamburger(!showHamburger)}>☰</button>
         </div>
-        <button className='bg-black text-white dark:invert rounded-full px-3 py-1 sm:hidden' onClick={() => setShowHamburger(!showHamburger)}>☰</button>
       </div>
       <div className={`${showHamburger ? '' : 'hidden'} absolute top-100 left-0 right-0 pb-4 z-10 sm:hidden bg-inherit`}>
         <div className='max-w-4xl mx-auto flex flex-col py-4 px-6 sm:px-0' onClick={() => setShowHamburger(false)}>
@@ -43,7 +43,6 @@ export default function Navbar() {
           ))}
         </div>
         <div className='flex space-x-2 items-center justify-center'>
-          <LanguageSelector />
           <Link className='bg-black text-white dark:invert rounded-full px-3 py-1' href='https://twnog.kktix.cc/events/2025twnog6' target='_blank'>{t('menu.register')}</Link>
         </div>
       </div>

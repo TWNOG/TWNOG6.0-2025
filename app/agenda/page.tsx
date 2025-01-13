@@ -9,7 +9,7 @@ export default function AgendaPage() {
     return (
       <div className="p-6 pb-20">
         <section className="max-w-4xl mx-auto rounded shadow-sm">
-          <h1 className="text-2xl font-bold mb-4">{t("pageTitle")}</h1>
+          <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b">

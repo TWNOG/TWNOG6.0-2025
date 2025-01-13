@@ -11,7 +11,7 @@ export default function SponsorshipPage() {
     <div className="p-6 pb-20">
       <section className="max-w-4xl mx-auto rounded shadow-sm">
         {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
-        <h1 className="text-2xl font-bold mb-6">{t("pageTitle")}</h1>
+        <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
 
         {/* 贊助方案表格 */}
         <div className="overflow-x-auto">
@@ -185,7 +185,7 @@ export default function SponsorshipPage() {
 
         {/* Notice */}
         <div className="mt-8 text-sm leading-relaxed">
-          <h2 className="font-semibold mb-2">{t("notice.title")}</h2>
+        <h2 className="text-xl font-bold mb-2">{t("notice.title")}</h2>
           <p>
             <strong>{t("notice.rankingPrinciples.heading")}</strong>{t("notice.rankingPrinciples.description")}
           </p>

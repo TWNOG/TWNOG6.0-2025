@@ -8,7 +8,7 @@ export default function Footer() {
     const { t } = useTranslation('index');
 
     if (pathname == "/") {
-        return null;
+      return null;
     }
 
     return (

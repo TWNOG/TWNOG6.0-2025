@@ -1,6 +1,10 @@
 {
   "callForPapersTitle": "徵稿資訊",
-  "callForPapersDescription": "TWNOG 6 議程組現正徵求投稿，歡迎在第六屆台灣網路維運論壇分享相關議題。請透過 APNIC Paper Submission System 提交稿件：https://submission.apnic.net/user/login.php?event=213",
+  "callForPapersDescription": "TWNOG 現正為第六屆台灣網路維運論壇 TWNOG 6 徵求投稿，歡迎各位分享相關議題。",
+  "callForPapersDescriptionSubmit": [
+    "請透過 APNIC Paper Submission System 提交稿件：",
+    "https://submission.apnic.net/user/login.php?event=213"
+  ],
   "conferenceMilestonesTitle": "論壇相關時程",
   "conferenceMilestones": {
     "open": "徵稿開始",

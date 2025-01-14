@@ -9,7 +9,7 @@ export default function SponsorshipPage() {
 
   return (
     <div className="p-6 pb-20">
-      <section className="max-w-4xl mx-auto rounded shadow-sm">
+      <section className="max-w-4xl mx-auto">
         {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
         <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
 

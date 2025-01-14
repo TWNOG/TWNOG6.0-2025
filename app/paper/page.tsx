@@ -10,7 +10,7 @@ export default function CFPPage() {
       <section className="max-w-4xl mx-auto rounded shadow-sm">
         {/* 大標題 */}
         <h2 className="text-xl font-bold mb-2">{t("callForPapersTitle")}</h2>
-        <p className="text-sm mb-4">{t("callForPapersDescription")}</p><br></br>
+        <p className="text-sm mb-4">{t("callForPapersDescription")}</p></br>
         <p className="text-sm mb-4">{t("callForPapersDescriptionSubmit.0")}<a href="https://submission.apnic.net/user/login.php?event=213">{t("callForPapersDescriptionSubmit.1")}</a></p>
 
         {/* Conference Milestones - Timeline */}

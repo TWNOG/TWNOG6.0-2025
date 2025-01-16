@@ -18,6 +18,7 @@ export default function Home() {
           width={200}
           height={80}
           priority
+          className="rounded-lg"
         />
 
         {/* 活動簡介 */}

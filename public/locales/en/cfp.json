@@ -36,7 +36,11 @@
     "Big Data, AI, IoT and Industry 4.0, Other Network-Related Topics"
   ],
   "cfpSubmissionTitle": "CFP Submission",
-  "cfpSubmissionDescription": "Draft slides MUST be provided with CFP submissions otherwise the submission will be rejected immediately. For work in progress, the most current information available at the time of submission is acceptable.\n\nAll draft and complete slides must be submitted in PDF format only. Slides must be of original work, with all company confidential marks removed. Presentations with commercial/sales content will NOT be accepted.\n\nFinal slides are to be provided by the specified deadline for publication on the TWNOG website.",
+  "cfpSubmissionDescription": [
+    "Draft slides MUST be provided with CFP submissions otherwise the submission will be rejected immediately. For work in progress, the most current information available at the time of submission is acceptable.",
+    "All draft and complete slides must be submitted in PDF format only. Slides must be of original work, with all company confidential marks removed. Presentations with commercial/sales content will NOT be accepted.",
+    "Final slides are to be provided by the specified deadline for publication on the TWNOG website."
+  ],
   "contactInfo": "Any questions or concerns should be addressed to the Program Committee Chairs by e-mail at paper@twnog.net.",
   "closingRemark": "We look forward to receiving your presentation proposals."
 }

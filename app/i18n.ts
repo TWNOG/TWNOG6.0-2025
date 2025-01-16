@@ -7,12 +7,16 @@ import i18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
 // 這裡直接匯入翻譯檔
 import enIndex from '../public/locales/en/index.json';
 import zhHantIndex from '../public/locales/zh-Hant/index.json';
+import jaIndex from '../public/locales/ja/index.json';
 import enSponsorship from '../public/locales/en/sponsorship.json';
 import zhHantSponsorship from '../public/locales/zh-Hant/sponsorship.json';
+import jaSponsorship from '../public/locales/ja/sponsorship.json';
 import enAgenda from '../public/locales/en/agenda.json';
 import zhHantAgenda from '../public/locales/zh-Hant/agenda.json';
+import jaAgenda from '../public/locales/ja/agenda.json';
 import enCfp from '../public/locales/en/cfp.json';
 import zhHantCfp from '../public/locales/zh-Hant/cfp.json';
+import jaCfp from '../public/locales/ja/cfp.json';
 
 // 如果你有多個 namespace，例如 common.json、footer.json，也能各自 import
 
@@ -30,6 +34,12 @@ const resources = {
     agenda: zhHantAgenda,
     cfp: zhHantCfp,
   },
+  ja: {
+    index: jaIndex,
+    sponsorship: jaSponsorship,
+    agenda: jaAgenda,
+    cfp: jaCfp,
+  },
 };
 
 if (!i18n.isInitialized) {
@@ -38,8 +48,8 @@ if (!i18n.isInitialized) {
     .use(initReactI18next)
     .init({
       resources,
-      fallbackLng: ['en', 'zh'],
-      supportedLngs: ['en', 'zh'],
+      fallbackLng: ['en', 'zh', 'ja'],
+      supportedLngs: ['en', 'zh', 'ja'],
       load: 'all',
       interpolation: {
         escapeValue: false,

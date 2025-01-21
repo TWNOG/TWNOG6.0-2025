@@ -15,8 +15,8 @@ export default function Navbar() {
 
   const links = {
     paper: t('menu.paper'),
-    sponsor: t('menu.sponsor'),
-    agenda: t('menu.agenda')
+    agenda: t('menu.agenda'),
+    sponsor: t('menu.sponsor')
   };
 
   return (

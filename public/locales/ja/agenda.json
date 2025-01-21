@@ -1,8 +1,8 @@
 {
-    "pageTitle": "Agenda",
+    "pageTitle": "アジェンダ",
     "sessions": {
-      "time": "Time",
-      "name": "Session Name"
+      "time": "実施時間",
+      "name": "セッション"
     },
     "copyright": "TWNOG (Taiwan Network Operators’ Group)"
   }

@@ -17,6 +17,9 @@ import jaAgenda from '../public/locales/ja/agenda.json';
 import enCfp from '../public/locales/en/cfp.json';
 import zhHantCfp from '../public/locales/zh-Hant/cfp.json';
 import jaCfp from '../public/locales/ja/cfp.json';
+import enTraffic from '../public/locales/en/traffic.json';
+import zhHantTraffic from '../public/locales/zh-Hant/traffic.json';
+import jaTraffic from '../public/locales/ja/traffic.json';
 
 // 如果你有多個 namespace，例如 common.json、footer.json，也能各自 import
 
@@ -27,18 +30,21 @@ const resources = {
     sponsor: enSponsor,
     agenda: enAgenda,
     cfp: enCfp,
+    traffic: enTraffic
   },
   zh: {
     index: zhHantIndex,
     sponsor: zhHantSponsor,
     agenda: zhHantAgenda,
     cfp: zhHantCfp,
+    traffic: zhHantTraffic
   },
   ja: {
     index: jaIndex,
     sponsor: jaSponsor,
     agenda: jaAgenda,
     cfp: jaCfp,
+    traffic: jaTraffic
   },
 };
 

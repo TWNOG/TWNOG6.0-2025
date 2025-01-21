@@ -8,9 +8,9 @@ import i18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
 import enIndex from '../public/locales/en/index.json';
 import zhHantIndex from '../public/locales/zh-Hant/index.json';
 import jaIndex from '../public/locales/ja/index.json';
-import enSponsorship from '../public/locales/en/sponsorship.json';
-import zhHantSponsorship from '../public/locales/zh-Hant/sponsorship.json';
-import jaSponsorship from '../public/locales/ja/sponsorship.json';
+import enSponsor from '../public/locales/en/sponsor.json';
+import zhHantSponsor from '../public/locales/zh-Hant/sponsor.json';
+import jaSponsor from '../public/locales/ja/sponsor.json';
 import enAgenda from '../public/locales/en/agenda.json';
 import zhHantAgenda from '../public/locales/zh-Hant/agenda.json';
 import jaAgenda from '../public/locales/ja/agenda.json';
@@ -24,19 +24,19 @@ import jaCfp from '../public/locales/ja/cfp.json';
 const resources = {
   en: {
     index: enIndex,
-    sponsorship: enSponsorship,
+    sponsor: enSponsor,
     agenda: enAgenda,
     cfp: enCfp,
   },
   zh: {
     index: zhHantIndex,
-    sponsorship: zhHantSponsorship,
+    sponsor: zhHantSponsor,
     agenda: zhHantAgenda,
     cfp: zhHantCfp,
   },
   ja: {
     index: jaIndex,
-    sponsorship: jaSponsorship,
+    sponsor: jaSponsor,
     agenda: jaAgenda,
     cfp: jaCfp,
   },

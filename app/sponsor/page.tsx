@@ -8,7 +8,7 @@ export default function SponsorPage() {
   const renderSponsorLevel = (level: string, sponsorList: Sponsor[]) => (
     <div key={level} className="mb-8">
       <h2 className="text-xl font-bold capitalize my-4">{t(`table.header.${level}`)}</h2>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {sponsorList.map((sponsor, index) => (
           <div
             key={index}

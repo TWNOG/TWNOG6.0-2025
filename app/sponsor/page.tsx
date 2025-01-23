@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { sponsors, SponsorsData, Sponsor } from "@/lib/sponsors";
+import { sponsors, Sponsor } from "@/lib/sponsors";
 
 export default function SponsorPage() {
   const { t } = useTranslation("sponsor");

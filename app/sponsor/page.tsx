@@ -1,18 +1,49 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { sponsors, SponsorsData, Sponsor } from "@/lib/sponsors";
 
 export default function SponsorPage() {
   const { t } = useTranslation("sponsor");
+  const renderSponsorLevel = (level: string, sponsorList: Sponsor[]) => (
+    <div key={level} className="mb-8">
+      <h2 className="text-xl font-bold capitalize my-4">{t(`table.header.${level}`)}</h2>
+      <div className="grid grid-cols-4 gap-3">
+        {sponsorList.map((sponsor, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center border border-gray-300 p-4 bg-white rounded-lg"
+          >
+            <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={sponsor.img}
+                alt={sponsor.name}
+                className="max-h-16"
+              />
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="p-6 pb-20">
       <section className="max-w-4xl mx-auto">
+
+        {/* 贊助廠商們 */}
+        <div className="mb-8">
+          {Object.entries(sponsors).map(([level, sponsorList]) =>
+            sponsorList.length === 0 ? null : renderSponsorLevel(level, sponsorList
+            ))
+          }
+        </div>
+
         {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
         <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
 
         {/* 贊助方案表格 */}
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto mb-2">
           <table className="table-auto w-full border border-gray-300 text-sm text-center">
             <thead className="">
               <tr>
@@ -165,7 +196,7 @@ export default function SponsorPage() {
 
         {/* Notice */}
         <div className="mt-8 text-sm leading-relaxed">
-        <h2 className="text-xl font-bold mb-2">{t("notice.title")}</h2>
+          <h2 className="text-xl font-bold mb-2">{t("notice.title")}</h2>
           <p>
             <strong>{t("notice.rankingPrinciples.heading")}</strong>{t("notice.rankingPrinciples.description")}
           </p>

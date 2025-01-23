@@ -23,8 +23,7 @@
       "deskTitanium": "4 張桌子及 8 張椅子",
       "deskPlatinum": "2 張桌子及 4 張椅子",
       "deskGold": "1 張桌子及 2 張椅子",
-      "deskNone": "X",
-      "dmA4": "DM (A4)"
+      "deskNone": "X"
     },
     "numbers": {
       "freeTicket": {
@@ -38,12 +37,6 @@
         "platinum": "5",
         "gold": "3",
         "silver": "1"
-      },
-      "dm": {
-        "titanium": "500",
-        "platinum": "200",
-        "gold": "200",
-        "silver": "200"
       }
     }
   },

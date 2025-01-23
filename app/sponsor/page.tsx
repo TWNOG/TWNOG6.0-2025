@@ -154,24 +154,6 @@ export default function SponsorPage() {
                   {t("table.rows.deskNone")}
                 </td>
               </tr>
-              {/* DM (A4) */}
-              <tr>
-                <th className="border border-gray-300 py-2 px-4 font-semibold">
-                  {t("table.rows.dmA4")}
-                </th>
-                <td className="border border-gray-300 py-2 px-4">
-                  {t("table.numbers.dm.titanium")}
-                </td>
-                <td className="border border-gray-300 py-2 px-4">
-                  {t("table.numbers.dm.platinum")}
-                </td>
-                <td className="border border-gray-300 py-2 px-4">
-                  {t("table.numbers.dm.gold")}
-                </td>
-                <td className="border border-gray-300 py-2 px-4">
-                  {t("table.numbers.dm.silver")}
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>

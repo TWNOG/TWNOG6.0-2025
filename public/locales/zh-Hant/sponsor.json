@@ -3,9 +3,9 @@
   "table": {
     "header": {
       "level": "贊助等級",
-      "titanium": "鈦金",
-      "platinum": "白金",
-      "gold": "黃金",
+      "titanium": "鈦金級",
+      "platinum": "白金級",
+      "gold": "黃金級",
       "silver": "銀級"
     },
     "rows": {

@@ -18,29 +18,32 @@ export default function TrafficPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-96 rounded-lg mb-8"
                 />
 
-                <div className="mb-4">
-                    <h3 className="text-lg font-semibold">{t("locationTitle")}</h3>
-                    <p>{t("locationName")}</p>
-                    <p>{t("locationAddress")}</p>
+                <div className="mb-8">
+                    <h3 className="text-xl font-semibold mb-2">{t("locationTitle")}</h3>
+                    <div className="space-y-2">
+                        <p>{t("locationName")}</p>
+                        <p>{t("locationAddress")}</p>
+                    </div>
                 </div>
 
-                <div className="mb-4">
-                    <h3 className="text-lg font-semibold">{t("mrtTitle")}</h3>
+                <div className="mb-8">
+                    <h3 className="text-xl font-semibold mb-2">{t("mrtTitle")}</h3>
                     <ul className="list-disc list-inside space-y-2">
                         <li>{t("mrtItem1")}</li>
                         <li>{t("mrtItem2")}</li>
                     </ul>
                 </div>
 
-                <div className="mb-4">
-                    <h3 className="text-lg font-semibold">{t("busTitle")}</h3>
+                <div className="mb-8">
+                    <h3 className="text-xl font-semibold mb-2">{t("busTitle")}</h3>
                     <p>{t("busDescription")}</p>
                 </div>
 
-                <div className="mb-4">
-                    <h3 className="text-lg font-semibold">{t("driveTitle")}</h3>
+                <div className="mb-8">
+                    <h3 className="text-xl font-semibold mb-2">{t("driveTitle")}</h3>
                     <ul className="list-disc list-inside space-y-2">
                         <li>{t("driveItem1")}</li>
                         <li>{t("driveItem2")}</li>

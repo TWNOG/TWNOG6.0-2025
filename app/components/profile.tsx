@@ -4,19 +4,19 @@ import Image from 'next/image';
 interface ProfileProps {
     staff: {
         sha256?: string;
-        img: string;
+        img?: string;
         name: string;
     };
 }
 
-const Profile: React.FC<ProfileProps> = ({ staff }) => {
+export default function Profile({ staff }: ProfileProps) {
     return (
         <div className="text-center">
             <Image
                 src={
                     staff.sha256
                         ? `https://www.gravatar.com/avatar/${staff.sha256}?s=256`
-                        : staff.img
+                        : staff.img || '/assets/twnog.png'
                 }
                 alt={staff.name}
                 width={256}
@@ -27,5 +27,3 @@ const Profile: React.FC<ProfileProps> = ({ staff }) => {
         </div>
     );
 };
-
-export default Profile;

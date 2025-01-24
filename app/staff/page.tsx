@@ -2,7 +2,6 @@
 
 import { useTranslation } from "react-i18next";
 import { staff, Staff } from "@/lib/staff";
-import Image from "next/image";
 import Profile from "@/app/components/profile";
 
 export default function StaffPage() {

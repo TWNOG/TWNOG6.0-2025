@@ -2,9 +2,9 @@
 
 export type Staff = {
     name: string;
-    img: string;
+    img?: string;
     link?: string;
-    md5?: string;
+    sha256?: string;
 };
 
 export type StaffData = {
@@ -14,29 +14,45 @@ export type StaffData = {
 export const staff: StaffData = {
     msg: [
         {
-            name: "小易",
+            name: "Jack Wang",
             img: "/assets/twnog.png",
-            md5: "636ffb648cf0eb979f6d3449c6aced1f",
+        },
+        {
+            name: "Makito Lay",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "小易",
+            sha256: "636ffb648cf0eb979f6d3449c6aced1f",
+            link: "https://steveyi.net/"
+        },
+        {
+            name: "William Lu",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "Louk Chi",
+            img: "/assets/twnog.png",
         },
     ],
     infra: [
         {
             name: "石頭",
-            img: "/assets/twnog.png",
+            sha256: "08441bfb959f5d66e66576ab381f8202229feabd22c0b8334d7fec7b5eabdc03",
         },
         {
             name: "油成",
-            img: "/assets/twnog.png",
-            md5: "bf5797545199284bfc73b5a372f49f8c",
+            link: "https://imych.one",
+            sha256: "e14de3db1b266a70e8f8fe82ce478337ede3bb3e375bda0b5671e8d5956c7051",
         },
         {
             name: "小弘",
-            img: "/assets/twnog.png",
+            sha256: "e7afb871d870a3e08ce9996498d308a9"
         },
         {
             name: "小易",
-            img: "/assets/twnog.png",
-            md5: "636ffb648cf0eb979f6d3449c6aced1f",
+            sha256: "636ffb648cf0eb979f6d3449c6aced1f",
+            link: "https://steveyi.net/"
         },
         {
             name: "Brian Jhan",
@@ -48,13 +64,13 @@ export const staff: StaffData = {
         },
         {
             name: "Yi Kuo",
-            img: "/assets/twnog.png",
+            sha256: "520438a37ad035a7bd2ddd1ca0999863",
         }
     ],
     image: [
         {
             name: "小弘",
-            img: "/assets/twnog.png",
+            sha256: "e7afb871d870a3e08ce9996498d308a9"
         },
         {
             name: "御痕",

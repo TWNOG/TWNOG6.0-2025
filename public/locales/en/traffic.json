@@ -1,14 +1,23 @@
 {
     "pageTitle": "Traffic Information",
-    "locationTitle": "Venue",
-    "locationName": "NTUH International Convention Center",
-    "locationAddress": "No. 2, Xuzhou Rd, Zhongzheng District, Taipei City, Taiwan 100",
+    "locationTitle": "Location",
+    "locationName": "NTU Hospital International Convention Center",
+    "locationAddress": "No. 2, Xuzhou Road, Zhongzheng District, Taipei City",
     "mrtTitle": "MRT",
-    "mrtItem1": "搭乘捷運淡水信義線（紅線）至「台大醫院站」出口 2，步行約 10 分鐘到達",
-    "mrtItem2": "搭乘捷運板南線（藍線）至「善導寺站」出口 5，步行約 15 分鐘到達",
+    "mtrDescription": [
+        "Take the Tamsui-Xinyi Line (Red Line) to \"NTU Hospital Station\" (Exit 2), walk about 6 minutes to arrive",
+        "Take the Bannan Line (Blue Line) to \"Shandao Temple Station\" (Exit 2), walk about 10 minutes to arrive"
+    ],
     "busTitle": "Bus",
-    "busDescription": "可搭乘至「台大醫院站」、「臺大醫院國際會議中心」、「公務人力發展中心」等站牌，步行約 5～10 分鐘到達",
-    "driveTitle": "Drive",
-    "driveItem1": "請行駛愛國東路或常德街至徐州路",
-    "driveItem2": "會議中心內部及附近有收費停車場，惟車位有限，建議多利用大眾運輸"
+    "busDescription": [
+        "NTU Hospital Station: 22 / 15 / 615 / 227 / 648 / 648 Green / Zhongshan Main Line / 208 / 208 Direct, about a 3-minute walk",
+        "Kai-Nan Commercial High School Stop (near Xuzhou Road intersection): 0 South / 15 / 22 / 208 / 295 / 297 / 671, about a 3-minute walk",
+        "Ren'ai-Linsen Intersection Stop (Linsen South Road intersection): 295 / 297 / 15 / 22 / 671, about a 3-minute walk",
+        "Ren'ai-Linsen Intersection Stop (Ren'ai Road intersection): 245 / 261 / 37 / 249 / 270 / 263 / 621 / 651 / 630, about a 5-minute walk"
+    ],
+    "driveTitle": "Driving",
+    "driveDescription": [
+        "Please drive along Aiguo East Road or Changde Street to Xuzhou Road",
+        "Paid parking is available inside and near the conference center, but spaces are limited. We recommend using public transportation"
+    ]
 }

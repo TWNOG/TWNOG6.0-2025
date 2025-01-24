@@ -32,21 +32,27 @@ export default function TrafficPage() {
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("mrtTitle")}</h3>
                     <ul className="list-disc list-inside space-y-2">
-                        <li>{t("mrtItem1")}</li>
-                        <li>{t("mrtItem2")}</li>
+                        <li>{t("mtrDescription.0")}</li>
+                        <li>{t("mtrDescription.1")}</li>
                     </ul>
                 </div>
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("busTitle")}</h3>
-                    <p>{t("busDescription")}</p>
+                    <ul className="list-disc list-inside space-y-2">
+                        <li>{t("busDescription.0")}</li>
+                        <li>{t("busDescription.1")}</li>
+                        <li>{t("busDescription.2")}</li>
+                        <li>{t("busDescription.3")}</li>
+                    </ul>
+                    <p></p>
                 </div>
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("driveTitle")}</h3>
                     <ul className="list-disc list-inside space-y-2">
-                        <li>{t("driveItem1")}</li>
-                        <li>{t("driveItem2")}</li>
+                        <li>{t("driveDescription.0")}</li>
+                        <li>{t("driveDescription.1")}</li>
                     </ul>
                 </div>
             </section>

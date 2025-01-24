@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 interface ProfileProps {
     staff: {
-        md5?: string;
+        sha256?: string;
         img: string;
         name: string;
     };
@@ -14,8 +14,8 @@ const Profile: React.FC<ProfileProps> = ({ staff }) => {
         <div className="text-center">
             <Image
                 src={
-                    staff.md5
-                        ? `https://www.gravatar.com/avatar/${staff.md5}?s=256`
+                    staff.sha256
+                        ? `https://www.gravatar.com/avatar/${staff.sha256}?s=256`
                         : staff.img
                 }
                 alt={staff.name}

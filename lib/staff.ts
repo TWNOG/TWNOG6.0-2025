@@ -18,7 +18,7 @@ export const staff: StaffData = {
             img: "/assets/twnog.png",
         },
         {
-            name: "Kams Yueng",
+            name: "Kams Yeung",
             sha256: "920ff150fbafd58ce44c8b204c1cf0afa0592ef8dff6aab05ec9528105a84acb"
         },
         {

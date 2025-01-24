@@ -14,12 +14,20 @@ export type StaffData = {
 export const staff: StaffData = {
     msg: [
         {
+            name: "William Lu",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "Kams Yueng",
+            img: "/assets/twnog.png",
+        },
+        {
             name: "Jack Wang",
             img: "/assets/twnog.png",
         },
         {
-            name: "Makito Lay",
-            sha256: "4a9fb526820f71be7df7dd8822b3c29a443e9a2b6397d6153e460525fd18486c",
+            name: "Louk Chi",
+            img: "/assets/twnog.png",
         },
         {
             name: "小易",
@@ -27,12 +35,16 @@ export const staff: StaffData = {
             link: "https://steveyi.net/"
         },
         {
-            name: "William Lu",
+            name: "Yong-Tin",
             img: "/assets/twnog.png",
         },
         {
-            name: "Louk Chi",
+            name: "Jack Kwok",
             img: "/assets/twnog.png",
+        },
+        {
+            name: "Makito Lay",
+            sha256: "4a9fb526820f71be7df7dd8822b3c29a443e9a2b6397d6153e460525fd18486c",
         },
     ],
     infra: [

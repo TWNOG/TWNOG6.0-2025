@@ -17,7 +17,8 @@ export default function Navbar() {
     paper: t('menu.paper'),
     agenda: t('menu.agenda'),
     sponsor: t('menu.sponsor'),
-    traffic: t('menu.traffic')
+    traffic: t('menu.traffic'),
+    staff: t('menu.staff')
   };
 
   return (

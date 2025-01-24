@@ -15,7 +15,7 @@ export const staff: StaffData = {
     msg: [
         {
             name: "William Lu",
-            img: "/assets/twnog.png",
+            sha256: "luyau2001@gmail.com",
         },
         {
             name: "Kams Yeung",
@@ -23,11 +23,11 @@ export const staff: StaffData = {
         },
         {
             name: "Jack Wang",
-            img: "/assets/twnog.png",
+            sha256: "cfe375873089983546297545f9d53707433ab4bdcaf39e0f3ed1c675cbea6287",
         },
         {
             name: "Louk Chi",
-            img: "/assets/twnog.png",
+            sha256: "d89be084cbff2f20df01c25423771cbfa9dfc6a10ce924350a4cfebd969f3e82",
         },
         {
             name: "小易",
@@ -36,11 +36,11 @@ export const staff: StaffData = {
         },
         {
             name: "Yong-Tin",
-            img: "/assets/twnog.png",
+            sha256: "b6e1404d87bbd1acea4f4a213ef6061a3113c19de6e08c841b216e3649d0f7ff",
         },
         {
             name: "Jack Kwok",
-            img: "/assets/twnog.png",
+            sha256: "1326dbb6a8beeb206e2750babba773881476b3d7bcc8f9a0bcdc9c85a7c2b9a5",
         },
         {
             name: "Makito Lay",

@@ -118,7 +118,7 @@ export default function CFPPage() {
               </h3>
               <div className="bg-gray-100 p-4 rounded-lg space-y-2">
                 <p className="text-gray-700">{t("peeringPersonalDescription.0")}</p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 break-words">
                   <a href="/assets/slides/Peering-Personals-Template.pptx" className="text-gray-600 hover:underline font-semibold">
                     {t("peeringPersonalDescription.1")}
                   </a>

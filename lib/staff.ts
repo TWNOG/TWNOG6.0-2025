@@ -19,7 +19,7 @@ export const staff: StaffData = {
         },
         {
             name: "Kams Yeung",
-            sha256: "920ff150fbafd58ce44c8b204c1cf0afa0592ef8dff6aab05ec9528105a84acb"
+            sha256: "920ff150fbafd58ce44c8b204c1cf0afa0592ef8dff6aab05ec9528105a84acb",
         },
         {
             name: "Jack Wang",
@@ -32,7 +32,7 @@ export const staff: StaffData = {
         {
             name: "小易",
             sha256: "636ffb648cf0eb979f6d3449c6aced1f",
-            link: "https://steveyi.net/"
+            link: "https://steveyi.net/",
         },
         {
             name: "Yong-Tin",
@@ -59,16 +59,16 @@ export const staff: StaffData = {
         },
         {
             name: "小弘",
-            sha256: "e7afb871d870a3e08ce9996498d308a9"
+            sha256: "e7afb871d870a3e08ce9996498d308a9",
         },
         {
             name: "小易",
             sha256: "636ffb648cf0eb979f6d3449c6aced1f",
-            link: "https://steveyi.net/"
+            link: "https://steveyi.net/",
         },
         {
             name: "Brian Jhan",
-            img: "/assets/twnog.png",
+            sha256: "90f53dc4897b548484c9d1a8d45a397053ee0e14da9c8996481896bd77ea773e",
         },
         {
             name: "Makito Lay",
@@ -82,15 +82,15 @@ export const staff: StaffData = {
     image: [
         {
             name: "小弘",
-            sha256: "e7afb871d870a3e08ce9996498d308a9"
+            sha256: "e7afb871d870a3e08ce9996498d308a9",
         },
         {
             name: "御痕",
-            img: "/assets/twnog.png",
+            sha256: "54fc23d386050bddbdf318272137a2fc7e42856e61bda71647b7be1942a3b262",
         },
         {
             name: "Brian Jhan",
-            img: "/assets/twnog.png",
+            sha256: "90f53dc4897b548484c9d1a8d45a397053ee0e14da9c8996481896bd77ea773e",
         }
     ],
 };

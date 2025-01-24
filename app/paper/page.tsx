@@ -41,8 +41,8 @@ export default function CFPPage() {
           <div className="p-6 space-y-6">
             {/* Introduction */}
             <div className="bg-gray-50 border-l-4 border-gray-500 p-4 rounded">
-              <p className="text-gray-700">{t("callForPapersDescription")}</p>
-              <p className="mt-2 text-gray-700">
+              <p className="text-gray-700 break-words">{t("callForPapersDescription")}</p>
+              <p className="mt-2 text-gray-700 break-words">
                 {t("callForPapersDescriptionSubmit.0")}
                 <a 
                   href="https://submission.apnic.net/user/login.php?event=213" 

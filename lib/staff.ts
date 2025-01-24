@@ -12,13 +12,13 @@ export type StaffData = {
 };
 
 export const staff: StaffData = {
-    host: [
+    msg: [
         {
             name: "小易",
             sha256: "636ffb648cf0eb979f6d3449c6aced1f",
         },
     ],
-    network: [
+    infra: [
         {
             name: "石頭",
             sha256: "08441bfb959f5d66e66576ab381f8202229feabd22c0b8334d7fec7b5eabdc03",
@@ -32,6 +32,36 @@ export const staff: StaffData = {
             name: "小弘",
             sha256: "e7afb871d870a3e08ce9996498d308a9"
         },
+        {
+            name: "小易",
+            img: "/assets/twnog.png",
+            md5: "636ffb648cf0eb979f6d3449c6aced1f",
+        },
+        {
+            name: "Brian Jhan",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "Makito Lay",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "Yi Kuo",
+            img: "/assets/twnog.png",
+        }
     ],
-
+    image: [
+        {
+            name: "小弘",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "御痕",
+            img: "/assets/twnog.png",
+        },
+        {
+            name: "Brian Jhan",
+            img: "/assets/twnog.png",
+        }
+    ],
 };

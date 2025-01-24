@@ -33,20 +33,20 @@ export default function CFPPage() {
         {/* Main Card */}
         <div className="bg-white shadow-lg rounded-xl overflow-hidden">
           {/* Header */}
-          <div className="bg-blue-600 text-white p-6">
+          <div className="bg-gray-600 text-white p-6">
             <h2 className="text-2xl font-bold text-center">{t("callForPapersTitle")}</h2>
           </div>
 
           {/* Content */}
           <div className="p-6 space-y-6">
             {/* Introduction */}
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <div className="bg-gray-50 border-l-4 border-gray-500 p-4 rounded">
               <p className="text-gray-700">{t("callForPapersDescription")}</p>
               <p className="mt-2 text-gray-700">
                 {t("callForPapersDescriptionSubmit.0")}
                 <a 
                   href="https://submission.apnic.net/user/login.php?event=213" 
-                  className="text-blue-600 hover:underline font-semibold"
+                  className="text-gray-600 hover:underline font-semibold"
                 >
                   {t("callForPapersDescriptionSubmit.1")}
                 </a>
@@ -56,7 +56,7 @@ export default function CFPPage() {
             {/* Conference Milestones */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <Calendar className="mr-2 text-blue-600" size={24} />
+                <Calendar className="mr-2 text-gray-600" size={24} />
                 {t("conferenceMilestonesTitle")}
               </h3>
               <div className="space-y-4">
@@ -65,7 +65,7 @@ export default function CFPPage() {
                     key={index} 
                     className="flex items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
                   >
-                    <Clock className="mr-4 text-blue-600" size={24} />
+                    <Clock className="mr-4 text-gray-600" size={24} />
                     <div>
                       <h4 className="font-semibold text-gray-800">{milestone.title}</h4>
                       <p className="text-gray-600 text-sm">{milestone.time}</p>
@@ -78,7 +78,7 @@ export default function CFPPage() {
             {/* Program Content */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <FileText className="mr-2 text-blue-600" size={24} />
+                <FileText className="mr-2 text-gray-600" size={24} />
                 {t("programContentTitle")}
               </h3>
               <p className="text-gray-700 mb-4">{t("presentationTopicsTitle")}</p>
@@ -89,7 +89,7 @@ export default function CFPPage() {
                     key={index} 
                     className="flex items-center text-gray-700"
                     >
-                    <ChevronRight className="mr-2 text-blue-500 flex-shrink-0" size={24} />
+                    <ChevronRight className="mr-2 text-gray-500 flex-shrink-0" size={24} />
                     {topic}
                     </li>
                 ))}
@@ -99,7 +99,7 @@ export default function CFPPage() {
             {/* CFP Submission */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <FileText className="mr-2 text-blue-600" size={24} />
+                <FileText className="mr-2 text-gray-600" size={24} />
                 {t("cfpSubmissionTitle")}
               </h3>
               <div className="bg-gray-100 p-4 rounded-lg space-y-2">

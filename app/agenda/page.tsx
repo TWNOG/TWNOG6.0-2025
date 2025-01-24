@@ -19,14 +19,14 @@ export default function AgendaPage() {
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
-        <div className="bg-blue-600 text-white p-6">
+        <div className="bg-gray-600 text-white p-6">
           <h2 className="text-2xl font-bold text-center">{t("pageTitle")}</h2>
         </div>
         <div className="p-6">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-gray-100 border-b-2 border-blue-500">
+                <tr className="bg-gray-100 border-b-2 border-gray-500">
                   <th className="text-left py-3 px-4 font-semibold text-gray-700 uppercase tracking-wider">
                     {t("sessions.time")}
                   </th>
@@ -41,7 +41,7 @@ export default function AgendaPage() {
                     key={index} 
                     className={`
                       ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} 
-                      hover:bg-blue-50 transition-colors duration-200
+                      hover:bg-gray-50 transition-colors duration-200
                       border-b last:border-b-0
                     `}
                   >

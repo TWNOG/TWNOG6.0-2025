@@ -19,7 +19,7 @@ export const staff: StaffData = {
         },
         {
             name: "Makito Lay",
-            img: "/assets/twnog.png",
+            sha256: "4a9fb526820f71be7df7dd8822b3c29a443e9a2b6397d6153e460525fd18486c",
         },
         {
             name: "小易",
@@ -60,7 +60,7 @@ export const staff: StaffData = {
         },
         {
             name: "Makito Lay",
-            img: "/assets/twnog.png",
+            sha256: "4a9fb526820f71be7df7dd8822b3c29a443e9a2b6397d6153e460525fd18486c",
         },
         {
             name: "Yi Kuo",

@@ -17,7 +17,7 @@ export default function AgendaPage() {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
         <div className="bg-gray-600 text-white p-6">
           <h2 className="text-2xl font-bold text-center">{t("pageTitle")}</h2>

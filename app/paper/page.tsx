@@ -28,7 +28,7 @@ export default function CFPPage() {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Main Card */}
         <div className="bg-white shadow-lg rounded-xl overflow-hidden">
@@ -55,7 +55,7 @@ export default function CFPPage() {
 
             {/* Conference Milestones */}
             <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <Calendar className="mr-2 text-gray-600" size={24} />
                 {t("conferenceMilestonesTitle")}
               </h3>
@@ -77,7 +77,7 @@ export default function CFPPage() {
 
             {/* Program Content */}
             <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <FileText className="mr-2 text-gray-600" size={24} />
                 {t("programContentTitle")}
               </h3>
@@ -98,7 +98,7 @@ export default function CFPPage() {
 
             {/* CFP Submission */}
             <div>
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <FileText className="mr-2 text-gray-600" size={24} />
                 {t("cfpSubmissionTitle")}
               </h3>

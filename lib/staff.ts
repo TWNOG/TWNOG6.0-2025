@@ -15,7 +15,6 @@ export const staff: StaffData = {
     host: [
         {
             name: "小易",
-            img: "/assets/twnog.png",
             sha256: "636ffb648cf0eb979f6d3449c6aced1f",
         },
     ],

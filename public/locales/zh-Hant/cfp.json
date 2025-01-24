@@ -42,5 +42,9 @@
     "最終簡報檔需於指定截止日期前提交，並將公布於 TWNOG 官方網站。"
   ],
   "contactInfo": "若有任何問題，請透過 email 與議程組聯繫：paper@twnog.net。",
-  "closingRemark": "期待收到您的投稿！"
+  "closingRemark": "期待收到您的投稿！",
+  "peeringPersonalDescription": [
+    "請於 2025 年 04 月 04 日之前，將簡報檔發送至 paper@twnog.net。簡報模板可參考以下連結。",
+    "https://2025.twnog.net/assets/slides/Peering-Personals-Template.pptx"
+  ]
 }

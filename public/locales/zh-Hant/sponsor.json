@@ -2,10 +2,13 @@
   "pageTitle": "贊助方案",
   "table": {
     "header": {
+      "host": "共同主辦",
+      "workshop": "工作坊",
+      "Internet": "網路服務",
       "level": "贊助等級",
-      "titanium": "鈦金",
-      "platinum": "白金",
-      "gold": "黃金",
+      "titanium": "鈦金級",
+      "platinum": "白金級",
+      "gold": "黃金級",
       "silver": "銀級"
     },
     "rows": {
@@ -47,7 +50,7 @@
   "notice": {
     "title": "注意事項",
     "rankingPrinciples": {
-      "heading": "順序排序原則：",
+      "heading": "順序排序原則",
       "description": "在活動中，各級別的贊助商名稱、品牌 Logo，以及攤位的安排，均應依照以下原則進行：",
       "items": [
         "贊助等級",

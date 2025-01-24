@@ -1,9 +1,10 @@
 {
   "content": "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。",
   "menu": {
-    "sponsorship": "贊助方案",
+    "sponsor": "合作夥伴",
     "paper": "徵稿資訊",
     "agenda": "活動議程",
+    "traffic": "交通資訊",
     "register": "立刻報名"
   },
   "copyright": "TWNOG 台灣網路維運社群"

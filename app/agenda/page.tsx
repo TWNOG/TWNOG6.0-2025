@@ -2,57 +2,62 @@
 
 import { useTranslation } from "react-i18next";
 
-// app/agenda/page.tsx
 export default function AgendaPage() {
   const { t } = useTranslation("agenda");
 
+  const agendaItems = [
+    { time: "09:00 - 09:20", name: "Welcome Remark" },
+    { time: "09:30 - 10:50", name: "Session A" },
+    { time: "10:50 - 11:10", name: "Coffee Break" },
+    { time: "11:10 - 12:30", name: "Session B" },
+    { time: "12:30 - 13:30", name: "Lunch Break" },
+    { time: "13:30 - 15:00", name: "Session C" },
+    { time: "15:00 - 15:20", name: "Coffee Break" },
+    { time: "15:20 - 17:00", name: "Session D" },
+  ];
+
   return (
-    <div className="p-6 pb-20">
-      <section className="max-w-4xl mx-auto">
-        <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
-        <table className="w-full border-collapse">
-          <thead>
-            <tr className="border-b">
-              <th className="text-left py-2 px-4 font-semibold">{t("sessions.time")}</th>
-              <th className="text-left py-2 px-4 font-semibold">{t("sessions.name")}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b">
-              <td className="py-2 px-4">09:00 - 09:20</td>
-              <td className="py-2 px-4">Welcome Remark</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">09:30 - 10:50</td>
-              <td className="py-2 px-4">Session A</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">10:50 - 11:10</td>
-              <td className="py-2 px-4">Coffee Break</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">11:10 - 12:30</td>
-              <td className="py-2 px-4">Session B</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">12:30 - 13:30</td>
-              <td className="py-2 px-4">Lunch Break</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">13:30 - 15:00</td>
-              <td className="py-2 px-4">Session C</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">15:00 - 15:20</td>
-              <td className="py-2 px-4">Coffee Break</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-2 px-4">15:20 - 17:00</td>
-              <td className="py-2 px-4">Session D</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+        <div className="bg-gray-600 text-white p-6">
+          <h2 className="text-2xl font-bold text-center">{t("pageTitle")}</h2>
+        </div>
+        <div className="p-6">
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-gray-100 border-b-2 border-gray-500">
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700 uppercase tracking-wider">
+                    {t("sessions.time")}
+                  </th>
+                  <th className="text-left py-3 px-4 font-semibold text-gray-700 uppercase tracking-wider">
+                    {t("sessions.name")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {agendaItems.map((item, index) => (
+                  <tr 
+                    key={index} 
+                    className={`
+                      ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} 
+                      hover:bg-gray-50 transition-colors duration-200
+                      border-b last:border-b-0
+                    `}
+                  >
+                    <td className="py-4 px-4 text-gray-800 font-medium">
+                      {item.time}
+                    </td>
+                    <td className="py-4 px-4 text-gray-600">
+                      {item.name}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -11,6 +11,18 @@ export type Sponsor = {
   };
   
   export const sponsors: SponsorsData = {
+    host: [
+      {
+        name: "TWNOG 台灣網路維運社群",
+        img: "assets/twnog.png",
+        link: "https://twnog.net/",
+      },
+      {
+        name: "OCF 開放文化基金會",
+        img: "assets/sponsor/ocf.svg",
+        link: "https://ocf.tw/",
+      }
+    ],
     titanium: [
     ],
     platinum: [
@@ -34,5 +46,12 @@ export type Sponsor = {
         link: "https://www.icann.org/",
       }
     ],
+    workshop: [
+      {
+        name: "Google",
+        img: "assets/sponsor/google.svg",
+        link: "https://peering.google.com/",
+      }
+    ]
   };
   

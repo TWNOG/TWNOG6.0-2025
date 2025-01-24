@@ -2,6 +2,9 @@
   "pageTitle": "Sponsorship",
   "table": {
     "header": {
+      "host": "Host",
+      "workshop": "Workshop",
+      "Internet": "Internet",
       "level": "Sponsor Level",
       "titanium": "Titanium",
       "platinum": "Platinum",

@@ -13,7 +13,7 @@ export default function Home() {
         {/* 活動 Logo 或 Banner */}
         {/* 你可以換成 TWNOG logo，或參考 /public 中的其他圖片 */}
         <Image
-          src="/twnog.png" 
+          src="/assets/twnog.png" 
           alt="2025 TWNOG Logo"
           width={200}
           height={80}

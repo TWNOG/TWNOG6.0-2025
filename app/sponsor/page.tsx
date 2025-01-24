@@ -2,6 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { sponsors, Sponsor } from "@/lib/sponsors";
+import Image from "next/image";
 
 export default function SponsorPage() {
   const { t } = useTranslation("sponsor");
@@ -12,13 +13,15 @@ export default function SponsorPage() {
         {sponsorList.map((sponsor, index) => (
           <div
             key={index}
-            className="flex items-center justify-center border border-gray-300 p-4 bg-white rounded-lg"
+            className="flex items-center justify-center border border-gray-300 p-4 bg-white rounded-lg h-32"
           >
             <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-              <img
+              <Image
                 src={sponsor.img}
                 alt={sponsor.name}
-                className="max-h-16"
+                width={256}
+                height={24}
+                className="h-24 w-auto object-contain"
               />
             </a>
           </div>

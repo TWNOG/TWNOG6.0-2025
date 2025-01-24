@@ -199,9 +199,9 @@ export default function SponsorPage() {
 
         {/* Notice */}
         <div className="mt-8 text-sm leading-relaxed">
-          <h2 className="text-xl font-bold mb-2">{t("notice.title")}</h2>
+          <h2 className="text-xl font-bold mb-2">{t("notice.rankingPrinciples.heading")}</h2>
           <p>
-            <strong>{t("notice.rankingPrinciples.heading")}</strong>{t("notice.rankingPrinciples.description")}
+            <strong></strong>{t("notice.rankingPrinciples.description")}
           </p>
           <ol className="list-decimal list-inside mt-2 mb-2 pl-2">
             {(

@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next";
 import { staff, Staff } from "@/lib/staff";
 import Image from "next/image";
+import Profile from "@/app/components/profile";
 
 export default function StaffPage() {
     const { t } = useTranslation("staff");
@@ -11,20 +12,14 @@ export default function StaffPage() {
             <h2 className="text-xl font-bold capitalize mb-2">{t(`group.${level}`)}</h2>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
                 {staffList.map((staff, index) => (
-
                     <div key={index} className="text-center">
-                        <Image
-                            src={
-                                staff.md5
-                                    ? `https://www.gravatar.com/avatar/${staff.md5}?s=256`
-                                    : staff.img
-                            }
-                            alt={staff.name}
-                            width={256}
-                            height={256}
-                            className="h-24 w-24 object-cover rounded-full mx-auto border border-gray-300"
-                        />
-                        <p className="mt-2 text-sm font-medium">{staff.name}</p>
+                        {staff.link ? (
+                            <a href={staff.link} target="_blank" rel="noopener noreferrer">
+                                <Profile staff={staff} />
+                            </a>
+                        ) : (
+                            <Profile staff={staff} />
+                        )}
                     </div>
                 ))}
             </div>

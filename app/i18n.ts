@@ -11,6 +11,9 @@ import jaIndex from '../public/locales/ja/index.json';
 import enSponsor from '../public/locales/en/sponsor.json';
 import zhHantSponsor from '../public/locales/zh-Hant/sponsor.json';
 import jaSponsor from '../public/locales/ja/sponsor.json';
+import enStaff from '../public/locales/en/staff.json';
+import zhHantStaff from '../public/locales/zh-Hant/staff.json';
+import jaStaff from '../public/locales/ja/staff.json';
 import enAgenda from '../public/locales/en/agenda.json';
 import zhHantAgenda from '../public/locales/zh-Hant/agenda.json';
 import jaAgenda from '../public/locales/ja/agenda.json';
@@ -30,21 +33,24 @@ const resources = {
     sponsor: enSponsor,
     agenda: enAgenda,
     cfp: enCfp,
-    traffic: enTraffic
+    traffic: enTraffic,
+    staff: enStaff
   },
   zh: {
     index: zhHantIndex,
     sponsor: zhHantSponsor,
     agenda: zhHantAgenda,
     cfp: zhHantCfp,
-    traffic: zhHantTraffic
+    traffic: zhHantTraffic,
+    staff: zhHantStaff
   },
   ja: {
     index: jaIndex,
     sponsor: jaSponsor,
     agenda: jaAgenda,
     cfp: jaCfp,
-    traffic: jaTraffic
+    traffic: jaTraffic,
+    staff: jaStaff
   },
 };
 

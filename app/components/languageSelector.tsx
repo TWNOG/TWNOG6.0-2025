@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const languageCodeToName: { [key: string]: string } = {
   'en': 'English',
   'zh': '繁體中文',
-  'ja': '日本語',
+  // 'ja': '日本語',
 };
 
 export default function LanguageSelector() {

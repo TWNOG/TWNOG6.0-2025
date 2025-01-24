@@ -42,5 +42,9 @@
     "Final slides are to be provided by the specified deadline for publication on the TWNOG website."
   ],
   "contactInfo": "Any questions or concerns should be addressed to the Program Committee Chairs by e-mail at paper@twnog.net.",
-  "closingRemark": "We look forward to receiving your presentation proposals."
+  "closingRemark": "We look forward to receiving your presentation proposals.",
+  "peeringPersonalDescription": [
+    "Please Submit the Peering Personal slide by 4th April 2025, with the template in the link below, to papre@twnog.net.",
+    "https://2025.twnog.net/assets/slides/Peering-Personals-Template.pptx"
+  ]
 }

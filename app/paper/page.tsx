@@ -44,8 +44,8 @@ export default function CFPPage() {
               <p className="text-gray-700 break-words">{t("callForPapersDescription")}</p>
               <p className="mt-2 text-gray-700 break-words">
                 {t("callForPapersDescriptionSubmit.0")}
-                <a 
-                  href="https://submission.apnic.net/user/login.php?event=213" 
+                <a
+                  href="https://submission.apnic.net/user/login.php?event=213"
                   className="text-gray-600 hover:underline font-semibold"
                 >
                   {t("callForPapersDescriptionSubmit.1")}
@@ -61,8 +61,8 @@ export default function CFPPage() {
               </h3>
               <div className="space-y-4">
                 {milestones.map((milestone, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="flex items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
                   >
                     <Clock className="mr-4 text-gray-600" size={24} />
@@ -85,13 +85,13 @@ export default function CFPPage() {
               <p className="text-gray-700 mb-4">{t("recommendedTopicsIntro")}</p>
               <ul className="grid md:grid-cols-2 gap-2 bg-gray-100 p-4 rounded-lg">
                 {recommendedTopics.map((topic, index) => (
-                    <li 
-                    key={index} 
+                  <li
+                    key={index}
                     className="flex items-center text-gray-700"
-                    >
+                  >
                     <ChevronRight className="mr-2 text-gray-500 flex-shrink-0" size={24} />
                     {topic}
-                    </li>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -107,6 +107,22 @@ export default function CFPPage() {
                 <p className="text-gray-700">{t("cfpSubmissionDescription.1")}</p>
                 <p className="text-gray-700">{t("cfpSubmissionDescription.2")}</p>
                 <p className="text-gray-700 font-semibold mt-2">{t("contactInfo")}</p>
+              </div>
+            </div>
+
+            <div>
+              {/* Peering Personal */}
+              <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
+                <FileText className="mr-2 text-gray-600" size={24} />
+                {t("peeringPersonalTitle")}
+              </h3>
+              <div className="bg-gray-100 p-4 rounded-lg space-y-2">
+                <p className="text-gray-700">{t("peeringPersonalDescription.0")}</p>
+                <p className="text-gray-700">
+                  <a href="/assets/slides/Peering-Personals-Template.pptx" className="text-gray-600 hover:underline font-semibold">
+                    {t("peeringPersonalDescription.1")}
+                  </a>
+                </p>
               </div>
             </div>
           </div>

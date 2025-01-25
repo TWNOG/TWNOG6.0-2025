@@ -24,7 +24,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TWNOG 6",
-  description: "第六屆台灣網路維運論壇",
+  description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+  keywords: "TWNOG, TWNOG6, TWNOG 6, TWNOG 2025, 台灣網路維運論壇, Network, Internet, 大會, 網路工程, IPv6, BGP, 資料中心, 雲端網路, 網路安全, ISP, 教育訓練, 研討會, 國立臺灣大學醫院國際會議中心",
+  openGraph: {
+    title: "TWNOG 6",
+    description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+    images: [
+      {
+        url: "/assets/twnog6-banner.jpg",
+        width: 1200,
+        height: 630,
+      }
+    ],
+  },
+  twitter: {
+    title: "TWNOG 6",
+    description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+    images: "/assets/twnog6-banner.jpg",
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

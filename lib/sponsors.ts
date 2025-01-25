@@ -37,7 +37,12 @@ export const sponsors: SponsorsData = {
       name: "seiko",
       img: "/assets/sponsor/seiko.svg",
       link: "https://www.seiko-sol.co.jp/",
-    }
+    },
+    // {
+    //   name: "FLEXOPTIX GmbH",
+    //   img: "",
+    //   link: "https://www.flexoptix.net/"
+    // },
   ],
   silver: [
     {

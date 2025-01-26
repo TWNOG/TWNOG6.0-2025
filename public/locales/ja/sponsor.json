@@ -1,31 +1,31 @@
 {
-  "pageTitle": "Sponsorship",
+  "pageTitle": "スポンサーシップ",
   "table": {
     "header": {
-      "host": "Host",
-      "workshop": "Workshop",
-      "Internet": "Internet",
-      "level": "Sponsor Level",
-      "titanium": "Titanium",
-      "platinum": "Platinum",
-      "gold": "Gold",
-      "silver": "Silver"
+      "host": "主催",
+      "workshop": "ワークショップ",
+      "Internet": "インターネット",
+      "level": "スポンサーレベル",
+      "titanium": "チタニウム",
+      "platinum": "プラチナ",
+      "gold": "ゴールド",
+      "silver": "シルバー"
     },
     "rows": {
-      "sponsorSession": "Sponsor Session",
-      "sponsorAmount": "Amount",
-      "sessionKeynote": "Keynote * 1",
-      "sessionNormal": "Session * 1",
+      "sponsorSession": "スポンサーセッション",
+      "sponsorAmount": "金額",
+      "sessionKeynote": "基調講演  * 1",
+      "sessionNormal": "セッション * 1",
       "sessionNone": "X",
-      "logoWebsite": "Logo on website & Hyperlink",
-      "logoSignage": "Logo on Signage",
-      "backdropLogo": "Event Backdrop Logo",
-      "freeTicket": "Free Ticket",
-      "dinnerQuota": "Dinner Quota",
-      "exhibitionDesk": "Exhibition Desk",
-      "deskTitanium": "Table * 4, Chair * 8",
-      "deskPlatinum": "Table * 2, Chair * 4",
-      "deskGold": "Table * 1, Chair * 2",
+      "logoWebsite": "ウェブサイトにロゴとハイパーリンク",
+      "logoSignage": "看板にロゴ",
+      "backdropLogo": "イベント背景幕にロゴ",
+      "freeTicket": "無料チケット",
+      "dinnerQuota": "ディナー枠",
+      "exhibitionDesk": "展示ブース",
+      "deskTitanium": "テーブル * 4, 椅子 * 8",
+      "deskPlatinum": "テーブル * 2, 椅子 * 4",
+      "deskGold": "テーブル * 1, 椅子 * 2",
       "deskNone": "X"
     },
     "numbers": {
@@ -44,19 +44,19 @@
     }
   },
   "introduction": {
-    "title": "Introduction",
-    "content": ": Please provide Hyperlink/Logo in an AI or EPS file and DM a month before the event date."
+    "title": "はじめに",
+    "content": ": ハイパーリンク/ロゴをAIまたはEPSファイルで提供し、イベント開催日の1ヶ月前までにDMでお送りください。"
   },
   "notice": {
-    "title": "Notice",
+    "title": "注意事項",
     "rankingPrinciples": {
-      "heading": "Ranking Processing Principles",
-      "description": "The arrangement and placement of names and logos of vendors at all levels of the conference, as well as the arrangement of exhibition tables, shall be conducted by the following principles:",
+      "heading": "ランキング処理の原則",
+      "description": "カンファレンスのすべてのレベルにおける企業名とロゴの配置、および展示テーブルの配置は、以下の原則に従って行われます：",
       "items": [
-        "Sponsorship Level",
-        "If sponsorship level are equal, priority is given based on the order of sponsorship time, followed by the alphabetical order of the English name."
+        "スポンサーシップレベル",
+        "スポンサーシップレベルが同じ場合、スポンサー申込みの順番を優先し、次に英語名のアルファベット順とします。"
       ]
     },
-    "tableLocation": "The organizing committee will assign and arrange the locations of the exhibition tables. For any inquiries, please contact our team at <sponsorship@twnog.net>."
+    "tableLocation": "展示テーブルの場所は運営委員会が割り当てて手配いたします。ご質問がある場合は、<sponsorship@twnog.net> までお問い合わせください。"
   }
 }

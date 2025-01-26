@@ -1,12 +1,12 @@
 {
-    "content": "The 6th Taiwan Network Operations Forum will be held on April 18, 2025, at the International Conference Center of National Taiwan University Hospital.",
+    "content": "第6回台湾ネットワーク運用フォーラムは、2025年4月18日に国立台湾大学病院国際会議センターにて開催されます。",
     "menu": {
-      "sponsor": "Sponsor",
-      "paper": "Call For Papers",
-      "agenda": "Agenda",
-      "traffic": "Traffic",
-      "staff": "Staff",
-      "register": "Register"
+      "sponsor": "スポンサー",
+      "paper": "発表募集",
+      "agenda": "アジェンダ",
+      "traffic": "交通案内",
+      "staff": "スタッフ",
+      "register": "参加登録"
     },
     "copyright": "TWNOG (Taiwan Network Operators’ Group)"
   }

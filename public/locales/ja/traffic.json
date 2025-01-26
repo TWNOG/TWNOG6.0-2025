@@ -1,23 +1,23 @@
 {
-    "pageTitle": "Traffic Information",
-    "locationTitle": "Location",
-    "locationName": "NTU Hospital International Convention Center",
-    "locationAddress": "No. 2, Xuzhou Road, Zhongzheng District, Taipei City",
+    "pageTitle": "交通案内",
+    "locationTitle": "会場",
+    "locationName": "国立台湾大学病院国際会議センター",
+    "locationAddress": "台北市中正区徐州路2号",
     "mrtTitle": "MRT",
     "mtrDescription": [
-        "Take the Tamsui-Xinyi Line (Red Line) to \"NTU Hospital Station\" (Exit 2), walk about 6 minutes to arrive",
-        "Take the Bannan Line (Blue Line) to \"Shandao Temple Station\" (Exit 2), walk about 10 minutes to arrive"
+        "淡水信義線（赤線）「台大医院駅」（2番出口）下車、徒歩約6分",
+        "板南線（青線）「善導寺駅」（2番出口）下車、徒歩約10分"
     ],
-    "busTitle": "Bus",
+    "busTitle": "バス",
     "busDescription": [
-        "NTU Hospital Station: 22 / 15 / 615 / 227 / 648 / 648 Green / Zhongshan Main Line / 208 / 208 Direct, about a 3-minute walk",
-        "Kai-Nan Commercial High School Stop (near Xuzhou Road intersection): 0 South / 15 / 22 / 208 / 295 / 297 / 671, about a 3-minute walk",
-        "Ren'ai-Linsen Intersection Stop (Linsen South Road intersection): 295 / 297 / 15 / 22 / 671, about a 3-minute walk",
-        "Ren'ai-Linsen Intersection Stop (Ren'ai Road intersection): 245 / 261 / 37 / 249 / 270 / 263 / 621 / 651 / 630, about a 5-minute walk"
+        "台大医院バス停：22 / 15 / 615 / 227 / 648 / 648緑 / 中山幹線 / 208 / 208直行、徒歩約3分",
+        "開南商工バス停（徐州路交差点）：0南 / 15 / 22 / 208 / 295 / 297 / 671、徒歩約3分",
+        "仁愛林森路口バス停（林森南路交差点）：295 / 297 / 15 / 22 / 671、徒歩約3分",
+        "仁愛林森路口バス停（仁愛路交差点）：245 / 261 / 37 / 249 / 270 / 263 / 621 / 651 / 630、徒歩約5分"
     ],
-    "driveTitle": "Driving",
+    "driveTitle": "お車でお越しの場合",
     "driveDescription": [
-        "Please drive along Aiguo East Road or Changde Street to Xuzhou Road",
-        "Paid parking is available inside and near the conference center, but spaces are limited. We recommend using public transportation"
+        "愛国東路または常徳街から徐州路へお進みください",
+        "会議センター内および周辺に有料駐車場がありますが、台数に限りがあります。公共交通機関のご利用をお勧めいたします"
     ]
 }

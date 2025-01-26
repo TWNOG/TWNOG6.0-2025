@@ -77,7 +77,11 @@ export const staff: StaffData = {
         {
             name: "Yi Kuo",
             sha256: "520438a37ad035a7bd2ddd1ca0999863",
-        }
+        },
+        {
+            name: "Wei-Ting",
+            sha256: "1764af732f88bf9512bd4770276f15330de39149100404288949352677816201",
+        },
     ],
     image: [
         {

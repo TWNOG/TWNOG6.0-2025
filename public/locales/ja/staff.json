@@ -2,8 +2,8 @@
     "pageTitle": "スタッフ",
     "pageDescription": "The TWNOG (Taiwan Network Operators' Group) is organized by many dedicated volunteers who contribute their time and effort. It wouldn’t be possible without everyone’s support. If you’d like to join us, please follow our official website.",
     "group": {
-        "msg": "召集人",
-        "infra": "ネットワークチーム",
-        "image": "攝影製播組"
+        "msg": "代表",
+        "infra": "インフラストラクチャーチーム",
+        "image": "撮影配信チーム"
     }
 }

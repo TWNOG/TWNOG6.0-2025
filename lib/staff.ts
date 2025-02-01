@@ -95,6 +95,11 @@ export const staff: StaffData = {
         {
             name: "Brian Jhan",
             sha256: "90f53dc4897b548484c9d1a8d45a397053ee0e14da9c8996481896bd77ea773e",
-        }
+        },
+        {
+            name: "竺原",
+            sha256: "078d4f7476d88199377c8a84a1a260f10b860269ebc83889ced05a29bf0d72ed",
+            link: "https://zhuyuan.tw",
+        },
     ],
 };

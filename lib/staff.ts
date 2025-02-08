@@ -15,7 +15,7 @@ export const staff: StaffData = {
     msg: [
         {
             name: "William Lu",
-            sha256: "luyau2001@gmail.com",
+            sha256: "a92633a1784e8d4fa137838db2f60b13481b320a370ec9c9a745e02ffbf71e7f",
         },
         {
             name: "Kams Yeung",

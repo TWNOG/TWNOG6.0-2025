@@ -29,7 +29,7 @@ export const sponsors: SponsorsData = {
   ],
   gold: [
     {
-      name: "是方",
+      name: "CHIEF 是方",
       img: "/assets/sponsor/chief.png",
       link: "https://www.chief.com.tw/",
     },
@@ -56,6 +56,11 @@ export const sponsors: SponsorsData = {
       name: "Google",
       img: "/assets/sponsor/google.svg",
       link: "https://peering.google.com/",
+    },
+    {
+      name: "APNIC",
+      img: "/assets/sponsor/apnic.png",
+      link: "https://apnic.net/",
     }
-  ]
+  ],
 };

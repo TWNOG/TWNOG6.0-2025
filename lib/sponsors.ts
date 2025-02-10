@@ -21,7 +21,7 @@ export const sponsors: SponsorsData = {
       name: "OCF 開放文化基金會",
       img: "/assets/sponsor/ocf.svg",
       link: "https://ocf.tw/",
-    }
+    },
   ],
   titanium: [
   ],
@@ -61,7 +61,7 @@ export const sponsors: SponsorsData = {
       name: "APNIC",
       img: "/assets/sponsor/apnic.png",
       link: "https://apnic.net/",
-    }
+    },
   ],
   internet: [
     {

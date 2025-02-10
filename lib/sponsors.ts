@@ -63,4 +63,46 @@ export const sponsors: SponsorsData = {
       link: "https://apnic.net/",
     }
   ],
+  internet: [
+    {
+      name: "TWAREN (Taiwan Advanced Research & Education Network)",
+      img: "/assets/sponsor/twaren.png",
+      link: "https://www.twaren.net/",
+    },
+    {
+      name: "國立臺灣大學計算機及資訊網路中心",
+      img: "/assets/sponsor/ntu.png",
+      link: "https://www.cc.ntu.edu.tw/",
+    },
+    {
+      name: "國立臺灣大學醫學院附設醫院資訊室",
+      img: "/assets/sponsor/ntu.png",
+      link: "https://www.ntuh.gov.tw/mis/Index.action",
+    },
+    {
+      name: "國立臺灣大學醫學院資訊組",
+      img: "/assets/sponsor/ntumi.png",
+      link: "https://www.mc.ntu.edu.tw/ntumi/Index.action",
+    },
+    {
+      name: "台灣智慧光網",
+      img: "/assets/sponsor/taifo.png",
+      link: "https://www.taifo.com.tw/",
+    },
+    {
+      name: "CHIEF 是方",
+      img: "/assets/sponsor/chief.png",
+      link: "https://www.chief.com.tw/",
+    },
+    {
+      name: "Hurricane Electric",
+      img: "/assets/sponsor/he.png",
+      link: "https://he.net/",
+    },
+    {
+      name: "福爾摩沙開放網際網路交換中心",
+      img: "/assets/sponsor/fox.png",
+      link: "https://www.fox.net.tw/",
+    },
+  ]
 };

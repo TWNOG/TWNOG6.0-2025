@@ -94,11 +94,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/chief.png",
       link: "https://www.chief.com.tw/",
     },
-    // {
-    //   name: "Hurricane Electric",
-    //   img: "/assets/sponsor/he.png",
-    //   link: "https://he.net/",
-    // },
+    {
+      name: "Hurricane Electric",
+      img: "/assets/sponsor/he.png",
+      link: "https://he.net/",
+    },
     // {
     //   name: "福爾摩沙開放網際網路交換中心",
     //   img: "/assets/sponsor/fox.png",

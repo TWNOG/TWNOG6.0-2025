@@ -30,16 +30,12 @@ export default function CFPPage() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-8">
-        {/* Main Card */}
         <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-          {/* Header */}
           <div className="bg-gray-600 text-white p-6">
             <h2 className="text-2xl font-bold text-center">{t("callForPapersTitle")}</h2>
           </div>
 
-          {/* Content */}
           <div className="p-6 space-y-6">
-            {/* Introduction */}
             <div className="bg-gray-50 border-l-4 border-gray-500 p-4 rounded">
               <p className="text-gray-700 break-words">{t("callForPapersDescription")}</p>
               <p className="mt-2 text-gray-700 break-words">
@@ -53,29 +49,37 @@ export default function CFPPage() {
               </p>
             </div>
 
-            {/* Conference Milestones */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <Calendar className="mr-2 text-gray-600" size={24} />
                 {t("conferenceMilestonesTitle")}
               </h3>
               <div className="space-y-4">
-                {milestones.map((milestone, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
-                  >
-                    <Clock className="mr-4 text-gray-600" size={24} />
-                    <div>
-                      <h4 className="font-semibold text-gray-800">{milestone.title}</h4>
-                      <p className="text-gray-600 text-sm">{milestone.time}</p>
+                {milestones.map((milestone, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
+                    >
+                      <Clock className="mr-4 text-gray-600" size={24} />
+                      <div>
+                        <h4 className="font-semibold text-gray-800">{milestone.title}</h4>
+                        <p
+                          className={
+                            milestone.time === t("conferenceMilestones.submissionDeadlineTime")
+                              ? "text-red-600 text-sm"
+                              : "text-gray-600 text-sm"
+                          }
+                        >
+                          {milestone.time}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
-            {/* Program Content */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <FileText className="mr-2 text-gray-600" size={24} />
@@ -96,7 +100,6 @@ export default function CFPPage() {
               </ul>
             </div>
 
-            {/* CFP Submission */}
             <div>
               <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <FileText className="mr-2 text-gray-600" size={24} />
@@ -111,7 +114,6 @@ export default function CFPPage() {
             </div>
 
             <div>
-              {/* Peering Personal */}
               <h3 className="text-xl font-semibold mb-4 flex items-center text-gray-600">
                 <FileText className="mr-2 text-gray-600" size={24} />
                 {t("peeringPersonalTitle")}

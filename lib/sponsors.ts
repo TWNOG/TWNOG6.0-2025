@@ -33,7 +33,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "JPIX",
-      img: "/assets/sponsor/jpix.jpg",
+      img: "/assets/sponsor/jpix.svg",
       link: "https://www.jpix.ad.jp/",
     },
   ],
@@ -67,7 +67,7 @@ export const sponsors: SponsorsData = {
   silver: [
     {
       name: "ICANN",
-      img: "/assets/sponsor/icann.jpg",
+      img: "/assets/sponsor/icann.svg",
       link: "https://www.icann.org/",
     }
   ],

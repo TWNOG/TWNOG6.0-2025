@@ -33,11 +33,16 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "JPIX",
-      img: "/assets/sponsor/jpix.jpg",
+      img: "/assets/sponsor/jpix.svg",
       link: "https://www.jpix.ad.jp/",
     },
   ],
   gold: [
+    {
+      name: "FLEXOPTIX GmbH",
+      img: "/assets/sponsor/flexoptix.svg",
+      link: "https://www.flexoptix.net/"
+    },
     {
       name: "CHIEF 是方",
       img: "/assets/sponsor/chief.png",
@@ -58,16 +63,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/inno-tech.png",
       link: "https://www.inno-tech.com.tw/",
     },
-    // {
-    //   name: "FLEXOPTIX GmbH",
-    //   img: "",
-    //   link: "https://www.flexoptix.net/"
-    // },
   ],
   silver: [
     {
       name: "ICANN",
-      img: "/assets/sponsor/icann.jpg",
+      img: "/assets/sponsor/icann.svg",
       link: "https://www.icann.org/",
     }
   ],

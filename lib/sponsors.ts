@@ -26,6 +26,16 @@ export const sponsors: SponsorsData = {
   titanium: [
   ],
   platinum: [
+    {
+      name: "APNIC",
+      img: "/assets/sponsor/apnic.png",
+      link: "https://apnic.net/",
+    },
+    {
+      name: "JPIX",
+      img: "/assets/sponsor/jpix.jpg",
+      link: "https://www.jpix.ad.jp/",
+    },
   ],
   gold: [
     {
@@ -38,6 +48,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/seiko.svg",
       link: "https://www.seiko-sol.co.jp/",
     },
+    {
+      name: "Arista Network",
+      img: "/assets/sponsor/arista.svg",
+      link: "https://www.arista.com/en/",
+    }
     // {
     //   name: "FLEXOPTIX GmbH",
     //   img: "",

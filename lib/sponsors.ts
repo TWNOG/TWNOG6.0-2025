@@ -52,7 +52,12 @@ export const sponsors: SponsorsData = {
       name: "Arista Network",
       img: "/assets/sponsor/arista.svg",
       link: "https://www.arista.com/en/",
-    }
+    },
+    {
+      name: "殷諾科技",
+      img: "/assets/sponsor/inno-tech.png",
+      link: "https://www.inno-tech.com.tw/",
+    },
     // {
     //   name: "FLEXOPTIX GmbH",
     //   img: "",

@@ -39,6 +39,11 @@ export const sponsors: SponsorsData = {
   ],
   gold: [
     {
+      name: "FLEXOPTIX GmbH",
+      img: "/assets/sponsor/flexoptix.svg",
+      link: "https://www.flexoptix.net/"
+    },
+    {
       name: "CHIEF 是方",
       img: "/assets/sponsor/chief.png",
       link: "https://www.chief.com.tw/",
@@ -58,11 +63,6 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/inno-tech.png",
       link: "https://www.inno-tech.com.tw/",
     },
-    // {
-    //   name: "FLEXOPTIX GmbH",
-    //   img: "",
-    //   link: "https://www.flexoptix.net/"
-    // },
   ],
   silver: [
     {

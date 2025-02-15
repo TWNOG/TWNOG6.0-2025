@@ -6,6 +6,8 @@ import Link from "next/link";
 import { speakers, type Speaker } from "@/lib/speakers";
 import { agenda, type Agenda } from "@/lib/agenda";
 
+export const runtime = 'edge';
+
 type AgendaItem = Agenda & {
   speaker?: string;
   presentation?: string;

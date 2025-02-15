@@ -1,0 +1,33 @@
+// /lib/speakers.ts
+
+export type Speaker = {
+    name: string;
+    img?: string;
+    bio?: string;
+    link?: string;
+    id?: string;
+    sessionIds: string[];
+};
+
+export const speakers: Speaker[] = [
+    {
+        name: "小易",
+        id: "26c993",
+        link: "https://steveyi.net/",
+        // img: "/assets/speakers/26c993.jpg",
+        bio: "小易是一位學生，擁有非常豐富的網路經驗！",
+        sessionIds: ["054b12", "c11a30"]
+    },
+    {
+        name: "Jack Wang",
+        id: "8a34ea",
+        bio: "TWNOG Chair",
+        sessionIds: ["054b12"]
+    },
+    {
+        name: "測試",
+        id: "d1a35d",
+        bio: "hahahahaha",
+        sessionIds: ["054b12"]
+    }
+];

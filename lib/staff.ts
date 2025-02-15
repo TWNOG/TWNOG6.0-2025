@@ -1,4 +1,4 @@
-// /lib/sponsors.ts
+// /lib/staff.ts
 
 export type Staff = {
     name: string;

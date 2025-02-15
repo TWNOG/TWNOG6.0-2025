@@ -4,5 +4,10 @@
       "time": "Time",
       "name": "Session Name"
     },
+    "backToList": "Back to List",
+    "loading": "Loading",
+    "speaker": "Speaker",
+    "presentation": "Presentation",
+    "moreInfo": "More Info",
     "copyright": "TWNOG (Taiwan Network Operators’ Group)"
   }

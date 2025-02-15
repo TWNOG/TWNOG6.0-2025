@@ -4,5 +4,10 @@
       "time": "時間",
       "name": "議程名稱"
     },
+    "backToList": "回到議程列表",
+    "loading": "載入中",
+    "speaker": "講者",
+    "presentation": "簡報",
+    "moreInfo": "更多資訊",
     "copyright": "TWNOG (Taiwan Network Operators’ Group)"
   }

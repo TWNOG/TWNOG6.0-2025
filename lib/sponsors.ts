@@ -45,7 +45,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "CHIEF 是方",
-      img: "/assets/sponsor/chief.png",
+      img: "/assets/sponsor/chief.svg",
       link: "https://www.chief.com.tw/",
     },
     {
@@ -111,8 +111,13 @@ export const sponsors: SponsorsData = {
     // },
     {
       name: "CHIEF 是方",
-      img: "/assets/sponsor/chief.png",
+      img: "/assets/sponsor/chief.svg",
       link: "https://www.chief.com.tw/",
+    },
+    {
+      name: "TPIX",
+      img: "/assets/sponsor/tpix.svg",
+      link: "https://www.tpix.net.tw/",
     },
     {
       name: "Hurricane Electric",

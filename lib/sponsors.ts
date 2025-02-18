@@ -28,7 +28,7 @@ export const sponsors: SponsorsData = {
   platinum: [
     {
       name: "APNIC",
-      img: "/assets/sponsor/apnic.png",
+      img: "/assets/sponsor/apnic.svg",
       link: "https://apnic.net/",
     },
     {
@@ -79,7 +79,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "APNIC",
-      img: "/assets/sponsor/apnic.png",
+      img: "/assets/sponsor/apnic.svg",
       link: "https://apnic.net/",
     },
   ],

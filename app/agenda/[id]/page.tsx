@@ -55,7 +55,7 @@ export default function AgendaDetailPage() {
     >
       <div className="flex items-center justify-center min-h-screen p-4">
         {/* 白色內容區塊 */}
-        <div className="relative bg-white w-full max-w-3xl rounded-lg shadow-lg p-6 md:p-8" onClick={stopPropagation}>
+        <div className="relative bg-white w-full max-w-screen-lg rounded-lg shadow-lg p-6 md:p-8" onClick={stopPropagation}>
           {/* 右上角關閉按鈕 */}
           <button
             onClick={handleClose}
@@ -105,30 +105,37 @@ export default function AgendaDetailPage() {
           {/* 講者介紹區塊 */}
           {sessionSpeakers.length > 0 && (
             <div className="mb-8">
-              <h3 className="text-gray-700 text-xl font-bold mb-4">{t("speaker")}</h3>
-              <ul className="space-y-6">
+              <ul className="list-none p-0 space-y-6">
                 {sessionSpeakers.map((speaker) => (
                   <li
                     key={speaker.id}
-                    className="flex flex-col md:flex-row items-start md:items-center space-x-4"
+                    // 1) 改用 flex-col (小螢幕) + flex-row (中螢幕)
+                    // 2) 調整 gap 或 space-x，讓左右空間更舒適
+                    className="flex flex-col md:flex-row gap-2 md:items-start"
                   >
-                    {/* 講者照片 */}
-                    {speaker.img && (
-                      <img
-                        src={speaker.img}
-                        alt={speaker.name}
-                        className="w-20 h-20 rounded-full object-cover"
-                      />
-                    )}
-                    {/* 講者姓名與簡介 */}
-                    <div className="mt-2 md:mt-0">
-                      <h4 className="text-gray-700 text-lg font-semibold">{speaker.name}</h4>
+                    {/* 左欄：文字介紹 */}
+                    <div className="md:w-2/3">
+                      <h3 className="text-gray-700 text-xl font-bold mb-4">
+                        {speaker.name}
+                      </h3>
                       {speaker.bio && (
-                        <p className="text-gray-700 mt-1 leading-relaxed">
+                        <p className="text-gray-700 mt-1 leading-relaxed whitespace-pre-line">
                           {speaker.bio}
                         </p>
                       )}
                     </div>
+
+                    {/* 右欄：人物照片 */}
+                    {speaker.img && (
+                      <div className="md:w-1/3 flex justify-end">
+                        <img
+                          src={speaker.img}
+                          alt={speaker.name}
+                          // 可以調大一點，或用 max-w-xs / w-48 / h-48 等
+                          className="w-40 h-40 rounded-lg object-cover"
+                        />
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>

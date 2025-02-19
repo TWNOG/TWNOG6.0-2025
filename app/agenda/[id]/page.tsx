@@ -43,6 +43,10 @@ export default function AgendaDetailPage() {
     router.push("/agenda");
   };
 
+  const stopPropagation = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+  };
+
   return (
     // 整個畫面使用「固定定位 + 半透明背景」，模擬彈窗浮層
     <div
@@ -51,7 +55,7 @@ export default function AgendaDetailPage() {
     >
       <div className="flex items-center justify-center min-h-screen p-4">
         {/* 白色內容區塊 */}
-        <div className="relative bg-white w-full max-w-3xl rounded-lg shadow-lg p-6 md:p-8">
+        <div className="relative bg-white w-full max-w-3xl rounded-lg shadow-lg p-6 md:p-8" onClick={stopPropagation}>
           {/* 右上角關閉按鈕 */}
           <button
             onClick={handleClose}
@@ -138,12 +142,6 @@ export default function AgendaDetailPage() {
                 {t("presentation")}
               </button>
             )}
-            <button
-              className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
-              onClick={() => alert("更多資訊...")}
-            >
-              {t("moreInfo")}
-            </button>
             {/* 若需要返回列表連結，也可使用 Link */}
             <Link
               href="/agenda"

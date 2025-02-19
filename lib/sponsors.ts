@@ -14,7 +14,7 @@ export const sponsors: SponsorsData = {
   host: [
     {
       name: "TWNOG 台灣網路維運社群",
-      img: "/assets/twnog.png",
+      img: "/assets/twnog.svg",
       link: "https://twnog.net/",
     },
     {

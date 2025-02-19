@@ -34,10 +34,10 @@ export const agenda: Agenda[] = [
     {
         id: "ab0b95",
         time: "11:10 - 12:30",
-        name: "Session B",
+        name: "One Fingerprint to rule them all",
         type: "Presentation",
         location: "402",
-        description: "TBD",
+        description: "DDOS attacks are becoming very common against network operators. They are many mitigation techniques at the network layer. This talk aims to show a unique and effective method using fingerprint technology across the whole stack and also its use in client side and server side technologies.",
     },
     {
         id: "02e348",

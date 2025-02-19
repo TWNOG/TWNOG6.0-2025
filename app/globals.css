@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -23,4 +23,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans), var(--font-geist-mono), var(--font-noto-sans-jp), var(--font-noto-sans-tc), sans-serif;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.0rem;
 }

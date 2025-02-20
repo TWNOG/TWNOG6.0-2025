@@ -63,6 +63,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/inno-tech.png",
       link: "https://www.inno-tech.com.tw/",
     },
+    {
+      name: "Opengear",
+      img: "/assets/sponsor/opengear.svg",
+      link: "https://opengear.com/",
+    },
   ],
   silver: [
     {

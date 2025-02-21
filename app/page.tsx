@@ -8,12 +8,9 @@ export default function Home() {
   const { t } = useTranslation('index');
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20">
-      {/* 主要內容放在 main */}
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
-        {/* 活動 Logo 或 Banner */}
-        {/* 你可以換成 TWNOG logo，或參考 /public 中的其他圖片 */}
         <Image
-          src="/assets/twnog.png" 
+          src="/assets/twnog.svg" 
           alt="2025 TWNOG Logo"
           width={200}
           height={80}
@@ -39,15 +36,15 @@ export default function Home() {
           </Link>
           <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/sponsor"
+            href="/traffic"
           >
-            {t('menu.sponsor')}
+            {t('menu.traffic')}
           </Link>
           <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="/agenda"
+            href="/sponsor"
           >
-            {t('menu.agenda')}
+            {t('menu.sponsor')}
           </Link>
         </div>
       </main>

@@ -126,7 +126,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "Hurricane Electric",
-      img: "/assets/sponsor/he.png",
+      img: "/assets/sponsor/he.webp",
       link: "https://he.net/",
     },
     // {

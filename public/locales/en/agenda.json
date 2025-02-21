@@ -4,6 +4,8 @@
     "time": "Time",
     "name": "Session Name"
   },
+  "backToList": "Back to the List",
+  "UnderConstruction": "This page is still under construction.",
   "loading": "Loading",
   "speaker": "Speaker",
   "presentation": "Presentation",

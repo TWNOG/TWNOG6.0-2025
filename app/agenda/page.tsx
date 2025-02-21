@@ -3,9 +3,20 @@ import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { agenda } from "@/lib/agenda";
 
+// 仍在開發中，暫時不公開議程
+const isUnderConstruction = true;
+
 export default function AgendaPage() {
   const { t } = useTranslation("agenda");
   const router = useRouter();
+
+  if (isUnderConstruction) {
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        <h1 className="text-3xl font-bold">{t("UnderConstruction")}</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">

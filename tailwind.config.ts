@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        serif: ['"Noto Serif TC"', 'serif'],
+        serif: ['"Noto Serif TC", "Noto Serif JP"', 'serif'],
       },
     },
   },

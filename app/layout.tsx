@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_TC, Noto_Sans_JP, Noto_Serif_TC } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_TC, Noto_Sans_JP, Noto_Serif_TC, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from './i18n-provider';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -14,6 +14,11 @@ const notoSerifTC = Noto_Serif_TC({
 
 const notoSansTC = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
+  preload: false
+});
+
+const notoSerifJP = Noto_Serif_JP({
+  variable: "--font-noto-serif-jp",
   preload: false
 });
 
@@ -62,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSansTC.variable} ${notoSansJP.variable} ${notoSerifTC.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${notoSansTC.variable} ${notoSansJP.variable} ${notoSerifTC.variable} ${notoSerifJP.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <I18nProvider>
           <Navbar />
           {children}

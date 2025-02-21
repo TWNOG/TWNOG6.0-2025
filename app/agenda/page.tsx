@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { agenda } from "@/lib/agenda";
+import { Construction } from 'lucide-react';
 
 // 仍在開發中，暫時不公開議程
 const isUnderConstruction = true;
@@ -13,7 +14,7 @@ export default function AgendaPage() {
   if (isUnderConstruction) {
     return (
       <div className="min-h-screen flex justify-center items-center">
-        <h1 className="text-3xl font-bold">{t("UnderConstruction")}</h1>
+        <h1 className="text-3xl font-bold text-center"><Construction className="mb-2 inline-block text-yellow-600" size={128}/><br />{t("UnderConstruction")}</h1>
       </div>
     );
   }

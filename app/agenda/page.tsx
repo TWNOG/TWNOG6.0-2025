@@ -1,20 +1,23 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import { agenda } from "@/lib/agenda";
+import { Construction } from 'lucide-react';
+
+// 仍在開發中，暫時不公開議程
+const isUnderConstruction = true;
 
 export default function AgendaPage() {
   const { t } = useTranslation("agenda");
+  const router = useRouter();
 
-  const agendaItems = [
-    { time: "09:00 - 09:20", name: "Welcome Remark" },
-    { time: "09:30 - 10:50", name: "Session A" },
-    { time: "10:50 - 11:10", name: "Coffee Break" },
-    { time: "11:10 - 12:30", name: "Session B" },
-    { time: "12:30 - 13:30", name: "Lunch Break" },
-    { time: "13:30 - 15:00", name: "Session C" },
-    { time: "15:00 - 15:20", name: "Coffee Break" },
-    { time: "15:20 - 17:00", name: "Session D" },
-  ];
+  if (isUnderConstruction) {
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        <h1 className="text-3xl font-bold text-center"><Construction className="mb-2 inline-block text-yellow-600" size={128}/><br />{t("UnderConstruction")}</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -36,21 +39,14 @@ export default function AgendaPage() {
                 </tr>
               </thead>
               <tbody>
-                {agendaItems.map((item, index) => (
-                  <tr 
-                    key={index} 
-                    className={`
-                      ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} 
-                      hover:bg-gray-50 transition-colors duration-200
-                      border-b last:border-b-0
-                    `}
+                {agenda.map((item, index) => (
+                  <tr
+                    key={item.id}
+                    onClick={() => router.push(`/agenda/${item.id}`)}
+                    className={`${index % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-gray-100 transition-colors duration-200 border-b last:border-b-0 cursor-pointer`}
                   >
-                    <td className="py-4 px-4 text-gray-800 font-medium">
-                      {item.time}
-                    </td>
-                    <td className="py-4 px-4 text-gray-600">
-                      {item.name}
-                    </td>
+                    <td className="py-4 px-4 text-gray-800 font-medium">{item.time}</td>
+                    <td className="py-4 px-4 text-gray-600">{item.name}</td>
                   </tr>
                 ))}
               </tbody>

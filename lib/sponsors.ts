@@ -14,7 +14,7 @@ export const sponsors: SponsorsData = {
   host: [
     {
       name: "TWNOG 台灣網路維運社群",
-      img: "/assets/twnog.png",
+      img: "/assets/twnog.svg",
       link: "https://twnog.net/",
     },
     {
@@ -28,7 +28,7 @@ export const sponsors: SponsorsData = {
   platinum: [
     {
       name: "APNIC",
-      img: "/assets/sponsor/apnic.png",
+      img: "/assets/sponsor/apnic.svg",
       link: "https://apnic.net/",
     },
     {
@@ -45,7 +45,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "CHIEF 是方",
-      img: "/assets/sponsor/chief.png",
+      img: "/assets/sponsor/chief.svg",
       link: "https://www.chief.com.tw/",
     },
     {
@@ -63,6 +63,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/inno-tech.png",
       link: "https://www.inno-tech.com.tw/",
     },
+    {
+      name: "Opengear",
+      img: "/assets/sponsor/opengear.svg",
+      link: "https://opengear.com/",
+    },
   ],
   silver: [
     {
@@ -79,7 +84,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "APNIC",
-      img: "/assets/sponsor/apnic.png",
+      img: "/assets/sponsor/apnic.svg",
       link: "https://apnic.net/",
     },
   ],
@@ -111,12 +116,17 @@ export const sponsors: SponsorsData = {
     // },
     {
       name: "CHIEF 是方",
-      img: "/assets/sponsor/chief.png",
+      img: "/assets/sponsor/chief.svg",
       link: "https://www.chief.com.tw/",
     },
     {
+      name: "TPIX",
+      img: "/assets/sponsor/tpix.svg",
+      link: "https://www.tpix.net.tw/",
+    },
+    {
       name: "Hurricane Electric",
-      img: "/assets/sponsor/he.png",
+      img: "/assets/sponsor/he.webp",
       link: "https://he.net/",
     },
     // {

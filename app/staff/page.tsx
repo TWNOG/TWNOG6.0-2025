@@ -6,18 +6,30 @@ import Profile from "@/app/components/profile";
 
 export default function StaffPage() {
     const { t } = useTranslation("staff");
+
+    // 將所有 staff 依據 groups 分組
+    const groupedStaff: { [key: string]: Staff[] } = {};
+    staff.forEach((member) => {
+        member.groups.forEach((group) => {
+            if (!groupedStaff[group]) {
+                groupedStaff[group] = [];
+            }
+            groupedStaff[group].push(member);
+        });
+    });
+
     const renderStaffLevel = (level: string, staffList: Staff[]) => (
         <div key={level} className="mb-8">
             <h2 className="text-xl font-bold capitalize mb-2">{t(`group.${level}`)}</h2>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-                {staffList.map((staff, index) => (
+                {staffList.map((staffMember, index) => (
                     <div key={index} className="text-center">
-                        {staff.link ? (
-                            <a href={staff.link} target="_blank" rel="noopener noreferrer">
-                                <Profile staff={staff} />
+                        {staffMember.link ? (
+                            <a href={staffMember.link} target="_blank" rel="noopener noreferrer">
+                                <Profile staff={staffMember} />
                             </a>
                         ) : (
-                            <Profile staff={staff} />
+                            <Profile staff={staffMember} />
                         )}
                     </div>
                 ))}
@@ -31,17 +43,12 @@ export default function StaffPage() {
                 <h2 className="text-xl font-bold mb-2">{t("pageTitle")}</h2>
                 <p className="mb-8">{t("pageDescription")}</p>
 
-                {/* 贊助廠商們 */}
+                {/* 根據分組 render staff */}
                 <div className="mb-8">
-                    {Object.entries(staff).map(([level, staffList]) =>
-                        staffList.length === 0 ? null : renderStaffLevel(level, staffList
-                        ))
-                    }
+                    {Object.entries(groupedStaff).map(([level, staffList]) =>
+                        staffList.length === 0 ? null : renderStaffLevel(level, staffList)
+                    )}
                 </div>
-
-                {/* 使用 t("pageTitle") 顯示主標題，如有需要可加上 h1 */}
-
-
             </section>
         </div>
     );

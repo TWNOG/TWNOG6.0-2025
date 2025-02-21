@@ -1,8 +1,13 @@
 {
-    "pageTitle": "Agenda",
-    "sessions": {
-      "time": "Time",
-      "name": "Session Name"
-    },
-    "copyright": "TWNOG (Taiwan Network Operators’ Group)"
-  }
+  "pageTitle": "Agenda",
+  "sessions": {
+    "time": "Time",
+    "name": "Session Name"
+  },
+  "backToList": "Back to the List",
+  "UnderConstruction": "This page is still under construction.",
+  "loading": "Loading",
+  "speaker": "Speaker",
+  "presentation": "Presentation",
+  "copyright": "TWNOG (Taiwan Network Operators’ Group)"
+}

@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'var(--font-geist-mono)', 'var(--font-noto-sans-tc)', 'var(--font-noto-sans-jp)', 'sans'],
+        serif: ['var(--font-noto-serif-tc)', 'var(--font-noto-serif-jp)', 'serif'],
+      },
     },
   },
   plugins: [],

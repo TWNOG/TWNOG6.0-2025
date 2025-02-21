@@ -1,8 +1,13 @@
 {
-    "pageTitle": "活動議程",
-    "sessions": {
-      "time": "時間",
-      "name": "議程名稱"
-    },
-    "copyright": "TWNOG (Taiwan Network Operators’ Group)"
-  }
+  "pageTitle": "活動議程",
+  "sessions": {
+    "time": "時間",
+    "name": "議程名稱"
+  },
+  "backToList": "回到議程列表",
+  "UnderConstruction": "此頁面仍在建置中",
+  "loading": "載入中",
+  "speaker": "講者",
+  "presentation": "簡報",
+  "copyright": "TWNOG (Taiwan Network Operators’ Group)"
+}

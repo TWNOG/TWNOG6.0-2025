@@ -13,7 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        serif: ['"Noto Serif TC", "Noto Serif JP"', 'serif'],
+        sans: ['var(--font-geist-sans)', 'var(--font-geist-mono)', 'var(--font-noto-sans-tc)', 'var(--font-noto-sans-jp)', 'sans'],
+        serif: ['var(--font-noto-serif-tc)', 'var(--font-noto-serif-jp)', 'serif'],
       },
     },
   },

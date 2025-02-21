@@ -13,7 +13,7 @@ export default function Footer() {
 
     return (
       <footer className="pb-20 flex gap-6 flex-wrap items-center justify-center">
-        <p className="text-sm sm:text-base">
+        <p className="text-sm sm:text-base font-sans">
           © 2025 {t('copyright')}
         </p>
         {/* 如有社群連結可加在這裡 */}

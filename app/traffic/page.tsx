@@ -23,7 +23,7 @@ export default function TrafficPage() {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("locationTitle")}</h3>
-                    <div className="space-y-2">
+                    <div className="font-serif space-y-2">
                         <p>{t("locationName")}</p>
                         <p>{t("locationAddress")}</p>
                     </div>
@@ -31,7 +31,7 @@ export default function TrafficPage() {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("mrtTitle")}</h3>
-                    <ul className="list-disc list-inside space-y-2">
+                    <ul className="font-serif list-disc list-inside space-y-2">
                         <li>{t("mtrDescription.0")}</li>
                         <li>{t("mtrDescription.1")}</li>
                     </ul>
@@ -39,7 +39,7 @@ export default function TrafficPage() {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("busTitle")}</h3>
-                    <ul className="list-disc list-inside space-y-2">
+                    <ul className="font-serif list-disc list-inside space-y-2">
                         <li>{t("busDescription.0")}</li>
                         <li>{t("busDescription.1")}</li>
                         <li>{t("busDescription.2")}</li>
@@ -50,7 +50,7 @@ export default function TrafficPage() {
 
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2">{t("driveTitle")}</h3>
-                    <ul className="list-disc list-inside space-y-2">
+                    <ul className="font-serif list-disc list-inside space-y-2">
                         <li>{t("driveDescription.0")}</li>
                         <li>{t("driveDescription.1")}</li>
                     </ul>

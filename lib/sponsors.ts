@@ -36,6 +36,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/jpix.svg",
       link: "https://www.jpix.ad.jp/",
     },
+    {
+      name: "Nokia",
+      img: "/assets/sponsor/nokia.png",
+      link: "https://www.nokia.com/",
+    },
   ],
   gold: [
     {

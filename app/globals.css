@@ -22,11 +22,11 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  @apply font-serif;
+  @apply font-sans;
 }
 
-h1, h2, h3, h4, h5, h6, th {
-  @apply font-sans;
+p, li {
+  @apply font-serif;
 }
 
 .text-xl {

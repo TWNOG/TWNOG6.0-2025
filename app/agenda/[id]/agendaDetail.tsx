@@ -1,12 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { speakers, type Speaker } from "@/lib/speakers";
 import { agenda, type Agenda } from "@/lib/agenda";
-
-export const runtime = 'edge';
 
 type AgendaItem = Agenda & {
   speaker?: string;
@@ -16,12 +13,8 @@ type AgendaItem = Agenda & {
 export default function AgendaDetailPage({ id }: { id: string }) {
   const { t } = useTranslation("agenda");
   const router = useRouter();
-  const [agendaItem, setAgendaItem] = useState<AgendaItem | null>(null);
 
-  useEffect(() => {
-    const foundItem = agenda.find((item) => item.id === id);
-    setAgendaItem(foundItem || null);
-  }, [id]);
+  const agendaItem: AgendaItem | undefined = agenda.find((item) => item.id === id);
 
   // 如果找不到對應的議程，顯示載入或 404
   if (!agendaItem) {

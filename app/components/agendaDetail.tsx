@@ -42,12 +42,12 @@ export default function AgendaDetailPage({ id }: { id: string }) {
   return (
     // 整個畫面使用「固定定位 + 半透明背景」，模擬彈窗浮層
     <div
-      className="fixed inset-0 z-50 bg-black bg-opacity-60 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black bg-opacity-60"
       onClick={handleClose}
     >
-      <div className="flex items-center justify-center min-h-screen p-4">
+      <div className="flex items-center justify-center h-screen p-4">
         {/* 白色內容區塊 */}
-        <div className="relative bg-white w-full max-w-screen-lg rounded-lg shadow-lg p-6 md:p-8" onClick={stopPropagation}>
+        <div className="relative bg-white w-full max-w-screen-lg max-h-full overflow-y-auto rounded-lg shadow-lg p-6 md:p-8" onClick={stopPropagation}>
           {/* 右上角關閉按鈕 */}
           <button
             onClick={handleClose}

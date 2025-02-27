@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
     images: [
       {
-        url: "https://dev.2025-twnog-net.pages.dev/assets/twnog6-banner.jpg",
+        url: "https://2025.twnog.net/assets/twnog6-banner.jpg",
         width: 1200,
         height: 630,
       }
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "TWNOG 6",
     description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
-    images: "https://dev.2025-twnog-net.pages.dev/assets/twnog6-banner.jpg",
+    images: "https://2025.twnog.net/assets/twnog6-banner.jpg",
     card: "summary_large_image",
   },
 };

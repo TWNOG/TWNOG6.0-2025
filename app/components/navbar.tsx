@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`${pathname == "/" ? 'fixed' : 'sticky'} top-0 left-0 right-0 z-10 bg-inherit px-6 py-4 font-sans`}>
+    <nav className={`${pathname == "/" ? 'fixed' : 'sticky'} top-0 left-0 right-0 z-10 bg-inherit px-6 py-4`}>
       <div className='max-w-4xl mx-auto flex items-center justify-between'>
         <div>
           <Link className='font-bold' href='/'><span className='text-xl'>TWNOG 6</span></Link>

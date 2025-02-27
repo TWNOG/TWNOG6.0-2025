@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </main>
 
-      <p className="row-start-3 text-sm sm:text-base">
+      <p className="row-start-3 text-sm sm:text-base font-sans">
         © 2025 {t('copyright')}
       </p>
     </div>

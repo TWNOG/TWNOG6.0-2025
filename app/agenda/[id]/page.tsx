@@ -1,6 +1,5 @@
-import { use } from "react"
 import { agenda } from "@/lib/agenda";
-import AgendaDetail from "./agendaDetail";
+import AgendaTable from "@/app/components/agendaTable";
 
 export function generateStaticParams() {
   return agenda.map((item) => ({
@@ -8,9 +7,6 @@ export function generateStaticParams() {
   }));
 }
 
-export default function AgendaDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
-  return (
-    <AgendaDetail id={id} />
-  );
+export default function AgendaPage() {
+  return <AgendaTable />;
 }

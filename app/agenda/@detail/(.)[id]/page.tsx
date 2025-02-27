@@ -1,6 +1,6 @@
 import { use } from "react"
 import { agenda } from "@/lib/agenda";
-import AgendaDetail from "../../../components/agendaDetail";
+import AgendaDetail from "@/app/components/agendaDetail";
 
 export function generateStaticParams() {
   return agenda.map((item) => ({

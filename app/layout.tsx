@@ -39,11 +39,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TWNOG 6",
-  description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+  description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
   keywords: "TWNOG, TWNOG6, TWNOG 6, TWNOG 2025, 台灣網路維運論壇, Network, Internet, 大會, 網路工程, IPv6, BGP, 資料中心, 雲端網路, 網路安全, ISP, 教育訓練, 研討會, 國立臺灣大學醫院國際會議中心",
   openGraph: {
     title: "TWNOG 6",
-    description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+    description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
     images: [
       {
         url: "https://2025.twnog.net/assets/twnog6-banner.jpg",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "TWNOG 6",
-    description: "The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+    description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
     images: "https://2025.twnog.net/assets/twnog6-banner.jpg",
     card: "summary_large_image",
   },

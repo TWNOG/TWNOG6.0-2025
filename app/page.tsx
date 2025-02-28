@@ -6,6 +6,38 @@ import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const { t } = useTranslation('index');
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "TWNOG 6",
+    startDate: "2025-04-18T08:00:00+08:00",
+    endDate: "2025-04-18T17:00:00+08:00",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    location: {
+      "@type": "Place",
+      name: "臺大醫院國際會議中心 NTU Hospital International Convention Center",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "No. 7, Chung-Shan S. Rd.",
+        addressLocality: "Zhongzheng District",
+        addressRegion: "Taipei City",
+        postalCode: "100",
+        addressCountry: "TW"
+      }
+    },
+    image: [
+      "https://2025.twnog.net/assets/twnog6-banner.jpg"
+    ],
+    description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
+    organizer: {
+      "@type": "Organization",
+      name: "TWNOG",
+      url: "https://twnog.net/"
+    }
+  };
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
@@ -52,6 +84,11 @@ export default function Home() {
       <p className="row-start-3 text-sm sm:text-base font-sans">
         © 2025 {t('copyright')}
       </p>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </div>
   );
 }

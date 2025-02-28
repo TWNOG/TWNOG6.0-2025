@@ -20,7 +20,7 @@ export default function Home() {
       name: "臺大醫院國際會議中心 NTU Hospital International Convention Center",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "No. 7, Chung-Shan S. Rd.",
+        streetAddress: "No. 2, Xuzhou Road",
         addressLocality: "Zhongzheng District",
         addressRegion: "Taipei City",
         postalCode: "100",

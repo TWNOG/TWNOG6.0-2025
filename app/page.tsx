@@ -35,6 +35,10 @@ export default function Home() {
       "@type": "Organization",
       name: "TWNOG",
       url: "https://twnog.net/"
+    },
+    offers: {
+      "@type": "Offer",
+      url: "https://twnog.kktix.cc/events/2025twnog6",
     }
   };
 

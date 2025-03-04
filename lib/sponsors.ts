@@ -73,6 +73,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/opengear.svg",
       link: "https://opengear.com/",
     },
+    {
+      name: "Equinix",
+      img: "/assets/sponsor/equinix.svg",
+      link: "https://www.equinix.com/",
+    },
   ],
   silver: [
     {

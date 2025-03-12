@@ -41,6 +41,16 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/nokia.png",
       link: "https://www.nokia.com/",
     },
+    {
+      name: "Chunghwa Telecom",
+      img: "/assets/sponsor/cht.svg",
+      link: "https://www.cht.com.tw",
+    },
+    {
+      name: "Chunghwa Telecom",
+      img: "/assets/sponsor/cht_cdn.svg",
+      link: "https://www.cht.com.tw",
+    },
   ],
   gold: [
     {

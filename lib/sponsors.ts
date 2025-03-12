@@ -27,9 +27,14 @@ export const sponsors: SponsorsData = {
   ],
   platinum: [
     {
-      name: "APNIC",
-      img: "/assets/sponsor/apnic.svg",
-      link: "https://apnic.net/",
+      name: "Chunghwa Telecom",
+      img: "/assets/sponsor/cht.svg",
+      link: "https://www.cht.com.tw",
+    },
+    {
+      name: "Chunghwa Telecom",
+      img: "/assets/sponsor/cht_cdn.svg",
+      link: "https://www.cht.com.tw",
     },
     {
       name: "JPIX",
@@ -42,14 +47,9 @@ export const sponsors: SponsorsData = {
       link: "https://www.nokia.com/",
     },
     {
-      name: "Chunghwa Telecom",
-      img: "/assets/sponsor/cht.svg",
-      link: "https://www.cht.com.tw",
-    },
-    {
-      name: "Chunghwa Telecom",
-      img: "/assets/sponsor/cht_cdn.svg",
-      link: "https://www.cht.com.tw",
+      name: "APNIC",
+      img: "/assets/sponsor/apnic.svg",
+      link: "https://apnic.net/",
     },
   ],
   gold: [

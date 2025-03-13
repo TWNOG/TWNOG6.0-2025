@@ -5,13 +5,13 @@ import { sponsors, Sponsor } from "@/lib/sponsors";
 import Image from "next/image";
 
 const sponsorLogoSize: { [level: string]: string } = {
-  host:     "grid-cols-2 md:grid-cols-3",
-  titanium: "grid-cols-2 md:grid-cols-3",
-  platinum: "grid-cols-2 md:grid-cols-3",
-  gold:     "grid-cols-2 md:grid-cols-4",
-  silver:   "grid-cols-3 md:grid-cols-5",
-  workshop: "grid-cols-3 md:grid-cols-5",
-  internet: "grid-cols-3 md:grid-cols-5",
+  host:     "grid-cols-1 md:grid-cols-2 px-20 max-[512px]:px-16",
+  titanium: "grid-cols-1 md:grid-cols-2 px-20 max-[512px]:px-16",
+  platinum: "grid-cols-1 md:grid-cols-2 px-20 max-[512px]:px-16",
+  gold:     "grid-cols-2 md:grid-cols-3",
+  silver:   "grid-cols-2 md:grid-cols-4",
+  workshop: "grid-cols-2 md:grid-cols-4",
+  internet: "grid-cols-2 md:grid-cols-4",
 };
 
 export default function SponsorPage() {

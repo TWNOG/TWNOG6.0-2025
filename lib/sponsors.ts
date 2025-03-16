@@ -88,6 +88,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/equinix.svg",
       link: "https://www.equinix.com/",
     },
+    {
+      name: "BBIX",
+      img: "/assets/sponsor/bbix.svg",
+      link: "https://www.bbix.net/",
+    },
   ],
   silver: [
     {
@@ -123,11 +128,6 @@ export const sponsors: SponsorsData = {
     //   name: "國立臺灣大學醫學院附設醫院資訊室",
     //   img: "/assets/sponsor/ntu.png",
     //   link: "https://www.ntuh.gov.tw/mis/Index.action",
-    // },
-    // {
-    //   name: "國立臺灣大學醫學院資訊組",
-    //   img: "/assets/sponsor/ntumi.png",
-    //   link: "https://www.mc.ntu.edu.tw/ntumi/Index.action",
     // },
     // {
     //   name: "台灣智慧光網",

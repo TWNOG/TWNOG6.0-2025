@@ -33,7 +33,7 @@ export const speakers: Speaker[] = [
       He has helped customer architect solutions to protect both their web and video streaming infrastructure. 
       He also has experience in API security and fingerprinting solutions.`,
         img: "/assets/speakers/4c42a9.jpg",
-        sessionIds: ["ab0b95"]
+        sessionIds: []
     },
     {
         name: "小易",
@@ -48,7 +48,7 @@ In terms of technical expertise, I specialize in Networking SRE (Site Reliabilit
 
 <li>steveyi</li>
 `,
-        sessionIds: ["c11a30", "ab0b95"]
+        sessionIds: []
     },
     {
         name: "",

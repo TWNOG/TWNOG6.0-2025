@@ -114,11 +114,11 @@ export const sponsors: SponsorsData = {
     },
   ],
   internet: [
-    // {
-    //   name: "TWAREN (Taiwan Advanced Research & Education Network)",
-    //   img: "/assets/sponsor/twaren.png",
-    //   link: "https://www.twaren.net/",
-    // },
+    {
+      name: "TWAREN (Taiwan Advanced Research & Education Network)",
+      img: "/assets/sponsor/twaren.svg",
+      link: "https://www.twaren.net/",
+    },
     // {
     //   name: "國立臺灣大學計算機及資訊網路中心",
     //   img: "/assets/sponsor/ntu.png",
@@ -149,10 +149,15 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/he.webp",
       link: "https://he.net/",
     },
-    // {
-    //   name: "福爾摩沙開放網際網路交換中心",
-    //   img: "/assets/sponsor/fox.png",
-    //   link: "https://www.fox.net.tw/",
-    // },
+    {
+      name: "National Center for High-performance Computing",
+      img: "/assets/sponsor/nchc.svg",
+      link: "https://www.nchc.org.tw/",
+    },
+    {
+      name: "福爾摩沙開放網際網路交換中心",
+      img: "/assets/sponsor/fox.svg",
+      link: "https://www.fox.net.tw/",
+    },
   ]
 };

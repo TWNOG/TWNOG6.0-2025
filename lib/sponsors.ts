@@ -93,6 +93,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/bbix.svg",
       link: "https://www.bbix.net/",
     },
+    {
+      name: "Sky Digital",
+      img: "/assets/sponsor/sky.svg",
+      link: "https://imcloud.tw/",
+    },
   ],
   silver: [
     {

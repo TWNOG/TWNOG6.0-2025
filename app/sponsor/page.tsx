@@ -23,7 +23,7 @@ export default function SponsorPage() {
         {sponsorList.map((sponsor, index) => (
           <div
             key={index}
-            className="flex items-center justify-center border border-gray-300 p-4 bg-white rounded-lg aspect-[16/9]"
+            className="relative flex items-center justify-center border border-gray-300 bg-white rounded-lg aspect-[16/9]"
           >
             <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="h-[80%] w-[80%]">
               <Image

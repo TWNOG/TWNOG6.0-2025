@@ -18,7 +18,7 @@ export default function SponsorPage() {
   const { t } = useTranslation("sponsor");
   const renderSponsorLevel = (level: string, sponsorList: Sponsor[]) => (
     <div key={level} className="mb-8">
-      <h2 className="text-xl font-bold capitalize mb-2">{t(`table.header.${level}`)}</h2>
+      <h2 className="text-2xl font-bold capitalize mb-2">{t(`table.header.${level}`)}</h2>
       <div className={"grid gap-4 " + sponsorLogoSize[level]}>
         {sponsorList.map((sponsor, index) => (
           <div

@@ -88,6 +88,16 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/equinix.svg",
       link: "https://www.equinix.com/",
     },
+    {
+      name: "BBIX",
+      img: "/assets/sponsor/bbix.svg",
+      link: "https://www.bbix.net/",
+    },
+    {
+      name: "Sky Digital",
+      img: "/assets/sponsor/sky.svg",
+      link: "https://imcloud.tw/",
+    },
   ],
   silver: [
     {
@@ -109,11 +119,11 @@ export const sponsors: SponsorsData = {
     },
   ],
   internet: [
-    // {
-    //   name: "TWAREN (Taiwan Advanced Research & Education Network)",
-    //   img: "/assets/sponsor/twaren.png",
-    //   link: "https://www.twaren.net/",
-    // },
+    {
+      name: "TWAREN (Taiwan Advanced Research & Education Network)",
+      img: "/assets/sponsor/twaren.svg",
+      link: "https://www.twaren.net/",
+    },
     // {
     //   name: "國立臺灣大學計算機及資訊網路中心",
     //   img: "/assets/sponsor/ntu.png",
@@ -123,11 +133,6 @@ export const sponsors: SponsorsData = {
     //   name: "國立臺灣大學醫學院附設醫院資訊室",
     //   img: "/assets/sponsor/ntu.png",
     //   link: "https://www.ntuh.gov.tw/mis/Index.action",
-    // },
-    // {
-    //   name: "國立臺灣大學醫學院資訊組",
-    //   img: "/assets/sponsor/ntumi.png",
-    //   link: "https://www.mc.ntu.edu.tw/ntumi/Index.action",
     // },
     // {
     //   name: "台灣智慧光網",
@@ -149,10 +154,15 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/he.webp",
       link: "https://he.net/",
     },
-    // {
-    //   name: "福爾摩沙開放網際網路交換中心",
-    //   img: "/assets/sponsor/fox.png",
-    //   link: "https://www.fox.net.tw/",
-    // },
+    {
+      name: "National Center for High-performance Computing",
+      img: "/assets/sponsor/nchc.svg",
+      link: "https://www.nchc.org.tw/",
+    },
+    {
+      name: "福爾摩沙開放網際網路交換中心",
+      img: "/assets/sponsor/fox.svg",
+      link: "https://www.fox.net.tw/",
+    },
   ]
 };

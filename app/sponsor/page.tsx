@@ -4,24 +4,34 @@ import { useTranslation } from "react-i18next";
 import { sponsors, Sponsor } from "@/lib/sponsors";
 import Image from "next/image";
 
+const sponsorLogoSize: { [level: string]: string } = {
+  host:     "grid-cols-1 md:grid-cols-2",
+  titanium: "grid-cols-1 md:grid-cols-2",
+  platinum: "grid-cols-1 md:grid-cols-3",
+  gold:     "grid-cols-1 md:grid-cols-3",
+  silver:   "grid-cols-2 md:grid-cols-4",
+  workshop: "grid-cols-2 md:grid-cols-4",
+  internet: "grid-cols-2 md:grid-cols-4",
+};
+
 export default function SponsorPage() {
   const { t } = useTranslation("sponsor");
   const renderSponsorLevel = (level: string, sponsorList: Sponsor[]) => (
     <div key={level} className="mb-8">
-      <h2 className="text-xl font-bold capitalize mb-2">{t(`table.header.${level}`)}</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <h2 className="text-2xl font-bold capitalize mb-2">{t(`table.header.${level}`)}</h2>
+      <div className={"grid gap-4 " + sponsorLogoSize[level]}>
         {sponsorList.map((sponsor, index) => (
           <div
             key={index}
-            className="flex items-center justify-center border border-gray-300 p-4 bg-white rounded-lg h-32"
+            className="flex items-center justify-center border border-gray-300 bg-white rounded-lg aspect-[2/1]"
           >
-            <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+            <a href={sponsor.link} target="_blank" rel="noopener noreferrer" className="h-[80%] w-[80%]">
               <Image
                 src={sponsor.img}
                 alt={sponsor.name}
                 width={256}
                 height={24}
-                className="h-24 w-auto object-contain"
+                className="h-full w-full object-contain"
               />
             </a>
           </div>

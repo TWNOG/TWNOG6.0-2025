@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav className={`${pathname == "/" ? 'fixed' : 'sticky'} top-0 left-0 right-0 z-10 bg-inherit px-6 py-4`}>
       <div className='max-w-4xl mx-auto flex items-center justify-between'>
         <div>
-          <Link className='font-bold' href='/'><span className='text-xl'>TWNOG 6</span></Link>
+          <Link className='font-bold' href='/'><span className='text-2xl'>TWNOG 6</span></Link>
         </div>
         <div className='hidden lg:flex space-x-4'>
           {Object.entries(links).map(([key, value]) => (

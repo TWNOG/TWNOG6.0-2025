@@ -32,7 +32,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
 
   // 按下關閉按鈕或背景時，返回議程列表
   const handleClose = () => {
-    router.push("/agenda");
+    router.push("/agenda", { scroll: false });
   };
 
   const stopPropagation = (e: React.MouseEvent<HTMLDivElement>) => {

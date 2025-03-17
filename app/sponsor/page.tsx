@@ -7,8 +7,8 @@ import Image from "next/image";
 const sponsorLogoSize: { [level: string]: string } = {
   host:     "grid-cols-1 md:grid-cols-2 px-25 max-[512px]:px-25",
   titanium: "grid-cols-1 md:grid-cols-2 px-25 max-[512px]:px-25",
-  platinum: "grid-cols-1 md:grid-cols-2 px-25 max-[512px]:px-25",
-  gold:     "grid-cols-2 md:grid-cols-3",
+  platinum: "grid-cols-1 md:grid-cols-3",
+  gold:     "grid-cols-1 md:grid-cols-3",
   silver:   "grid-cols-2 md:grid-cols-4",
   workshop: "grid-cols-2 md:grid-cols-4",
   internet: "grid-cols-2 md:grid-cols-4",

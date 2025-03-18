@@ -9,7 +9,8 @@
       "titanium": "鈦金級",
       "platinum": "白金級",
       "gold": "黃金級",
-      "silver": "銀級"
+      "silver": "銀級",
+      "special_thanks": "特別感謝"
     },
     "rows": {
       "sponsorSession": "贊助議程",

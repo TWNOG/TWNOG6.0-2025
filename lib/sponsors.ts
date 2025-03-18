@@ -164,5 +164,12 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/fox.svg",
       link: "https://www.fox.net.tw/",
     },
+  ],
+  special_thanks: [
+    {
+      name: "方格子創意",
+      img: "/assets/sponsor/lighthouse.svg",
+      link: "https://lighthousecc.tw/",
+    },
   ]
 };

@@ -12,6 +12,7 @@ const sponsorLogoSize: { [level: string]: string } = {
   silver:   "grid-cols-2 md:grid-cols-4",
   workshop: "grid-cols-2 md:grid-cols-4",
   internet: "grid-cols-2 md:grid-cols-4",
+  special_thanks: "grid-cols-2 md:grid-cols-4",
 };
 
 export default function SponsorPage() {

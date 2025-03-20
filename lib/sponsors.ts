@@ -105,6 +105,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/sky.svg",
       link: "https://imcloud.tw/",
     },
+    {
+      name: "Kentik",
+      img: "/assets/sponsor/kentik.svg",
+      link: "https://www.kentik.com/",
+    },
   ],
   silver: [
     {

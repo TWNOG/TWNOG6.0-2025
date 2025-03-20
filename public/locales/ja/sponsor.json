@@ -3,6 +3,7 @@
   "table": {
     "header": {
       "host": "主催",
+      "cohost": "协力",
       "workshop": "ワークショップ",
       "internet": "インターネット",
       "level": "スポンサーレベル",

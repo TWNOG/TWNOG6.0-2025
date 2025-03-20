@@ -23,6 +23,13 @@ export const sponsors: SponsorsData = {
       link: "https://ocf.tw/",
     },
   ],
+  cohost: [
+    {
+      name: "資訊聯盟",
+      img: "/assets/sponsor/isaroc.svg",
+      link: "https://isaroc.org/",
+    },
+  ],
   titanium: [
   ],
   platinum: [

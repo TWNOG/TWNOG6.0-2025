@@ -3,6 +3,7 @@
   "table": {
     "header": {
       "host": "共同主辦",
+      "cohost": "協辦單位",
       "workshop": "工作坊",
       "internet": "網路服務",
       "level": "贊助等級",

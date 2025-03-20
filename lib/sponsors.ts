@@ -23,6 +23,13 @@ export const sponsors: SponsorsData = {
       link: "https://ocf.tw/",
     },
   ],
+  cohost: [
+    {
+      name: "資訊聯盟",
+      img: "/assets/sponsor/isaroc.svg",
+      link: "https://isaroc.org/",
+    },
+  ],
   titanium: [
   ],
   platinum: [
@@ -97,6 +104,11 @@ export const sponsors: SponsorsData = {
       name: "Sky Digital",
       img: "/assets/sponsor/sky.svg",
       link: "https://imcloud.tw/",
+    },
+    {
+      name: "Kentik",
+      img: "/assets/sponsor/kentik.svg",
+      link: "https://www.kentik.com/",
     },
   ],
   silver: [

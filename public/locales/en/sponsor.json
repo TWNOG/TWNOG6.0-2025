@@ -3,6 +3,7 @@
   "table": {
     "header": {
       "host": "Host",
+      "cohost": "Co-Host",
       "workshop": "Workshop",
       "internet": "Internet",
       "level": "Sponsor Level",

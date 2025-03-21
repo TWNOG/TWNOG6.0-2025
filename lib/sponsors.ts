@@ -112,7 +112,7 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "Amazon Web Service",
-      img: "/assets/sponsor/aws.png",
+      img: "/assets/sponsor/aws.svg",
       link: "https://aws.amazon.com/",
     },
     {
@@ -121,7 +121,6 @@ export const sponsors: SponsorsData = {
       link: "https://www.team-cymru.com/",
     },
   ],
-  // cymru.png
   silver: [
     {
       name: "ICANN",

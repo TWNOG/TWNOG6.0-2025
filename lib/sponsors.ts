@@ -110,6 +110,16 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/kentik.svg",
       link: "https://www.kentik.com/",
     },
+    {
+      name: "Amazon Web Service",
+      img: "/assets/sponsor/aws.svg",
+      link: "https://aws.amazon.com/",
+    },
+    {
+      name: "Cymru",
+      img: "/assets/sponsor/cymru.png",
+      link: "https://www.team-cymru.com/",
+    },
   ],
   silver: [
     {

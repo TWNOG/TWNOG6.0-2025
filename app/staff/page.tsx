@@ -20,7 +20,7 @@ export default function StaffPage() {
 
     const renderStaffLevel = (level: string, staffList: Staff[]) => (
         <div key={level} className="mb-8">
-            <h2 className="text-xl font-bold capitalize mb-2">{t(`group.${level}`)}</h2>
+            <h2 className="text-xl font-bold capitalize mb-8">{t(`group.${level}`)}</h2>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
                 {staffList.map((staffMember, index) => (
                     <div key={index} className="text-center">

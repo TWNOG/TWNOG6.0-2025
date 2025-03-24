@@ -186,6 +186,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/fox.svg",
       link: "https://www.fox.net.tw/",
     },
+    {
+      name: "TWNIC",
+      img: "/assets/sponsor/twnic.svg",
+      link: "https://www.twnic.tw/",
+    },
   ],
   special_thanks: [
     {

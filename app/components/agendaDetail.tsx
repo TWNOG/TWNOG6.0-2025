@@ -105,21 +105,9 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                     // 2) 調整 gap 或 space-x，讓左右空間更舒適
                     className="flex flex-col md:flex-row gap-2 md:items-start"
                   >
-                    {/* 左欄：文字介紹 */}
-                    <div className="md:w-2/3">
-                      <h3 className="text-gray-700 text-xl font-bold mb-4">
-                        {speaker.name}
-                      </h3>
-                      {speaker.bio && (
-                        <p className="text-gray-700 mt-1 leading-relaxed whitespace-pre-line">
-                          {speaker.bio}
-                        </p>
-                      )}
-                    </div>
-
-                    {/* 右欄：人物照片 */}
+                    {/* 左欄：人物照片 */}
                     {speaker.img && (
-                      <div className="md:w-1/3 flex justify-end">
+                      <div className="md:w-1/4 flex justify-start">
                         <img
                           src={speaker.img}
                           alt={speaker.name}
@@ -128,6 +116,18 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         />
                       </div>
                     )}
+
+                    {/* 右欄：文字介紹 */}
+                    <div className="md:w-3/4">
+                      <h3 className="text-gray-700 text-xl font-bold mb-4">
+                        {speaker.name}
+                      </h3>
+                      {speaker.bio && (
+                        <p className="text-gray-700 mt-1 leading-relaxed">
+                          {speaker.bio}
+                        </p>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>

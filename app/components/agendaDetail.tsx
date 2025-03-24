@@ -123,9 +123,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {speaker.name}
                       </h3>
                       {speaker.bio && (
-                        <p className="text-gray-700 mt-1 leading-relaxed">
-                          {speaker.bio}
-                        </p>
+                        <p className="text-gray-700 mt-1 leading-relaxed" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
                       )}
                     </div>
                   </li>

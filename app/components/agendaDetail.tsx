@@ -101,17 +101,17 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                 {sessionSpeakers.map((speaker) => (
                   <li
                     key={speaker.id}
-                    // 1) 改用 flex-col (小螢幕) + flex-row (中螢幕)
-                    // 2) 調整 gap 或 space-x，讓左右空間更舒適
-                    className="flex flex-col md:flex-row gap-2 md:items-start"
+                    className="flex flex-col md:flex-row gap-2 md:items-start border-b border-gray-200 pb-4 last:border-0"
                   >
                     {/* 左欄：人物照片 */}
                     {speaker.img && (
-                      <div className="md:w-1/4 flex justify-start">
+                      <div className="md:w-1/4 flex flex-col items-center gap-2">
+                        <h3 className="text-gray-700 text-xl font-extrabold mb-4">
+                          {speaker.name}
+                        </h3>
                         <img
                           src={speaker.img}
                           alt={speaker.name}
-                          // 可以調大一點，或用 max-w-xs / w-48 / h-48 等
                           className="w-40 h-40 rounded-lg object-cover"
                         />
                       </div>
@@ -119,9 +119,6 @@ export default function AgendaDetailPage({ id }: { id: string }) {
 
                     {/* 右欄：文字介紹 */}
                     <div className="md:w-3/4">
-                      <h3 className="text-gray-700 text-xl font-bold mb-4">
-                        {speaker.name}
-                      </h3>
                       {speaker.bio && (
                         <p className="text-gray-700 mt-1 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
                       )}

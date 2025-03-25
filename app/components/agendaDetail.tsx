@@ -143,6 +143,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
             <Link
               href="/agenda"
               className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded"
+              scroll={false}
             >
               {t("backToList")}
             </Link>

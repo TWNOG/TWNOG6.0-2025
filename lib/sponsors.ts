@@ -116,9 +116,9 @@ export const sponsors: SponsorsData = {
       link: "https://aws.amazon.com/",
     },
     {
-      name: "Cymru",
-      img: "/assets/sponsor/cymru.png",
-      link: "https://www.team-cymru.com/",
+      name: "JPNAP",
+      img: "/assets/sponsor/jpnap.svg",
+      link: "https://www.jpnap.net/en/",
     },
   ],
   silver: [
@@ -126,7 +126,12 @@ export const sponsors: SponsorsData = {
       name: "ICANN",
       img: "/assets/sponsor/icann.svg",
       link: "https://www.icann.org/",
-    }
+    },
+    {
+      name: "Cymru",
+      img: "/assets/sponsor/cymru.png",
+      link: "https://www.team-cymru.com/",
+    },
   ],
   workshop: [
     {

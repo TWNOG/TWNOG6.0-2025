@@ -39,10 +39,10 @@ export default function AgendaTable() {
                 </tr>
               </thead>
               <tbody>
-                {agenda.map((item, index) => (
+                {agenda.map((item) => (
                   <tr
                     key={item.id}
-                    onClick={() => router.push(`/agenda/${item.id}`, { scroll: false })}
+                    onClick={(!item.isBreak) ? () => router.push(`/agenda/${item.id}`, { scroll: false }) : undefined}
                     className={`${item.isBreak ? "bg-gray-300" : "bg-white hover:bg-gray-100 cursor-pointer"} transition-colors duration-200 border-b last:border-b-0`}
                   >
                     <td className="py-4 px-4 text-gray-800 font-medium">{item.time}</td>

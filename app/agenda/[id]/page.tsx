@@ -2,7 +2,7 @@ import { agenda } from "@/lib/agenda";
 import AgendaTable from "@/app/components/agendaTable";
 
 export function generateStaticParams() {
-  return agenda.map((item) => ({
+  return agenda.filter((item) => !item.isBreak).map((item) => ({
     id: item.id
   }));
 }

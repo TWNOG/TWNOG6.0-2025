@@ -3,7 +3,7 @@ import { agenda } from "@/lib/agenda";
 import AgendaDetail from "@/app/components/agendaDetail";
 
 export function generateStaticParams() {
-  return agenda.map((item) => ({
+  return agenda.filter((item) => !item.isBreak).map((item) => ({
     id: item.id
   }));
 }

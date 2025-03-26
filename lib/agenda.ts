@@ -7,7 +7,6 @@ export type Agenda = {
     type?: string;
     location?: string;
     description?: string;
-    isBreak?: boolean;
 };
 
 export const agenda: Agenda[] = [
@@ -44,7 +43,7 @@ export const agenda: Agenda[] = [
         id: "02e348",
         time: "10:30 - 10:50",
         name: "Break",
-        isBreak: true,
+        type: "Break",
     },
     {
         id: "c603ad",
@@ -90,7 +89,7 @@ export const agenda: Agenda[] = [
         id: "820995",
         time: "12:00 - 13:20",
         name: "Lunch Break",
-        isBreak: true,
+        type: "Break",
     },
     {
         id: "e284f9",
@@ -136,7 +135,7 @@ export const agenda: Agenda[] = [
         id: "b98908",
         time: "15:00 - 15:20",
         name: "Break",
-        isBreak: true,
+        type: "Break",
     },
     {
         id: "4c8828",

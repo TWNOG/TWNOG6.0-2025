@@ -5,6 +5,7 @@ import { sponsors, Sponsor } from "@/lib/sponsors";
 import Image from "next/image";
 
 const sponsorLogoSize: { [level: string]: string } = {
+  adviser: "grid-cols-1 md:grid-cols-2",
   host: "grid-cols-1 md:grid-cols-2",
   cohost: "grid-cols-1 md:grid-cols-3",
   titanium: "grid-cols-1 md:grid-cols-2",

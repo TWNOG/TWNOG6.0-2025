@@ -2,6 +2,7 @@
   "pageTitle": "スポンサーシップ",
   "table": {
     "header": {
+      "adviser": "Advisory Organization",
       "host": "主催",
       "cohost": "协力",
       "workshop": "ワークショップ",

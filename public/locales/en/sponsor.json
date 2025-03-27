@@ -2,6 +2,7 @@
   "pageTitle": "Sponsorship",
   "table": {
     "header": {
+      "adviser": "Advisory Organization",
       "host": "Host",
       "cohost": "Co-Host",
       "workshop": "Workshop",

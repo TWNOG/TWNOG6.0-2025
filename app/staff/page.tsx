@@ -25,11 +25,20 @@ export default function StaffPage() {
                 {staffList.map((staffMember, index) => (
                     <div key={index} className="text-center">
                         {staffMember.link ? (
-                            <a href={staffMember.link} target="_blank" rel="noopener noreferrer">
-                                <Profile staff={staffMember} />
+                            <a
+                                href={staffMember.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block relative group"
+                            >
+                                <div className="transform transition-transform duration-300 group-hover:scale-110 relative">
+                                    <Profile staff={staffMember} />
+                                </div>
                             </a>
                         ) : (
-                            <Profile staff={staffMember} />
+                            <div className="transform transition-transform duration-300 hover:scale-110">
+                                <Profile staff={staffMember} />
+                            </div>
                         )}
                     </div>
                 ))}

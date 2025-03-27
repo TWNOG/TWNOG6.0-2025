@@ -2,6 +2,7 @@
   "pageTitle": "スポンサーシップ",
   "table": {
     "header": {
+      "adviser": "Advisory Organization",
       "host": "主催",
       "cohost": "协力",
       "workshop": "ワークショップ",
@@ -12,53 +13,6 @@
       "gold": "ゴールド",
       "silver": "シルバー",
       "special_thanks": "スペシャルサンクス"
-    },
-    "rows": {
-      "sponsorSession": "スポンサーセッション",
-      "sponsorAmount": "金額",
-      "sessionKeynote": "基調講演  * 1",
-      "sessionNormal": "セッション * 1",
-      "sessionNone": "X",
-      "logoWebsite": "ウェブサイトにロゴとハイパーリンク",
-      "logoSignage": "看板にロゴ",
-      "backdropLogo": "イベント背景幕にロゴ",
-      "freeTicket": "無料チケット",
-      "dinnerQuota": "ディナー枠",
-      "exhibitionDesk": "展示ブース",
-      "deskTitanium": "テーブル * 4, 椅子 * 8",
-      "deskPlatinum": "テーブル * 2, 椅子 * 4",
-      "deskGold": "テーブル * 1, 椅子 * 2",
-      "deskNone": "X"
-    },
-    "numbers": {
-      "freeTicket": {
-        "titanium": "30",
-        "platinum": "15",
-        "gold": "10",
-        "silver": "6"
-      },
-      "dinnerQuota": {
-        "titanium": "15",
-        "platinum": "5",
-        "gold": "3",
-        "silver": "1"
-      }
     }
-  },
-  "introduction": {
-    "title": "はじめに",
-    "content": ": ハイパーリンク/ロゴをAIまたはEPSファイルで提供し、イベント開催日の1ヶ月前までにDMでお送りください。"
-  },
-  "notice": {
-    "title": "注意事項",
-    "rankingPrinciples": {
-      "heading": "ランキング処理の原則",
-      "description": "カンファレンスのすべてのレベルにおける企業名とロゴの配置、および展示テーブルの配置は、以下の原則に従って行われます：",
-      "items": [
-        "スポンサーシップレベル",
-        "スポンサーシップレベルが同じ場合、スポンサー申込みの順番を優先し、次に英語名のアルファベット順とします。"
-      ]
-    },
-    "tableLocation": "展示テーブルの場所は運営委員会が割り当てて手配いたします。ご質問がある場合は、<sponsorship@twnog.net> までお問い合わせください。"
   }
 }

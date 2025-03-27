@@ -2,6 +2,7 @@
   "pageTitle": "贊助方案",
   "table": {
     "header": {
+      "adviser": "指導單位",
       "host": "共同主辦",
       "cohost": "協辦單位",
       "workshop": "工作坊",
@@ -12,53 +13,6 @@
       "gold": "黃金級",
       "silver": "銀級",
       "special_thanks": "特別感謝"
-    },
-    "rows": {
-      "sponsorSession": "贊助議程",
-      "sponsorAmount": "價格",
-      "sessionKeynote": "Keynote * 1",
-      "sessionNormal": "Session * 1",
-      "sessionNone": "X",
-      "logoWebsite": "網頁 Logo 連結曝光",
-      "logoSignage": "大會文宣 Logo 曝光",
-      "backdropLogo": "活動背板 Logo 曝光",
-      "freeTicket": "大會門票",
-      "dinnerQuota": "晚宴",
-      "exhibitionDesk": "贊助商攤位",
-      "deskTitanium": "4 張桌子及 8 張椅子",
-      "deskPlatinum": "2 張桌子及 4 張椅子",
-      "deskGold": "1 張桌子及 2 張椅子",
-      "deskNone": "X"
-    },
-    "numbers": {
-      "freeTicket": {
-        "titanium": "30",
-        "platinum": "15",
-        "gold": "10",
-        "silver": "6"
-      },
-      "dinnerQuota": {
-        "titanium": "15",
-        "platinum": "5",
-        "gold": "3",
-        "silver": "1"
-      }
     }
-  },
-  "introduction": {
-    "title": "關於品牌曝光",
-    "content": "：請在活動前一個月，提供網站超連結及 AI/EPS 格式的 Logo。"
-  },
-  "notice": {
-    "title": "注意事項",
-    "rankingPrinciples": {
-      "heading": "順序排序原則",
-      "description": "在活動中，各級別的贊助商名稱、品牌 Logo，以及攤位的安排，均應依照以下原則進行：",
-      "items": [
-        "贊助等級",
-        "如果贊助等級相同，則依照時間的先後順序調整，再依英文名稱的字母順序來決定。"
-      ]
-    },
-    "tableLocation": "主辦單位會主動分配贊助商攤位。若有任何疑問，請透過 sponsorship@twnog.net 與我們聯繫。"
   }
 }

@@ -11,6 +11,13 @@ export type SponsorsData = {
 };
 
 export const sponsors: SponsorsData = {
+  adviser: [
+    {
+      name: "臺北市政府資訊局",
+      img: "/assets/sponsor/doit_Taipei.svg",
+      link: "https://doit.gov.taipei/",
+    },
+  ],
   host: [
     {
       name: "TWNOG 台灣網路維運社群",

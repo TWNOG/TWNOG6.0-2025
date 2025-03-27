@@ -15,7 +15,7 @@ export const sponsors: SponsorsData = {
     {
       name: "臺北市政府資訊局",
       img: "/assets/sponsor/doit_Taipei.svg",
-      link: "doit_Taipei.svg",
+      link: "https://doit.gov.taipei/",
     },
   ],
   host: [

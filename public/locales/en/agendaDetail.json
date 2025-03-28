@@ -51,7 +51,8 @@
       "description": "TBD"
     },
     "8f797b": {
-      "name": "PEERING PERSONALS"
+      "name": "PEERING PERSONALS",
+      "description": "TBD"
     },
     "e284f9": {
       "name": "Unleashing the power of containerization for network testing and development",
@@ -87,6 +88,10 @@
     "9d1b78": {
       "name": "AI-Driven IT Management",
       "description": "Out-of-band management is critical for ensuring network resiliency and minimizing downtime in environments running generative AI workloads, where uninterrupted data processing and model training are paramount. By establishing a dedicated management channel that remains operational even when the primary network is compromised or congested, out-of-band solutions allow IT teams to remotely monitor, diagnose, and remediate issues in real time. This immediate visibility and control help prevent small incidents from escalating into major disruptions, maintain service continuity for resource-intensive AI applications, and streamline troubleshooting by providing secure, isolated access to hardware and software components. In turn, organizations can ensure higher availability, faster recovery, and robust performance—key factors for hosting the demanding and continuous operations of generative AI systems."
+    },
+    "0c8763": {
+      "name": "Lightning Talk",
+      "description": "TBD"
     },
     "babd97": {
       "name": "Bridging the Talent Gap: How Can Global and Local Companies Attract and Nurture Top Internet Industry Talent in Taiwan?",

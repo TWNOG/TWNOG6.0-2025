@@ -172,11 +172,19 @@ export const agenda: Agenda[] = [
     },
     {
         id: "930903",
-        time: "16:15 - 16:30",
+        time: "16:15 - 16:25",
         name: "PEERING PERSONALS",
         type: "Presentation",
         location: "402",
         description: "TBD",
+    },
+    {
+        id: "0c8763",
+        time: "16:25 - 16:30",
+        name: "Lightning Talk",
+        type: "Presentation",
+        location: "402",
+        description: "TBD"
     },
     {
         id: "babd97",

@@ -5,10 +5,11 @@ import { Construction } from 'lucide-react';
 import { agenda } from "@/lib/agenda";
 
 // 仍在開發中，暫時不公開議程
-const isUnderConstruction = true;
+const isUnderConstruction = false;
 
 export default function AgendaTable() {
   const { t } = useTranslation("agenda");
+  const { t: dt } = useTranslation("agendaDetail");
   const router = useRouter();
 
   if (isUnderConstruction) {
@@ -46,7 +47,7 @@ export default function AgendaTable() {
                     className={`${(item.type === "Break") ? "bg-gray-300" : "bg-white hover:bg-gray-100 cursor-pointer"} transition-colors duration-200 border-b last:border-b-0`}
                   >
                     <td className="py-4 px-4 text-gray-800 font-medium">{item.time}</td>
-                    <td className="py-4 px-4 text-gray-600">{item.name}</td>
+                    <td className="py-4 px-4 text-gray-600">{dt(`sessions.${item.id}.name`)}</td>
                   </tr>
                 ))}
               </tbody>

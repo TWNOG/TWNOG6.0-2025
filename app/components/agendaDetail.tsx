@@ -2,9 +2,10 @@
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { speakers, type Speaker } from "@/lib/speakers";
 import { agenda, type Agenda } from "@/lib/agenda";
-import { X } from 'lucide-react';
+import { X, User2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 type AgendaItem = Agenda & {
@@ -39,7 +40,7 @@ const itemVariants = {
 };
 
 export default function AgendaDetailPage({ id }: { id: string }) {
-  const { t } = useTranslation("agenda");
+  const { t } = useTranslation("agendaDetail");
   const router = useRouter();
 
   const agendaItem: AgendaItem | undefined = agenda.find((item) => item.id === id);
@@ -145,7 +146,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                   className="text-gray-800 leading-relaxed mb-8"
                   variants={itemVariants}
                 >
-                  {agendaItem.description}
+                  {t(`sessions.${agendaItem.id}.description`)}
                 </motion.p>
               )}
 
@@ -155,11 +156,17 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                   className="mb-8"
                   variants={itemVariants}
                 >
+                  <motion.h2
+                    className="text-xl md:text-2xl font-bold text-gray-900 mb-8"
+                    variants={itemVariants}
+                  >
+                    {t("speaker")}
+                  </motion.h2>
                   <ul className="list-none p-0 space-y-6">
                     {sessionSpeakers.map((speaker, index) => (
                       <motion.li
                         key={speaker.id}
-                        className="flex flex-col md:flex-row gap-2 md:items-start border-b border-gray-200 pb-4 last:border-0"
+                        className="flex flex-col md:flex-row gap-4 md:items-start border-b border-gray-200 pb-4 last:border-0"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -170,23 +177,32 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         }}
                       >
                         {/* 左欄：人物照片 */}
-                        {speaker.img && (
-                          <div className="md:w-1/4 flex flex-col items-center gap-2">
-                            <h3 className="text-gray-700 text-xl font-extrabold mb-4">
-                              {speaker.name}
-                            </h3>
-                            <img
-                              src={speaker.img}
-                              alt={speaker.name}
-                              className="w-40 h-40 rounded-lg object-cover"
-                            />
-                          </div>
-                        )}
+                        <div className="md:w-1/4 flex flex-col items-center gap-2">
+                          <h3 className="text-gray-700 text-xl text-center font-bold">
+                            {speaker.name}
+                          </h3>
+                          <p className="text-gray-500 text-center mb-4">{speaker.org}</p>
+                          {
+                            speaker.img ? (
+                              <Image
+                                src={speaker.img}
+                                alt={speaker.name}
+                                width={40}
+                                height={40}
+                                className="w-40 h-40 rounded-lg object-cover"
+                              />
+                            ) : (
+                              <User2 className="w-40 h-40 rounded-lg object-cover text-gray-400" />
+                            )
+                          }
+                        </div>
 
                         {/* 右欄：文字介紹 */}
                         <div className="md:w-3/4">
-                          {speaker.bio && (
+                          {speaker.bio ? (
                             <p className="text-gray-700 mt-1 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
+                          ) : (
+                            <p className="text-gray-500 italic mt-1 leading-relaxed">{t("noBio")}</p>
                           )}
                         </div>
                       </motion.li>

@@ -14,7 +14,7 @@ export default {
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'var(--font-geist-mono)', 'var(--font-noto-sans-tc)', 'var(--font-noto-sans-jp)', 'sans'],
-        serif: ['var(--font-noto-serif-tc)', 'var(--font-noto-serif-jp)', 'serif'],
+        serif: ['var(--font-ibm-plex-serif), var(--font-noto-serif-tc)', 'var(--font-noto-serif-jp)', 'serif'],
       },
     },
   },

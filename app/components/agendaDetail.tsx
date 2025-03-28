@@ -178,9 +178,10 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                       >
                         {/* 左欄：人物照片 */}
                         <div className="md:w-1/4 flex flex-col items-center gap-2">
-                          <h3 className="text-gray-700 text-xl text-center font-bold mb-4">
+                          <h3 className="text-gray-700 text-xl text-center font-bold">
                             {speaker.name}
                           </h3>
+                          <p className="text-gray-500 text-center mb-4">{speaker.org}</p>
                           {
                             speaker.img ? (
                               <Image

@@ -5,7 +5,7 @@ import { Construction } from 'lucide-react';
 import { agenda } from "@/lib/agenda";
 
 // 仍在開發中，暫時不公開議程
-const isUnderConstruction = true;
+const isUnderConstruction = false;
 
 export default function AgendaTable() {
   const { t } = useTranslation("agenda");

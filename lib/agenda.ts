@@ -16,7 +16,7 @@ export const agenda: Agenda[] = [
         name: "Welcome Remark",
         type: "Keynote",
         location: "402",
-        description: "大會開幕致詞，說明本次活動流程與注意事項。",
+        description: "Welcome remarks for the conference, explaining the event schedule and important notes.",
     },
     {
         id: "c11a30",

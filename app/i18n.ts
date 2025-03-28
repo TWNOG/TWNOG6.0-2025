@@ -17,6 +17,9 @@ import jaStaff from '../public/locales/ja/staff.json';
 import enAgenda from '../public/locales/en/agenda.json';
 import zhHantAgenda from '../public/locales/zh-Hant/agenda.json';
 import jaAgenda from '../public/locales/ja/agenda.json';
+import enAgendaDetail from '../public/locales/en/agendaDetail.json';
+import zhHantAgendaDetail from '../public/locales/zh-Hant/agendaDetail.json';
+import jaAgendaDetail from '../public/locales/ja/agendaDetail.json';
 import enCfp from '../public/locales/en/cfp.json';
 import zhHantCfp from '../public/locales/zh-Hant/cfp.json';
 import jaCfp from '../public/locales/ja/cfp.json';
@@ -32,6 +35,7 @@ const resources = {
     index: enIndex,
     sponsor: enSponsor,
     agenda: enAgenda,
+    agendaDetail: enAgendaDetail,
     cfp: enCfp,
     traffic: enTraffic,
     staff: enStaff
@@ -40,6 +44,7 @@ const resources = {
     index: zhHantIndex,
     sponsor: zhHantSponsor,
     agenda: zhHantAgenda,
+    agendaDetail: zhHantAgendaDetail,
     cfp: zhHantCfp,
     traffic: zhHantTraffic,
     staff: zhHantStaff
@@ -48,6 +53,7 @@ const resources = {
     index: jaIndex,
     sponsor: jaSponsor,
     agenda: jaAgenda,
+    agendaDetail: jaAgendaDetail,
     cfp: jaCfp,
     traffic: jaTraffic,
     staff: jaStaff

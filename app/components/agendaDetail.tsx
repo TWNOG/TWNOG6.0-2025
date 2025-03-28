@@ -40,7 +40,7 @@ const itemVariants = {
 };
 
 export default function AgendaDetailPage({ id }: { id: string }) {
-  const { t } = useTranslation("agenda");
+  const { t } = useTranslation("agendaDetail");
   const router = useRouter();
 
   const agendaItem: AgendaItem | undefined = agenda.find((item) => item.id === id);
@@ -146,7 +146,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                   className="text-gray-800 leading-relaxed mb-8"
                   variants={itemVariants}
                 >
-                  {agendaItem.description}
+                  {t(`sessions.${agendaItem.id}.description`)}
                 </motion.p>
               )}
 

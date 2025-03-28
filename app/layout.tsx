@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_TC, Noto_Sans_JP, Noto_Serif_TC, Noto_Serif_JP } from "next/font/google";
+import { Geist, Geist_Mono, IBM_Plex_Serif, Noto_Sans_TC, Noto_Sans_JP, Noto_Serif_TC, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from './i18n-provider';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -37,6 +37,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const IBMPlexSerif = IBM_Plex_Serif({
+  variable: "--font-ibm-plex-serif",
+  subsets: ["latin"],
+  weight: ["100", "400", "500", "700"]
+})
+
 export const metadata: Metadata = {
   title: "TWNOG 6",
   description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
@@ -67,7 +73,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSansTC.variable} ${notoSansJP.variable} ${notoSerifTC.variable} ${notoSerifJP.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${notoSansTC.variable} ${notoSansJP.variable} ${notoSerifTC.variable} ${notoSerifJP.variable} ${IBMPlexSerif.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <I18nProvider>
           <Navbar />
           {children}

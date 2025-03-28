@@ -60,7 +60,7 @@ export const speakers: Speaker[] = [
     },
     {
         id: "9b3894",
-        name: "Charles",
+        name: "Charles Li",
         bio: "Charles Li is the Chief Analyst at TeamT5. He leads the TeamT5 analyst team in threat intelligence research. He has been studying cyber attacks and campaign tracking for more than 10 years. His research interests include vulnerability research, reverse engineering and APT attacks. He often publishes research and gives training courses at security conferences.",
         org: "TeamT5",
         sessionIds: ["1e4ec4"]
@@ -154,6 +154,6 @@ export const speakers: Speaker[] = [
         bio: "Scott Fisher has worked at Team Cymru for 13 years in various leadership roles in Operations and Engineering. Currently he is a Senior Security Evangelist on the Community Outreach team, working with network operator community to better protect their networks. Prior to working at TC, Scott worked in the telecommunication space managing AAA/RADIUS, MMSC, SMSC, and gateway services.",
         img: "/assets/speakers/a39c17.jpg",
         org: "Team Cymru",
-        sessionIds: ["babd97"]
+        sessionIds: ["1e4ec4"]
     }
 ];

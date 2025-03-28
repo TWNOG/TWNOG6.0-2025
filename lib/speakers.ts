@@ -36,14 +36,6 @@ export const speakers: Speaker[] = [
         sessionIds: ["6cc2d0", "bea9e5"]
     },
     {
-        id: "d6cca4",
-        name: "Paresh Khatri",
-        bio: "Paresh Khatri is the CTO and Chief Architect for the IP Networks Division for Nokia Corporation in APAC.  In this role, Paresh is responsible for formulating platform and architecture strategies to meet the varied demands of operators in the Asia-Pacific region.  He has been responsible for architectural design for the largest IP transformation projects in the region, and is now working closely with service providers as they address the growing demand for scale and new services that will be enabled by the evolution to 5G/6G, AI workloads and the metaverse. \n\r\nParesh’s areas of expertise include the entire range of IP/MPLS technologies and applications, from the network core to the access network.  His current areas of interest include 5G transport, coherent routing, network slicing, segment routing and other SDN technologies.\n\r\nParesh has more than 27 years of experience with both service providers and vendors in building carrier-grade IP/MPLS networks.\n\r\nParesh is a regular speaker at industry conferences in the APAC region and also actively participates in a number of telecommunications industry standards bodies. \n\r\nParesh holds a Bachelors of Electronic Systems Engineering (First Class Honours) and a Bachelor of Information Technology from the Queensland University of Technology.",
-        img: "/assets/speakers/d6cca4.jpg",
-        org: "Nokia",
-        sessionIds: ["babd97"]
-    },
-    {
         id: "d4f24f",
         name: "Diane Lee",
         bio: "With 20+ years of networking and data communication experience, worked with service providers in North America and APAC on various solutions.",
@@ -71,14 +63,6 @@ export const speakers: Speaker[] = [
         bio: "",
         org: "Arista",
         sessionIds: ["36c72a"]
-    },
-    {
-        id: "cf09c2",
-        name: "Stanley Tee",
-        bio: "From 2014 to 2016, Stanley Tee served as Chairman of the Singapore Association of Hong Kong (SAHK), an organization that fosters recreation, social integration, and networking for Singaporeans in Hong Kong while promoting Singapore’s developments to the local community. Stanley has a distinguished career spanning the semiconductor, telecommunications, and cybersecurity industries, with a focus on solution sales in the Asian market. His expertise lies in business development, market expansion, and tackling complex challenges. Known for his integrity, loyalty, and honesty, Stanley has built a strong reputation among colleagues and clients alike. With over 25 years of experience across various industries, including semiconductor and telecommunications, Stanley continues to make a significant impact in both business and community service.",
-        img: "/assets/speakers/cf09c2.jpg",
-        org: "Nexusguard",
-        sessionIds: ["babd97"]
     },
     {
         id: "96ca22",
@@ -139,14 +123,6 @@ export const speakers: Speaker[] = [
         img: "/assets/speakers/95238e.jpg",
         org: "EPI",
         sessionIds: ["96b1f8"]
-    },
-    {
-        id: "385cd4",
-        name: "Yuanxiang Miao",
-        bio: "Peering Manager at JPIX.",
-        img: "/assets/speakers/385cd4.png",
-        org: "JPIX",
-        sessionIds: ["babd97"]
     },
     {
         id: "a39c17",

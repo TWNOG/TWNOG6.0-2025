@@ -11,6 +11,14 @@ export type Agenda = {
 
 export const agenda: Agenda[] = [
     {
+        id: "0f3e1b",
+        time: "08:30 - 09:00",
+        name: "Registration",
+        type: "Break",
+        location: "402",
+        description: "Registration for the conference.",
+    },
+    {
         id: "054b12",
         time: "09:00 - 09:20",
         name: "Welcome Remark",

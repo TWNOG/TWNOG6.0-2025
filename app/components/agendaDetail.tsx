@@ -156,12 +156,6 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                   className="mb-8"
                   variants={itemVariants}
                 >
-                  <motion.h2
-                    className="text-xl md:text-2xl font-bold text-gray-900 mb-8"
-                    variants={itemVariants}
-                  >
-                    {t("speaker")}
-                  </motion.h2>
                   <ul className="list-none p-0 space-y-6">
                     {sessionSpeakers.map((speaker, index) => (
                       <motion.li

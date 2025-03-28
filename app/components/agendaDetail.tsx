@@ -2,9 +2,10 @@
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { speakers, type Speaker } from "@/lib/speakers";
 import { agenda, type Agenda } from "@/lib/agenda";
-import { X } from 'lucide-react';
+import { X, User2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 type AgendaItem = Agenda & {

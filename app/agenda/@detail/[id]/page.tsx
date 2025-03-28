@@ -7,7 +7,14 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const agendaItem = agenda.find((item) => item.id === id);
   return {
     title: `${agendaItem?.name || id}`,
-    description: `${agendaItem?.description}`
+    description: `${agendaItem?.description}`,
+    openGraph: {
+      title: `${agendaItem?.name || id}`,
+      description: `${agendaItem?.description}`,
+      url: `https://2025.twnog.net/agenda/${id}`,
+      type: "website",
+      // images: ["https://2025.twnog.net/path-to-image.jpg"],
+    }
   };
 }
 

@@ -1,10 +1,18 @@
 import type { MetadataRoute } from "next";
 
+import { agenda } from "@/lib/agenda";
+
 const domain = "https://2025.twnog.net";
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const agendaRoutes = agenda.filter((item) => item.type !== "Break").map((item) => ({
+    url: `${domain}/agenda/${item.id}`,
+    lastModified: new Date(),
+    priority: 1,
+  }));
+
   return [
     {
       url: `${domain}/`,
@@ -20,8 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${domain}/agenda`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.8,
+      priority: 1,
     },
+    ...agendaRoutes,
     {
       url: `${domain}/traffic`,
       lastModified: new Date(),

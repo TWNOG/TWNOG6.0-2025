@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const agendaItem = agenda.find((item) => item.id === id);
   return {
-    title: `${agendaItem?.name || id}`,
+    title: `${agendaItem?.name || id} - TWNOG 6`,
     description: `${agendaItem?.description}`,
     openGraph: {
       title: `${agendaItem?.name || id}`,

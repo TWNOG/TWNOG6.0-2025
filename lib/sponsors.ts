@@ -168,11 +168,11 @@ export const sponsors: SponsorsData = {
     //   img: "/assets/sponsor/ntu.png",
     //   link: "https://www.ntuh.gov.tw/mis/Index.action",
     // },
-    // {
-    //   name: "台灣智慧光網",
-    //   img: "/assets/sponsor/taifo.png",
-    //   link: "https://www.taifo.com.tw/",
-    // },
+    {
+      name: "台灣智慧光網",
+      img: "/assets/sponsor/taifo.png",
+      link: "https://www.taifo.com.tw/",
+    },
     {
       name: "CHIEF 是方",
       img: "/assets/sponsor/chief.svg",

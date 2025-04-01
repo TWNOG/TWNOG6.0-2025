@@ -127,6 +127,11 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/jpnap.svg",
       link: "https://www.jpnap.net/en/",
     },
+    {
+      name: "DE-CIX",
+      img: "/assets/sponsor/decix.svg",
+      link: "https://www.de-cix.net/",
+    },
   ],
   silver: [
     {

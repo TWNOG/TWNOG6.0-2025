@@ -10,7 +10,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 type AgendaItem = Agenda & {
   speaker?: string;
-  presentation?: string;
 };
 
 // Container variants for staggered children animations
@@ -206,24 +205,43 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               )}
 
               {/* 其他按鈕 (簡報下載 / 更多資訊) */}
-              <motion.div
-                className="flex flex-wrap gap-3"
-                variants={itemVariants}
-              >
-                {agendaItem.presentation && (
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-                    {t("presentation")}
-                  </button>
-                )}
+              <div className="flex flex-wrap gap-3 flex-col-reverse md:flex-row md:justify-between">
                 {/* 若需要返回列表連結，也可使用 Link */}
                 <Link
                   href="/agenda"
-                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded"
+                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded w-fit"
                   scroll={false}
                 >
                   {t("backToList")}
                 </Link>
-              </motion.div>
+
+                {/* 其他按鈕 */}
+                <motion.div
+                  className="flex flex-wrap gap-3"
+                  variants={itemVariants}
+                >
+                    {agendaItem.presentation && (
+                    <Link
+                      href={agendaItem.presentation}
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("presentation")}
+                    </Link>
+                    )}
+                    {agendaItem.slido && (
+                    <Link
+                      href={agendaItem.slido}
+                      className="bg-[#198038] hover:bg-[#016125] text-white py-2 px-4 rounded"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("slido")}
+                    </Link>
+                    )}
+                </motion.div>
+              </div>
             </motion.div>
           </motion.div>
         </div>

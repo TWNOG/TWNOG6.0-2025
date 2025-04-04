@@ -83,13 +83,23 @@ export const speakers: Speaker[] = [
         id: "c94563",
         name: "Daiki Yamada",
         bio: "",
+        img: "/assets/speakers/c94563.png",
         org: "LINE",
         sessionIds: ["3fa4d4"]
     },
     {
         id: "c94562",
+        name: "Suzuki Kohei",
+        bio: "",
+        img: "/assets/speakers/c94562.png",
+        org: "LINE",
+        sessionIds: ["3fa4d4"]
+    },
+    {
+        id: "c94561",
         name: "Noh Seung-Heun",
         bio: "",
+        img: "/assets/speakers/c94561.png",
         org: "LINE",
         sessionIds: ["3fa4d4"]
     },

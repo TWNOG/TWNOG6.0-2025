@@ -152,14 +152,14 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               {/* 講者介紹區塊 */}
               {sessionSpeakers.length > 0 && (
                 <motion.div
-                  className="mb-8"
+                  className="mb-4 md:mb-8"
                   variants={itemVariants}
                 >
                   <ul className="list-none p-0 space-y-6">
                     {sessionSpeakers.map((speaker, index) => (
                       <motion.li
                         key={speaker.id}
-                        className="flex flex-col md:flex-row gap-2 md:items-start border-b border-gray-200 pb-4 last:border-0"
+                        className="flex flex-col md:flex-row gap-2 md:items-start border-b border-gray-200 pb-4 last:border-0 last:pb-0"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{

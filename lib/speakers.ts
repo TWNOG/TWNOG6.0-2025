@@ -87,6 +87,13 @@ export const speakers: Speaker[] = [
         sessionIds: ["3fa4d4"]
     },
     {
+        id: "c94562",
+        name: "Noh Seung-Heun",
+        bio: "",
+        org: "LINE",
+        sessionIds: ["3fa4d4"]
+    },
+    {
         id: "9b4c48",
         name: "Vincent Boon",
         bio: "Vincent Boon has over 30 years of experience in the IT and networking industry, working with enterprise and data center customers within Asia Pacific. His focus has been in DCIM, Infrastructure, Access and Power Solutions, working with clients such as Smart Nation, Tata Communications, Standard Chartered Bank, Equinix and many more. Technology has always been a keen interest and his previous roles within technology companies have involved him working closely with product and engineering teams in providing productive solutions to customers. He joined Opengear at the beginning of 2018 and brings his expertise to assist customers on the next generation Out-of-Band solutions and Network Automation for managing IT infrastructure, First Day, Worst Day and Everyday.",

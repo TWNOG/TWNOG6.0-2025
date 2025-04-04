@@ -7,14 +7,20 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const agendaItem = agenda.find((item) => item.id === id);
   return {
     title: `${agendaItem?.name || id} - TWNOG 6`,
-    description: `${agendaItem?.description}`,
+    description: `${agendaItem?.description?.replace(/\n/g, " ")}`,
     openGraph: {
-      title: `${agendaItem?.name || id}`,
-      description: `${agendaItem?.description}`,
+      title: `${agendaItem?.name || id} - TWNOG 6`,
+      description: `${agendaItem?.description?.replace(/\n/g, " ")}`,
       url: `https://2025.twnog.net/agenda/${id}`,
       type: "website",
       // images: ["https://2025.twnog.net/path-to-image.jpg"],
-    }
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${agendaItem?.name || id} - TWNOG 6`,
+      description: `${agendaItem?.description?.replace(/\n/g, " ")}`,
+      // images: ["https://2025.twnog.net/path-to-image.jpg"],
+    },
   };
 }
 

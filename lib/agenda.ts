@@ -7,6 +7,8 @@ export type Agenda = {
     type?: string;
     location?: string;
     description?: string;
+    presentation?: string;
+    slido?: string;
 };
 
 export const agenda: Agenda[] = [

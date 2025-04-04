@@ -10,7 +10,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 type AgendaItem = Agenda & {
   speaker?: string;
-  presentation?: string;
 };
 
 // Container variants for staggered children animations
@@ -143,7 +142,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               {/* 議程簡介 */}
               {agendaItem.description && (
                 <motion.p
-                  className="text-gray-800 leading-relaxed mb-8"
+                  className="text-gray-800 leading-relaxed mb-4 md:mb-8"
                   variants={itemVariants}
                 >
                   {t(`sessions.${agendaItem.id}.description`)}
@@ -153,14 +152,14 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               {/* 講者介紹區塊 */}
               {sessionSpeakers.length > 0 && (
                 <motion.div
-                  className="mb-8"
+                  className="mb-4 md:mb-8"
                   variants={itemVariants}
                 >
                   <ul className="list-none p-0 space-y-6">
                     {sessionSpeakers.map((speaker, index) => (
                       <motion.li
                         key={speaker.id}
-                        className="flex flex-col md:flex-row gap-4 md:items-start border-b border-gray-200 pb-4 last:border-0"
+                        className="flex flex-col md:flex-row gap-2 md:items-start border-b border-gray-200 pb-4 last:border-0 last:pb-0"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -175,7 +174,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                           <h3 className="text-gray-700 text-xl text-center font-bold">
                             {speaker.name}
                           </h3>
-                          <p className="text-gray-500 text-center mb-4">{speaker.org}</p>
+                          <p className="text-gray-500 text-center mb-2">{speaker.org}</p>
                           {
                             speaker.img ? (
                               <Image
@@ -194,9 +193,9 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {/* 右欄：文字介紹 */}
                         <div className="md:w-3/4">
                           {speaker.bio ? (
-                            <p className="text-gray-700 mt-1 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
+                            <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
                           ) : (
-                            <p className="text-gray-500 italic mt-1 leading-relaxed">{t("noBio")}</p>
+                            <p className="text-gray-500 italic leading-relaxed">{t("noBio")}</p>
                           )}
                         </div>
                       </motion.li>
@@ -206,24 +205,43 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               )}
 
               {/* 其他按鈕 (簡報下載 / 更多資訊) */}
-              <motion.div
-                className="flex flex-wrap gap-3"
-                variants={itemVariants}
-              >
-                {agendaItem.presentation && (
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-                    {t("presentation")}
-                  </button>
-                )}
+              <div className="flex flex-wrap gap-3 flex-col-reverse md:flex-row md:justify-between">
                 {/* 若需要返回列表連結，也可使用 Link */}
                 <Link
                   href="/agenda"
-                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded"
+                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded w-fit"
                   scroll={false}
                 >
                   {t("backToList")}
                 </Link>
-              </motion.div>
+
+                {/* 其他按鈕 */}
+                <motion.div
+                  className="flex flex-wrap gap-3"
+                  variants={itemVariants}
+                >
+                    {agendaItem.presentation && (
+                    <Link
+                      href={agendaItem.presentation}
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("presentation")}
+                    </Link>
+                    )}
+                    {agendaItem.slido && (
+                    <Link
+                      href={agendaItem.slido}
+                      className="bg-[#198038] hover:bg-[#016125] text-white py-2 px-4 rounded"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("slido")}
+                    </Link>
+                    )}
+                </motion.div>
+              </div>
             </motion.div>
           </motion.div>
         </div>

@@ -48,7 +48,7 @@
     },
     "3fa4d4": {
       "name": "Traffic Optimization for LINE Taiwan Users",
-      "description": "TBD"
+      "description": "This presentation will present on the optimization for LINE service in Taiwan.\n In detail, we will introduce the network design, peering, new year traffic trend and operation, LINE CDN service."
     },
     "8f797b": {
       "name": "PEERING PERSONALS",

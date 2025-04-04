@@ -84,7 +84,7 @@ export const agenda: Agenda[] = [
         name: "Traffic Optimization for LINE Taiwan Users",
         type: "Presentation",
         location: "402",
-        description: "TBD",
+        description: "This presentation will present on the optimization for LINE service in Taiwan.\n In detail, we will introduce the network design, peering, new year traffic trend and operation, LINE CDN service.",
     },
     {
         id: "8f797b",

@@ -47,7 +47,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
   // 如果找不到對應的議程，顯示載入或 404
   if (!agendaItem) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-svh flex items-center justify-center">
         <p>{t("loading")}</p>
       </div>
     );
@@ -78,7 +78,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="flex items-center justify-center h-screen p-4">
+        <div className="flex items-center justify-center h-svh p-4">
           {/* 白色內容區塊 */}
           <motion.div
             className="relative bg-white w-full max-w-screen-lg max-h-full overflow-y-auto rounded-lg shadow-lg p-6 md:p-8"

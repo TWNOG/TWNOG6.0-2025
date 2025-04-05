@@ -172,14 +172,14 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {/* 左欄：人物照片 */}
                         <div className="md:w-1/4 flex flex-col items-center gap-2">
                           <h3 className="text-gray-700 text-xl text-center font-bold">
-                            {speaker.name}
+                            {t(`speakers.${speaker.id}.name`)}
                           </h3>
                           <p className="text-gray-500 text-center mb-2">{speaker.org}</p>
                           {
                             speaker.img ? (
                               <Image
                                 src={speaker.img}
-                                alt={speaker.name}
+                                alt={t(`speakers.${speaker.id}.name`)}
                                 width={40}
                                 height={40}
                                 className="w-40 h-40 rounded-lg object-cover"
@@ -193,7 +193,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {/* 右欄：文字介紹 */}
                         <div className="md:w-3/4">
                           {speaker.bio ? (
-                            <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
+                            <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: t(`speakers.${speaker.id}.bio`) }}></p>
                           ) : (
                             <p className="text-gray-500 italic leading-relaxed">{t("noBio")}</p>
                           )}

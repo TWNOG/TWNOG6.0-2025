@@ -122,7 +122,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
                 variants={itemVariants}
               >
-                {agendaItem.name}
+                {t(`sessions.${agendaItem.id}.name`)}
               </motion.h1>
 
               {/* 時間 + 地點 */}

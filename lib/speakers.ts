@@ -30,7 +30,7 @@ export const speakers: Speaker[] = [
     {
         id: "51e0f3",
         name: "Philip Paeps",
-        bio: "Philip Paeps (“Trouble”) is a consultant based in Hong Kong. He provides research and development on low-level software and operating systems, particularly in an embedded or real-time context. His main interests are bootloaders, device drivers, security and high-performance networking. He can also be convinced to teach courses and workshops on a variety of networking-related topics.\n\r\nIn his so-called free time, Philip is a FreeBSD committer contributing mainly to the kernel and a member of the FreeBSD security team. He was one of the main organisers of FOSDEM, the largest annual open source software conference in Europe, from the early 2000s until 2015. He denies having any involvement with amateur radio or tabletop role playing games.",
+        bio: "Philip Paeps (“Trouble”) is a consultant based in Hong Kong. He provides research and development on low-level software and operating systems, particularly in an embedded or real-time context. His main interests are bootloaders, device drivers, security and high-performance networking. He can also be convinced to teach courses and workshops on a variety of networking-related topics.\n\nIn his so-called free time, Philip is a FreeBSD committer contributing mainly to the kernel and a member of the FreeBSD security team. He was one of the main organisers of FOSDEM, the largest annual open source software conference in Europe, from the early 2000s until 2015. He denies having any involvement with amateur radio or tabletop role playing games.",
         img: "/assets/speakers/51e0f3.jpeg",
         org: "Alternative Enterprises",
         sessionIds: ["6cc2d0", "bea9e5"]
@@ -45,7 +45,7 @@ export const speakers: Speaker[] = [
     {
         id: "4a91ef",
         name: "Masataka Mawatari",
-        bio: "Masataka Mawatari is chief engineer at JPIX.  He is in charge of the IX network operation and route server.\r\nHe contributes to JANOG, APIX as a Steering Committee and the other engineers' communities.",
+        bio: "Masataka Mawatari is chief engineer at JPIX.  He is in charge of the IX network operation and route server.\nHe contributes to JANOG, APIX as a Steering Committee and the other engineers' communities.",
         img: "/assets/speakers/4a91ef.jpg",
         org: "JPIX",
         sessionIds: ["c11a30"]

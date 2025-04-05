@@ -142,7 +142,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               {/* 議程簡介 */}
               {agendaItem.description && (
                 <motion.p
-                  className="text-gray-800 leading-relaxed mb-4 md:mb-8"
+                  className="text-gray-800 leading-relaxed mb-4 md:mb-8 whitespace-pre-line"
                   variants={itemVariants}
                 >
                   {t(`sessions.${agendaItem.id}.description`)}

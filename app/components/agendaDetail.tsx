@@ -195,7 +195,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                           {speaker.bio ? (
                             <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: t(`speakers.${speaker.id}.bio`) }}></p>
                           ) : (
-                            <p className="text-gray-500 italic leading-relaxed">{t("noBio")}</p>
+                            <p className="text-gray-500 italic pt-4 text-center md:text-left leading-relaxed">{t("noBio")}</p>
                           )}
                         </div>
                       </motion.li>

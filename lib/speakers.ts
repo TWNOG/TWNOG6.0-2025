@@ -124,6 +124,7 @@ export const speakers: Speaker[] = [
         id: "e013ab",
         name: "Ivan Tsay",
         bio: "I’m Ivan Tsay, the Director of the Development Department at Nexusguard Limited. I lead a dynamic and innovative team focused on developing cybersecurity and network defense solutions, specializing in DNS security and DDoS protection. With a strong background in programming and network security, I am passionate about enhancing digital resilience and ensuring the reliability of our security services.",
+        img: "/assets/speakers/e013ab.jpg",
         org: "Nexusguard",
         sessionIds: ["2f0af7"]
     },

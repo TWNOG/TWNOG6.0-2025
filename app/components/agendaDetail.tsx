@@ -47,7 +47,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
   // 如果找不到對應的議程，顯示載入或 404
   if (!agendaItem) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-svh flex items-center justify-center">
         <p>{t("loading")}</p>
       </div>
     );
@@ -78,7 +78,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="flex items-center justify-center h-screen p-4">
+        <div className="flex items-center justify-center h-svh p-4">
           {/* 白色內容區塊 */}
           <motion.div
             className="relative bg-white w-full max-w-screen-lg max-h-full overflow-y-auto rounded-lg shadow-lg p-6 md:p-8"
@@ -142,7 +142,7 @@ export default function AgendaDetailPage({ id }: { id: string }) {
               {/* 議程簡介 */}
               {agendaItem.description && (
                 <motion.p
-                  className="text-gray-800 leading-relaxed mb-4 md:mb-8"
+                  className="text-gray-800 leading-relaxed mb-4 md:mb-8 whitespace-pre-line"
                   variants={itemVariants}
                 >
                   {t(`sessions.${agendaItem.id}.description`)}
@@ -172,14 +172,14 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {/* 左欄：人物照片 */}
                         <div className="md:w-1/4 flex flex-col items-center gap-2">
                           <h3 className="text-gray-700 text-xl text-center font-bold">
-                            {speaker.name}
+                            {t(`speakers.${speaker.id}.name`)}
                           </h3>
                           <p className="text-gray-500 text-center mb-2">{speaker.org}</p>
                           {
                             speaker.img ? (
                               <Image
                                 src={speaker.img}
-                                alt={speaker.name}
+                                alt={t(`speakers.${speaker.id}.name`)}
                                 width={40}
                                 height={40}
                                 className="w-40 h-40 rounded-lg object-cover"
@@ -193,9 +193,9 @@ export default function AgendaDetailPage({ id }: { id: string }) {
                         {/* 右欄：文字介紹 */}
                         <div className="md:w-3/4">
                           {speaker.bio ? (
-                            <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: speaker.bio }}></p>
+                            <p className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: t(`speakers.${speaker.id}.bio`) }}></p>
                           ) : (
-                            <p className="text-gray-500 italic leading-relaxed">{t("noBio")}</p>
+                            <p className="text-gray-500 italic pt-4 text-center md:text-left leading-relaxed">{t("noBio")}</p>
                           )}
                         </div>
                       </motion.li>

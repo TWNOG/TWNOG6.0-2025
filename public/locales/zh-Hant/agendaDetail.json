@@ -35,6 +35,10 @@
     "e013ab": {
       "name": "Ivan Tsay",
       "bio": "我是 Ivan Tsay，Nexusguard Limited 開發部門的主管。我帶領一個充滿活力與創新的團隊，專注於開發網路安全與防禦解決方案，特別是在 DNS 安全與 DDoS 防護方面。基於在程式設計與網路安全領域的背景，我熱衷於提供網路安全韌性的解決方案，並確保我們安全服務的有效性與可靠性。"
+    },
+    "947198": {
+      "name": "趙雲龍",
+      "bio": "Chao Yin Loong has more than 20 years in the video and network industry. He started his career at MediaCorp Singapore where he implemented the first DVB-T network in South East Asia. He has worked at Cisco Systems implementing various OTT video streaming infrastructure for customers. Currently he is a Principal Solution Architect with Tencent CDN Edge One and Video-On Demand product architecture team. He has helped customer architect solutions to protect both their web and video streaming infrastructure. He also has experience in API security and fingerprinting solutions."
     }
   }
 }

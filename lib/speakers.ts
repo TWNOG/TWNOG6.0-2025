@@ -130,6 +130,7 @@ export const speakers: Speaker[] = [
         id: "e83cf9",
         name: "Yik Ho Kwok",
         bio: "Experienced in network product management and technical evaluation, with deep knowledge of Taiwan’s network industry and infrastructure. Skilled in IP resource management, network planning, and industry collaboration with Google, Facebook, and AWS. Proficient in network technologies and market trends, ensuring balanced technical and business evaluations.",
+        img: "/assets/speakers/e83cf9.jpg",
         org: "TWM",
         sessionIds: ["babd97"]
     },

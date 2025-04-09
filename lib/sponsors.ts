@@ -47,6 +47,11 @@ export const sponsors: SponsorsData = {
     },
     {
       name: "Chunghwa Telecom",
+      img: "/assets/sponsor/twix.png",
+      link: "https://www.cht.com.tw/home/enterprise/products-services/internet-voice/enterprise-line/451",
+    },
+    {
+      name: "Chunghwa Telecom",
       img: "/assets/sponsor/cht_cdn.svg",
       link: "https://www.cht.com.tw",
     },

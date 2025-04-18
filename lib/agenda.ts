@@ -35,12 +35,14 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "This presentation will provide JPIX updates first, what JPIX did about our Route Server and statistics we can see on our Route Server.\nAfter introducing the basic functions of IX route servers, I would like to have a discussion for making our multilateral peering on IX route server better.",
+        slido: "https://app.sli.do/event/ocwGUxnJC2aoiE1ecunieH"
     },
     {
         id: "bea9e5",
         time: "09:40 - 10:05",
         name: "The RouteViews Project: Update",
         description: "RouteViews was initiated in 1995 at the University of Oregon to allow network operators see what their routing tables looked like from an external perspective. Over the years since, this community project has set up collectors in strategic locations around the world, allowing network operators a rich view of their routing announcements, and researchers a valuable resource for tracking the growth and variations in the global Internet infrastructure.\n\nThis presentation introduces the new team behind RouteViews, and shares the new latest developments in the project, now operated on behalf of the global Internet community by the Network Startup Resource Center (NSRC). Some of the developments are a new Peering Policy, How to use the RouteViews system as a network operator and what are we working on for the future.",
+        slido: "https://app.sli.do/event/i7v32t33avqQDPXAnRQFG5"
     },
     {
         id: "ab0b95",
@@ -49,6 +51,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Data centers are undergoing a transformation driven by the push for standardisation and the shift away from proprietary solutions. This effort seeks to eliminate vendor lock-in, enhance interoperability, and foster innovation across the industry.\n  By reviewing emerging technologies, this talk emphasises how standardisation enhances scalability, reduces costs, and ensures a more sustainable and adaptable data center ecosystem.",
+        slido: "https://app.sli.do/event/dZh1cQGz9xocxUyoQoRjgg"
     },
     {
         id: "02e348",
@@ -63,6 +66,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "This presentation investigates the proximity to a low Signal-to-Noise Ratio (SNR) threshold that can still maintain a tolerable Bit Error Rate (BER) in 100G / 400G / 800G network links. Additionally, we account for factors such as temperature and cable length to predict the duration for which a reliable network connection can be sustained between transceivers. The analysis, based on data retrieved using a Flexbox, focuses on comparing the reliability of coherent (16QAM) and non-coherent (PAM4) transceivers, with a detailed discussion on the implications of these technologies on network performance. \nMade by FLEXOPTIX Research - Gerhard and Thomas.",
+        slido: "https://app.sli.do/event/bTKTeHLXT9xFtmSyrunkjQ"
     },
     {
         id: "36c72a",
@@ -71,6 +75,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Today, AI applications is broader to the world, particular in Generative AI.\nIt consume lots of GPU resource and need the large network to interconnect GPU communication.\n\nArista is sophisticated in HPC/AI large network, and providing a large/stable/visibility network to support customer business to grow up.",
+        slido: "https://app.sli.do/event/oU8U6fCp1BWhBfdkm3pPAM"
     },
     {
         id: "421a22",
@@ -79,6 +84,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Intorduce what is Cloud Networking and the service application and deployment examples",
+        slido: "https://app.sli.do/event/v2MDedUWL5GMTqsTn47Qgw"
     },
     {
         id: "3fa4d4",
@@ -87,6 +93,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "This presentation will present on the optimization for LINE service in Taiwan.\n In detail, we will introduce the network design, peering, new year traffic trend and operation, LINE CDN service.",
+        slido: "https://app.sli.do/event/jEDSHLS4qd66RWwDZHXpQi"
     },
     {
         id: "8f797b",
@@ -109,6 +116,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "TBD",
+        slido: "https://app.sli.do/event/iefFBwvhdUctmT1TFJTU6W"
     },
     {
         id: "6cc2d0",
@@ -116,7 +124,8 @@ export const agenda: Agenda[] = [
         name: "DNS & DNSSEC operational best practices - Sleep better at night with KINDNS in your network!",
         type: "Presentation",
         location: "402",
-        description: "The Domain Name System (DNS) is a critical part of the Internet infrastructure.  DNS translates the domain names of websites and email addresses that people can remember to the IP addresses that computers can understand.  It is a large distributed system with many moving parts.\n\nKINDNS is simple framework for stable and secure DNS operations.  The KINDNS guidelines are current best practices for DNS operators to improve the security and reliability of their operations."
+        description: "The Domain Name System (DNS) is a critical part of the Internet infrastructure.  DNS translates the domain names of websites and email addresses that people can remember to the IP addresses that computers can understand.  It is a large distributed system with many moving parts.\n\nKINDNS is simple framework for stable and secure DNS operations.  The KINDNS guidelines are current best practices for DNS operators to improve the security and reliability of their operations.",
+        slido: "https://app.sli.do/event/3i2TKnvjWscwjVvHz5NPF9"
     },
     {
         id: "2f0af7",
@@ -124,7 +133,8 @@ export const agenda: Agenda[] = [
         name: "DNS Under Siege: Protecting Against Advanced Threats",
         type: "Presentation",
         location: "402",
-        description: "Domain Name System (DNS) plays a foundational role in a Communication Service Provider (CSP) environment, such as telecoms, ISPs, or other network-based service providers, in order for CSP to efficiently route user requests and providing secure internet access. However, protecting DNS in a Communication Service Provider (CSP) network is challenging due to the critical nature of DNS services, the high volume of traffic, and the variety of threats targeting DNS infrastructure.\n\nThis presentation will cover the DDoS attacks to DNS resolvers and authoritative servers, its impact and challenges for CSPs, and finally, strategies for defending against the DNS DDoS attack."
+        description: "Domain Name System (DNS) plays a foundational role in a Communication Service Provider (CSP) environment, such as telecoms, ISPs, or other network-based service providers, in order for CSP to efficiently route user requests and providing secure internet access. However, protecting DNS in a Communication Service Provider (CSP) network is challenging due to the critical nature of DNS services, the high volume of traffic, and the variety of threats targeting DNS infrastructure.\n\nThis presentation will cover the DDoS attacks to DNS resolvers and authoritative servers, its impact and challenges for CSPs, and finally, strategies for defending against the DNS DDoS attack.",
+        slido: "https://app.sli.do/event/aKVUFwTjbXsQUPJPG53jwF"
     },
     {
         id: "1e4ec4",
@@ -133,6 +143,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Telecom sector has been long as a major target of various cyber-attacks because of its position as an information flow center. As one of the world’s leading tech hubs, Taiwan’s telecom sector is especially facing a growing number of challenges, from cyberattacks and evolving regulatory pressures to the complex landscape shaped by global geopolitics.\n\nIn today’s session, we will start by exploring the threat landscape of Taiwanese telecom sector. It includes a strategic overview of telecom industry, motivations to attract threat actors, technical dissect and corresponding attack vectors. We will provide real-world case studies of state sponsored attacks that showcase the implications of the ongoing threats. \n\nA significant part of our discussion will focus on the emerging concept of the ORB (Operation Relab Box) network, a botnet structure network composed of various compromised devices. ORB Network has been widely adopted by various state sponsored threat actors and can effectively hinder traceback by investigators. We will introduce the concept, mechanism, and use cases in various phases of cyber-attacks, to help audience master such kind of novel threats. \n\nBy the end of our session, we hope to provide audiences with a clearer understanding of the current threats and the counter measure: a proactive cyber defense drive by cyber threat intelligence.",
+        slido: "https://app.sli.do/event/ppTjihmyTDfi8wjrFrJoLx"
     },
     {
         id: "328a5c",
@@ -141,6 +152,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "DDOS attacks are becoming very common against network operators. They are many mitigation techniques at the network layer. This talk aims to show a unique and effective method using fingerprint technology across the whole stack and also its use in client side and server side technologies.",
+        slido: "https://app.sli.do/event/reC4JjnjibqpNAHCQtehYb"
     },
     {
         id: "b98908",
@@ -155,6 +167,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Discuss our network operation challenges in Taiwan and provide some suggestion and comment.",
+        slido: "https://app.sli.do/event/ju5ZNUY7ZEdbvhpdPJXp5c"
     },
     {
         id: "96b1f8",
@@ -163,6 +176,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "The emerging AI, quantum computing require much higher power and cooling systems support. This create challenges to the traditional data center infrastructure design.  This paper will discuss, in particular, the emerging liquid cooling systems, we will discuss the main approaches, each pros and cons.",
+        slido: "https://app.sli.do/event/1cu4SggwwDtDT3X67pdPeB"
     },
     {
         id: "9d1b78",
@@ -171,6 +185,7 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Out-of-band management is critical for ensuring network resiliency and minimizing downtime in environments running generative AI workloads, where uninterrupted data processing and model training are paramount. By establishing a dedicated management channel that remains operational even when the primary network is compromised or congested, out-of-band solutions allow IT teams to remotely monitor, diagnose, and remediate issues in real time. This immediate visibility and control help prevent small incidents from escalating into major disruptions, maintain service continuity for resource-intensive AI applications, and streamline troubleshooting by providing secure, isolated access to hardware and software components. In turn, organizations can ensure higher availability, faster recovery, and robust performance—key factors for hosting the demanding and continuous operations of generative AI systems.",
+        slido: "https://app.sli.do/event/7Tw2JVJx8SorqRcRnKDawC"
     },
     {
         id: "930903",
@@ -195,5 +210,6 @@ export const agenda: Agenda[] = [
         type: "Presentation",
         location: "402",
         description: "Taiwan’s internet industry is growing rapidly, attracting both global and local companies looking for top talent. However, many companies face challenges in recruiting and retaining skilled professionals, while job seekers often struggle to navigate career opportunities in this evolving field.\n\nThis panel discussion brings together industry experts, HR professionals, and students to explore how companies can attract and nurture the right talent in Taiwan. We’ll discuss industry demands, essential skills, recruitment challenges, and career development strategies, offering valuable insights for both employers and aspiring professionals.",
+        slido: "https://app.sli.do/event/ivs8oKfFthRpgxK8feXV5S"
     },
 ];

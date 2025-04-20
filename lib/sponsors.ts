@@ -3,7 +3,7 @@
 export type Sponsor = {
   name: string;
   img: string;
-  link: string;
+  link?: string;
 };
 
 export type SponsorsData = {
@@ -70,6 +70,10 @@ export const sponsors: SponsorsData = {
       img: "/assets/sponsor/apnic.svg",
       link: "https://apnic.net/",
     },
+    {
+      name: "ISOC Taipei",
+      img: "/assets/sponsor/isoc_Taipei.svg",
+    }
   ],
   gold: [
     {

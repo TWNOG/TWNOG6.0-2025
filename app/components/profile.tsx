@@ -16,7 +16,7 @@ export default function Profile({ staff }: ProfileProps) {
                 src={
                     staff.sha256
                         ? `https://www.gravatar.com/avatar/${staff.sha256}?s=256`
-                        : staff.img || '/assets/twnog.png'
+                        : staff.img || '/2025/assets/twnog.png'
                 }
                 alt={staff.name}
                 width={256}

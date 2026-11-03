@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
     images: [
       {
-        url: "https://2025.twnog.net/assets/twnog6-banner.jpg",
+        url: "https://twnog.net/2025/assets/twnog6-banner.jpg",
         width: 1200,
         height: 630,
       }
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "TWNOG 6",
     description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
-    images: "https://2025.twnog.net/assets/twnog6-banner.jpg",
+    images: "https://twnog.net/2025/assets/twnog6-banner.jpg",
     card: "summary_large_image",
   },
 };

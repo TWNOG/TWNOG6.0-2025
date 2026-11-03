@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { agenda } from "@/lib/agenda";
 
-const domain = "https://2025.twnog.net";
+const domain = "https://twnog.net/2025";
 
 export const dynamic = 'force-static';
 

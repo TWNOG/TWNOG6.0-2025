@@ -32,8 +32,8 @@ export default function TrafficPage() {
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-2"><TramFront className="inline-block mr-2" size={24} />{t("mrtTitle")}</h3>
                     <ul className="font-serif list-disc list-inside space-y-2">
-                        <li><Image className="inline-block mr-2" src='/assets/Taipei_Metro_Line_R.svg' alt="Taipei_Metro_Line_R" width={24} height={24}/>{t("mtrDescription.0")}</li>
-                        <li><Image className="inline-block mr-2" src='/assets/Taipei_Metro_Line_BL.svg' alt="Taipei_Metro_Line_BL" width={24} height={24}/>{t("mtrDescription.1")}</li>
+                        <li><Image className="inline-block mr-2" src='/2025/assets/Taipei_Metro_Line_R.svg' alt="Taipei_Metro_Line_R" width={24} height={24}/>{t("mtrDescription.0")}</li>
+                        <li><Image className="inline-block mr-2" src='/2025/assets/Taipei_Metro_Line_BL.svg' alt="Taipei_Metro_Line_BL" width={24} height={24}/>{t("mtrDescription.1")}</li>
                     </ul>
                 </div>
 

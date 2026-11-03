@@ -28,7 +28,7 @@ export default function Home() {
       }
     },
     image: [
-      "https://2025.twnog.net/assets/twnog6-banner.jpg"
+      "https://twnog.net/2025/assets/twnog6-banner.jpg"
     ],
     description: "第六屆台灣網路維運論壇將於 2025 年 04 月 18 日於臺大醫院國際會議中心舉辦。歡迎所有網路維運者與學生一同參與！The TWNOG 6 will be held on April 18, 2024, at the NTU Hospital International Convention Center. All network operations personnel or students are welcome to attend!",
     organizer: {
@@ -46,7 +46,7 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-svh p-8 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
         <Image
-          src="/assets/twnog.svg" 
+          src="/2025/assets/twnog.svg" 
           alt="2025 TWNOG Logo"
           width={200}
           height={80}

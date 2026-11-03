@@ -11,15 +11,15 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: `${agendaItem?.name || id} - TWNOG 6`,
       description: `${agendaItem?.description?.replace(/\n/g, " ")}`,
-      url: `https://2025.twnog.net/agenda/${id}`,
+      url: `https://twnog.net/2025/agenda/${id}`,
       type: "website",
-      // images: ["https://2025.twnog.net/path-to-image.jpg"],
+      // images: ["https://twnog.net/2025/path-to-image.jpg"],
     },
     twitter: {
       card: "summary_large_image",
       title: `${agendaItem?.name || id} - TWNOG 6`,
       description: `${agendaItem?.description?.replace(/\n/g, " ")}`,
-      // images: ["https://2025.twnog.net/path-to-image.jpg"],
+      // images: ["https://twnog.net/2025/path-to-image.jpg"],
     },
   };
 }
